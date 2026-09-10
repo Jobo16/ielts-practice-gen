@@ -18,9 +18,36 @@ npm run dev
 
 普通 API 密钥允许 validate/build；管理员密钥另外允许题库保存、列表、下载、归档。build 不把调用者题目加入公共或管理员题库。后台密钥仅保留在页面内存，刷新后重新输入。
 
-## 域名上线准备
+## 已部署实例
 
-尚未部署。收到域名和服务器信息后再配置实际服务与证书。
+公网入口：https://ieltsbuddy-reading-gen.jobo.asia；后台追加 `/admin`。
+服务器：`ssh server-renovation`，服务名 `reading-gen`，监听 `127.0.0.1:14173`，公网由现有 Caddy 代理，自动管理 HTTPS 证书。
+
+- 源码仓库：`/opt/git/ieltsbuddy-reading-gen.git`（服务器上的私有 bare 仓库）；本地 Git remote 名为 deploy。
+- 生产检出：`/opt/apps/ieltsbuddy-reading-gen/repo`，分支 main。
+- 配置：`/opt/stacks/ieltsbuddy-reading-gen/service.env`，root 可读，含两个独立密钥。
+- 数据：`/opt/stacks/ieltsbuddy-reading-gen/data/reading.sqlite3`，由 reading-gen 用户持有。
+- 本地密钥副本：`.local/production.env`，权限 0600，不进 Git；后台登录使用其中 READING_ADMIN_TOKEN。
+
+发布只推送已提交源码，再由服务器快进拉取、构建和启动。未创建或推送 GitHub 仓库。
+
+```sh
+git push deploy main
+ssh server-renovation 'cd /opt/apps/ieltsbuddy-reading-gen/repo && test -z "$(git status --porcelain)" && git pull --ff-only origin main && ./deploy/install.sh'
+# 仅站点配置变更时执行（先校验再重载，保留其他站点）：
+ssh server-renovation 'cd /opt/apps/ieltsbuddy-reading-gen/repo && sudo python3 deploy/publish-site.py'
+```
+
+对公网调用 CLI：
+
+```sh
+set -a
+. .local/production.env
+set +a
+python3 scripts/reading_cli.py build examples/community-garden.json -o practice.html
+```
+
+## 新实例部署基线
 
 1. 在服务器准备项目和 Node/Python，以专用普通用户运行。
 2. 生成两个不同的随机密钥（如各 32 随机字节的十六进制字符串），通过进程环境设置 READING_API_TOKEN、READING_ADMIN_TOKEN；不能只配置一个。不要提交密钥。

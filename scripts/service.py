@@ -88,7 +88,8 @@ def handler_for(service):
             for name, value in (headers or {}).items():
                 self.send_header(name, value)
             self.end_headers()
-            self.wfile.write(body)
+            if self.command != 'HEAD':
+                self.wfile.write(body)
 
         def authorize(self, admin=False):
             if not service.api_token:
@@ -117,7 +118,7 @@ def handler_for(service):
 
         def dispatch(self):
             path = urlsplit(self.path).path
-            method = self.command
+            method = 'GET' if self.command == 'HEAD' else self.command
             if method == 'GET' and path == '/api/v1/health':
                 return self.respond(200, {'ok': True, 'apiVersion': 'v1', 'authenticationRequired': bool(service.api_token), 'maxBytes': service.max_body})
             public_docs = {
@@ -209,7 +210,7 @@ def handler_for(service):
                 print(f'Service error: {type(error).__name__}', flush=True)
                 self.respond(500, {'error': {'code': 'internal_error', 'message': '服务内部错误，请稍后重试。'}})
 
-        do_GET = do_POST = do_DELETE = handle_request
+        do_GET = do_HEAD = do_POST = do_DELETE = handle_request
     return Handler
 
 

@@ -8,7 +8,7 @@ const folder='artifacts/bank-roundtrip';fs.mkdirSync(folder,{recursive:true});
 const report={passages:0,tasks:0,responses:0,types:[],exactOriginalImports:0,evidenceDifferences:[],cases:[]};const types=new Set();
 function clean(value){
  if(Array.isArray(value))return value.map(clean);
- if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).filter(([k])=>!['displayNumber','heading','ordinal','label'].includes(k)).map(([k,v])=>[k,clean(v)]));
+ if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).filter(([k])=>!['displayNumber','heading'].includes(k)).map(([k,v])=>[k,clean(v)]));
  return value;
 }
 for(const [position,s] of sources.entries()){

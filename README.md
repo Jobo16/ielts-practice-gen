@@ -89,4 +89,4 @@ python3 scripts/reading_cli.py build examples/community-garden.json -o practice.
 python3 scripts/reading_cli.py upload examples/community-garden.json
 ```
 
-CLI 默认连接本地 4173；远程设置 READING_SERVER、READING_API_TOKEN。upload 使用独立 READING_ADMIN_TOKEN。普通 build 不保存题库记录，返回可离线打开的 HTML。域名和证书尚未部署。
+CLI 默认连接本地 4173；远程设置 READING_SERVER、READING_API_TOKEN。upload 使用独立 READING_ADMIN_TOKEN。普通 build 不保存题库记录，返回可离线打开的 HTML。已部署到 https://ieltsbuddy-reading-gen.jobo.asia，后台路径 /admin，HTTPS 证书自动续期。

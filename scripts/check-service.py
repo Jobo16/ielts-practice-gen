@@ -34,6 +34,7 @@ def main():
             for path in ('health','agent-guide','content-format','task-layouts','openapi.json','examples'):
                 call('/api/v1/'+path,token='')
             call('/admin',token='')
+            assert call('/api/v1/health',method='HEAD',token='')[0] == b''
             for path in ('/data/packages.json','/.local/service/reading.sqlite3','/legacy.html'):
                 call(path,expected=404)
             call('/api/v1/sets',expected=401)
