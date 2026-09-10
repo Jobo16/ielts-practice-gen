@@ -1,90 +1,76 @@
-# PASSAGE by ZYZ · 本地重建版
+# IELTS Reading · 自有题目引擎
 
-从 `PASSAGE-by-ZYZ-IELTS-Reading-2026-09-06-r1.html` 分发包恢复的可编辑工程。
-保留原界面、170 篇文章、2,263 个答题位置，以及练习、组卷、模考、复盘和本地记录逻辑。
+复用 PASSAGE by ZYZ 的阅读题型渲染、判分和复盘规则，让自己的题目也能变成可交互、可离线分发的阅读练习。
 
-这是恢复后的源码组织，不是作者原始工程。没有恢复原始构建系统、Git 历史或签名私钥。
-本工程构建的是明确标记的**未签名本地重建版**，不宣称通过原作者的发布认证。
+**导入题目 JSON → 校验 → 作答 → 判分与解析 → 导出自己的离线练习包。**
 
-## 本地运行
+默认入口不加载原题库，也不依赖原包月度目录或签名。原来的 170 篇题仅保留作参考与回归样本。
 
-需要 Python 3.10+；运行检查另需 Node.js 18+。无需安装 npm 依赖。
+## 启动
+
+需要 Python 3.10+；运行检查另需 Node.js 18+。没有 npm 依赖需要安装。
 
 ```sh
 npm run dev
 ```
 
-打开 <http://127.0.0.1:4173>。该命令先构建，再提供仅本机可访问的预览服务。
-修改源码后运行 `npm run build`，刷新页面即可；当前没有自动热更新。
+打开 <http://127.0.0.1:4173>，导入自己的 JSON，或先点击“试用示例题目”。
+示例是新编的社区花园短文，包含 5 道题和中文解析，不使用原题库文章。
+当前预览如已在运行，直接刷新即可。
 
-不用 npm 也可以：
+修改源码后运行 `npm run build`，刷新页面；没有自动热更新。
+不用 npm 也可运行 `python3 scripts/serve.py --port 4173`。
 
-```sh
-python3 scripts/serve.py --port 4173
-```
+## 题目怎么准备
 
-## 构建与检查
+复制 `examples/community-garden.json` 修改，然后在首页导入。浏览器会指出缺失字段或关联错误。
+支持原引擎的 17 种阅读题型组合，包含选项、填空、匹配、表格、流程图与图示。
+
+- [题目格式与嵌入接口](docs/content-format.md)：字段、题型、答案、解析、译文、图片和计时规则。
+- [各题型字段形状](docs/task-layouts.json)：17 种题型的结构参考，不是可直接导入的模板。
+- [可直接运行的示例](examples/community-garden.json)：判断题、单选题、句子填空。
+
+当前接受结构化 JSON。PDF、Word、图片需要先转换；未包含 OCR、账号、云端题库或成绩上传服务。
+导入界面保存最近的一份练习（1–3 篇、1–200 个答题位置），可导出 JSON 备份后再导入其他题目。
+
+## 构建产物
 
 ```sh
 npm run build
 npm run check
 ```
 
-- `dist/index.html`：约 26.8 MB 的单文件离线应用，可直接用桌面浏览器打开。
-- `dist/build.json`：构建文件的 SHA-256 和来源摘要；这是校验清单，不是数字签名。
-- `npm run check`：检查构建可重复性、17 个脚本的语法、170 篇整篇组卷、478 个题型组卷、空答评分和解析关联、40 题组合与运行时插槽。
+| 产物 | 用途 |
+| --- | --- |
+| `dist/index.html` | 约 0.9 MB 的自有题目导入工具，内嵌引擎与自编示例 |
+| `dist/reading-engine.js` | 可嵌入其他页面的编译与渲染 API |
+| `dist/reading-runtime.html` | 供 API 使用的答题模板，含一个题目插入点 |
+| `dist/legacy.html` | 可选参考应用，运行 `npm run build:legacy` 生成 |
+| `dist/build.json` | 默认入口的构建摘要，不是签名 |
 
-`dist/` 是生成目录，不提交 Git。更改其中文件会在下次构建时被覆盖。
+首页“导出离线练习包”会生成只含当前题目的单文件 HTML。
+默认构建也不读取原题库；只有 `build:legacy` 和原包回归检查需要 `data/`。
+`dist/` 是生成目录，不提交 Git，也不要直接修改。
 
 ## 源码导航
 
-| 位置 | 内容 |
+| 位置 | 作用 |
 | --- | --- |
-| `src/app/index.html` | 首页、练习、模考、记录和弹窗结构 |
-| `src/app/styles/` | 外层应用样式，按原包顺序保留 |
-| `src/app/app.js` | 应用状态、筛选、练习启动、模考、复盘和记录交互 |
-| `src/app/composer.js` | 组卷、题型选择、题号映射和练习包生成 |
-| `src/app/record-store.js` | IndexedDB、本地存储、备份和恢复 |
-| `src/runtime/index.html` | iframe 中的答题页模板 |
-| `src/runtime/controller.js` | 答题、计时、提交和复盘控制 |
-| `src/runtime/question-*.js` | 题型注册与题目数据适配 |
-| `src/runtime/answer-grading.js` | 答案归一化和评分 |
-| `src/runtime/homework-report.js` | 成绩报告、分数换算和分篇用时 |
-| `src/runtime/attempt-ledger.js` | 作答次数与提交记录账本 |
-| `src/runtime/bilingual-link.js` | 原文与译文句子联动 |
-| `data/library/` | 文章、题目、答案、中文解析和元数据 |
-| `data/manifest/` | 月度题库清单 |
-| `data/translations/` | 全文翻译及其来源绑定 |
-| `data/controller/` | 证据位置辅助数据 |
-| `data/bilingual-link/` | 双语句子对应关系 |
-| `data/app/` | 原包内嵌的旧记录复盘数据 |
-| `reference/` | 原包校验信息、外层签名逻辑与启动门禁存档，不参与构建 |
-| `scripts/` | 提取、构建、本地预览和验证工具 |
+| `src/engine/content.js` | 自有题目校验、包编译、译文与证据生成、HTML 注入 |
+| `src/engine/app.js` / `store.js` | 导入、预览、导出与 IndexedDB 保存 |
+| `src/engine/index.html` / `style.css` | 自有题目入口 |
+| `src/runtime/` | 复用的原生 JavaScript 答题、评分、复盘与交互模块 |
+| `src/app/` | 原包参考应用；composer 的题型清单与摘要工具亦供新引擎复用 |
+| `data/` | 原题库及辅助数据，只进入参考应用和回归测试 |
+| `examples/` | 我们自己的题目 |
+| `scripts/` | 构建、预览、检查与原包提取 |
+| `reference/` / `original/` | 来源摘要和原包校验逻辑；original 副本不提交 Git |
 
-大段 JSON 已从 JavaScript 中拆出。HTML 的 `<!-- @include ... -->` 和 JavaScript 的
-`__ZYZ_JSON__(...)` / `__ZYZ_HTML_STRING__(...)` 由构建器展开，不是浏览器运行时 API。
-答题模板中唯一的 `__IELTS_PACKAGE_JSON__` 则留给组卷模块在启动练习时填充。
-字体等已有内联资源仍保留在样式中，因此输出没有外部静态资源依赖。
+## 验证与边界
 
-## 数据与原版关系
-
-原包没有改动。来源文件摘要记录在 `reference/recovery.json`，原包副本保存在本机 `original/`，不提交 Git。
-代码中的历史版本标识、存储键、数据完整性规则和原有署名均保留；这里只调整独立启动入口并添加重建版标记。
-原始外层签名校验代码保存在 `reference/`，不作为重建版的信任凭证。
-
-练习记录保存在当前浏览器、当前来源下。HTTP 预览与直接打开文件的记录不自动共享；可通过“立即完整备份”与“选择备份文件”迁移。
-重建版之间的备份迁移已经抽样验证。原版已有记录的迁移尚未验收，请先保留原版备份。
-原包中的第三方许可注释与产品署名保留；本仓库不另行给原代码和题库授予开源许可。
-
-## 重新提取
-
-初次提取已完成。需要验证提取过程时，请使用另一个空目录，以免覆盖已修改的源码：
-
-```sh
-python3 scripts/recover.py /path/to/original.html --output /tmp/zyz-recovery
-```
-
-提取器会拒绝覆盖已有 `src/`、`data/` 或 `reference/` 的目录。
-当前提取器针对给定的 2026-09-06-r1 分发包结构编写。
-
-本次验证范围及未覆盖项见 `docs/verification.md`。
+`npm run check` 覆盖原有组卷回归、自编题的正确/错误评分、非法输入、内容变更后的记录隔离、嵌入脚本转义、17 种题型结构兼容、独立构建不包含原题库。
+浏览器验证记录见 [自有题目验收](docs/engine-verification.md)。
+题目和答案保存在当前浏览器。不同浏览器、HTTP 地址与 file:// 文件之间不自动同步。
+译文可随题目提供，当前自有译文按整段联动；证据必须由题目作者提供，不自动推断。
+这个工程保留原代码署名和第三方许可注释，不另行给原代码和题库授予开源许可。
+原作者源码历史、构建系统与签名私钥未恢复；原始解包记录见 [重建说明](docs/reconstruction.md)。

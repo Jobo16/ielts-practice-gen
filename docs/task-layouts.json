@@ -1,0 +1,1495 @@
+{
+  "true_false_not_given|single_choice|statement_list": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "maxSelections": null,
+        "wordLimit": null
+      },
+      "content": {
+        "options": [
+          {
+            "optionId": "string",
+            "text": "string",
+            "detail": "string"
+          }
+        ],
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ]
+          }
+        ]
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "displayNumber": "number",
+      "responseKind": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ]
+    }
+  },
+  "note_completion|text_entry|notes": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "maxSelections": null,
+        "wordLimit": {
+          "maxWords": "number",
+          "allowNumber": "boolean",
+          "sourceText": "string"
+        },
+        "normalization": {
+          "unicode": "string",
+          "caseSensitive": "boolean",
+          "trim": "boolean",
+          "collapseWhitespace": "boolean",
+          "hyphenPolicy": "string",
+          "apostrophePolicy": "string"
+        }
+      },
+      "content": {
+        "listTitle": "string",
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "itemId": "string",
+            "fieldId": "string"
+          }
+        ],
+        "sections": [
+          {
+            "sectionId": "string",
+            "label": "string",
+            "items": [
+              {
+                "itemId": "string",
+                "text": "string",
+                "responseSlotIds": [
+                  "string"
+                ],
+                "inlines": [
+                  {
+                    "type": "string",
+                    "text": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "displayNumber": "number",
+      "responseKind": "string",
+      "fieldId": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string",
+          "verification": "string",
+          "sourceDerivation": "string",
+          "ledgerEntryId": "string"
+        }
+      ],
+      "normalization": {
+        "unicode": "string",
+        "caseSensitive": "boolean",
+        "trim": "boolean",
+        "collapseWhitespace": "boolean",
+        "hyphenPolicy": "string",
+        "apostrophePolicy": "string"
+      }
+    }
+  },
+  "flowchart_completion|text_entry|flow_chart": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "maxSelections": null,
+        "wordLimit": {
+          "maxWords": "number",
+          "allowNumber": "boolean",
+          "sourceText": "string"
+        },
+        "normalization": {
+          "unicode": "string",
+          "caseSensitive": "boolean",
+          "trim": "boolean",
+          "collapseWhitespace": "boolean",
+          "hyphenPolicy": "string",
+          "apostrophePolicy": "string"
+        }
+      },
+      "content": {
+        "flowChart": {
+          "title": "string",
+          "orientation": "string",
+          "topology": "string",
+          "nodes": [
+            {
+              "nodeId": "string",
+              "kind": "string",
+              "text": "string"
+            }
+          ],
+          "edges": [
+            {
+              "edgeId": "string",
+              "fromNodeId": "string",
+              "toNodeId": "string",
+              "kind": "string"
+            }
+          ],
+          "readingOrder": [
+            "string"
+          ]
+        },
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "nodeId": "string",
+            "itemId": "string",
+            "fieldId": "string"
+          }
+        ],
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "inlines": [
+              {
+                "type": "string",
+                "text": "string"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "displayNumber": "number",
+      "responseKind": "string",
+      "fieldId": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string",
+          "verification": "string",
+          "sourceDerivation": "string",
+          "ledgerEntryId": "string"
+        }
+      ],
+      "normalization": {
+        "unicode": "string",
+        "caseSensitive": "boolean",
+        "trim": "boolean",
+        "collapseWhitespace": "boolean",
+        "hyphenPolicy": "string",
+        "apostrophePolicy": "string"
+      }
+    }
+  },
+  "classification|option_mapping|matching_grid": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "minSelections": "number",
+        "maxSelections": "number",
+        "wordLimit": null
+      },
+      "content": {
+        "listTitle": "string",
+        "options": [
+          {
+            "optionId": "string",
+            "label": "string",
+            "text": "string"
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "label": "string",
+            "itemId": "string"
+          }
+        ],
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "targetId": "string"
+          }
+        ],
+        "mapping": {
+          "presentation": "string",
+          "inputMode": "string",
+          "showOptionLabels": "boolean"
+        }
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "responseKind": "string",
+      "displayNumber": "number",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ]
+    }
+  },
+  "multiple_choice|choice_set|option_list": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "minSelections": "number",
+        "maxSelections": "number",
+        "wordLimit": null
+      },
+      "content": {
+        "stem": "string",
+        "stemInlines": [
+          {
+            "style": "string",
+            "text": "string"
+          }
+        ],
+        "options": [
+          {
+            "optionId": "string",
+            "text": "string"
+          }
+        ],
+        "choice": {
+          "presentation": "string",
+          "inputMode": "string",
+          "showOptionLabels": "boolean",
+          "clickTarget": "string"
+        },
+        "contextParagraphs": [
+          {
+            "text": "string",
+            "inlines": [
+              {
+                "style": "string",
+                "text": "string"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "responseKind": "string",
+      "displayNumber": "number",
+      "groupId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ]
+    }
+  },
+  "summary_completion|text_entry|prose": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "maxSelections": null,
+        "wordLimit": {
+          "maxWords": "number",
+          "allowNumber": "boolean",
+          "sourceText": "string"
+        },
+        "normalization": {
+          "unicode": "string",
+          "caseSensitive": "boolean",
+          "trim": "boolean",
+          "collapseWhitespace": "boolean",
+          "hyphenPolicy": "string",
+          "apostrophePolicy": "string"
+        }
+      },
+      "content": {
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "itemId": "string",
+            "fieldId": "string"
+          }
+        ],
+        "sections": [
+          {
+            "sectionId": "string",
+            "label": "string",
+            "items": [
+              {
+                "itemId": "string",
+                "text": "string",
+                "responseSlotIds": [
+                  "string"
+                ],
+                "inlines": [
+                  {
+                    "type": "string",
+                    "text": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "displayNumber": "number",
+      "responseKind": "string",
+      "fieldId": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string",
+          "verification": "string",
+          "sourceDerivation": "string",
+          "ledgerEntryId": "string"
+        }
+      ],
+      "normalization": {
+        "unicode": "string",
+        "caseSensitive": "boolean",
+        "trim": "boolean",
+        "collapseWhitespace": "boolean",
+        "hyphenPolicy": "string",
+        "apostrophePolicy": "string"
+      }
+    }
+  },
+  "matching_information|option_mapping|matching_grid": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "minSelections": "number",
+        "maxSelections": "number",
+        "wordLimit": null
+      },
+      "content": {
+        "listTitle": "string",
+        "options": [
+          {
+            "optionId": "string",
+            "label": "string",
+            "text": "string",
+            "sourceBlockId": "string"
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "label": "string",
+            "itemId": "string"
+          }
+        ],
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "targetId": "string"
+          }
+        ],
+        "mapping": {
+          "presentation": "string",
+          "inputMode": "string",
+          "showOptionLabels": "boolean"
+        }
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "displayNumber": "number",
+      "responseKind": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ]
+    }
+  },
+  "multiple_choice|single_choice|option_list": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "content": {
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "options": [
+              {
+                "optionId": "string",
+                "text": "string"
+              }
+            ]
+          }
+        ],
+        "choice": {
+          "presentation": "string",
+          "inputMode": "string",
+          "showOptionLabels": "boolean",
+          "clickTarget": "string"
+        }
+      },
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "minSelections": "number",
+        "maxSelections": "number",
+        "wordLimit": null
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "displayNumber": "number",
+      "responseKind": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ]
+    }
+  },
+  "table_completion|text_entry|table": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "responseOrder": "string",
+        "maxSelections": null,
+        "wordLimit": {
+          "maxWords": "number",
+          "allowNumber": "boolean",
+          "sourceText": "string"
+        },
+        "normalization": {
+          "unicode": "string",
+          "caseSensitive": "boolean",
+          "trim": "boolean",
+          "collapseWhitespace": "boolean",
+          "hyphenPolicy": "string",
+          "apostrophePolicy": "string"
+        }
+      },
+      "content": {
+        "table": {
+          "caption": "string",
+          "columnCount": "number",
+          "columnWidths": [
+            "number"
+          ],
+          "rows": [
+            {
+              "rowId": "string",
+              "cells": [
+                {
+                  "cellId": "string",
+                  "kind": "string",
+                  "scope": "string",
+                  "colSpan": "number",
+                  "rowSpan": "number",
+                  "text": "string"
+                }
+              ]
+            }
+          ],
+          "readingOrder": [
+            "string"
+          ]
+        },
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "itemId": "string",
+            "cellId": "string",
+            "fieldId": "string"
+          }
+        ],
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "inlines": [
+              {
+                "type": "string",
+                "text": "string"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "responseKind": "string",
+      "displayNumber": "number",
+      "fieldId": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string",
+          "verification": "string",
+          "sourceDerivation": "string",
+          "ledgerEntryId": "string"
+        }
+      ],
+      "normalization": {
+        "unicode": "string",
+        "caseSensitive": "boolean",
+        "trim": "boolean",
+        "collapseWhitespace": "boolean",
+        "hyphenPolicy": "string",
+        "apostrophePolicy": "string"
+      }
+    }
+  },
+  "sentence_completion|text_entry|sentence_list": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "maxSelections": null,
+        "wordLimit": {
+          "maxWords": "number",
+          "allowNumber": "boolean",
+          "sourceText": "string"
+        },
+        "normalization": {
+          "unicode": "string",
+          "caseSensitive": "boolean",
+          "trim": "boolean",
+          "collapseWhitespace": "boolean",
+          "hyphenPolicy": "string",
+          "apostrophePolicy": "string"
+        }
+      },
+      "content": {
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "itemId": "string",
+            "fieldId": "string"
+          }
+        ],
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "inlines": [
+              {
+                "type": "string",
+                "text": "string"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "responseKind": "string",
+      "displayNumber": "number",
+      "fieldId": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string",
+          "verification": "string",
+          "sourceDerivation": "string",
+          "ledgerEntryId": "string"
+        }
+      ],
+      "normalization": {
+        "unicode": "string",
+        "caseSensitive": "boolean",
+        "trim": "boolean",
+        "collapseWhitespace": "boolean",
+        "hyphenPolicy": "string",
+        "apostrophePolicy": "string"
+      }
+    }
+  },
+  "short_answer|text_entry|short_question_list": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "content": {
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "itemId": "string",
+            "fieldId": "string"
+          }
+        ],
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "inlines": [
+              {
+                "type": "string",
+                "text": "string"
+              }
+            ]
+          }
+        ]
+      },
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "maxSelections": null,
+        "wordLimit": {
+          "maxWords": "number",
+          "allowNumber": "boolean",
+          "sourceText": "string"
+        },
+        "normalization": {
+          "unicode": "string",
+          "caseSensitive": "boolean",
+          "trim": "boolean",
+          "collapseWhitespace": "boolean",
+          "hyphenPolicy": "string",
+          "apostrophePolicy": "string"
+        }
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "displayNumber": "number",
+      "responseKind": "string",
+      "fieldId": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string",
+          "verification": "string",
+          "sourceDerivation": "string",
+          "ledgerEntryId": "string"
+        }
+      ],
+      "normalization": {
+        "unicode": "string",
+        "caseSensitive": "boolean",
+        "trim": "boolean",
+        "collapseWhitespace": "boolean",
+        "hyphenPolicy": "string",
+        "apostrophePolicy": "string"
+      }
+    }
+  },
+  "matching_features|option_mapping|matching_grid": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "minSelections": "number",
+        "maxSelections": "number",
+        "wordLimit": null
+      },
+      "content": {
+        "listTitle": "string",
+        "options": [
+          {
+            "optionId": "string",
+            "label": "string",
+            "text": "string"
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "label": "string",
+            "itemId": "string"
+          }
+        ],
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "targetId": "string"
+          }
+        ],
+        "mapping": {
+          "presentation": "string",
+          "inputMode": "string",
+          "showOptionLabels": "boolean"
+        }
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "displayNumber": "number",
+      "responseKind": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ]
+    }
+  },
+  "matching_headings|option_mapping|passage_attached_targets": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "maxSelections": null,
+        "wordLimit": null
+      },
+      "content": {
+        "listTitle": "string",
+        "options": [
+          {
+            "optionId": "string",
+            "text": "string"
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "label": "string",
+            "blockId": "string"
+          }
+        ]
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "displayNumber": "number",
+      "responseKind": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ]
+    }
+  },
+  "summary_completion|option_mapping|prose": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "minSelections": "number",
+        "maxSelections": "number",
+        "wordLimit": null
+      },
+      "content": {
+        "listTitle": "string",
+        "options": [
+          {
+            "optionId": "string",
+            "text": "string"
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "label": "string",
+            "itemId": "string"
+          }
+        ],
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "inlines": [
+              {
+                "type": "string",
+                "text": "string"
+              }
+            ]
+          }
+        ],
+        "mapping": {
+          "presentation": "string",
+          "inputMode": "string",
+          "showOptionLabels": "boolean"
+        }
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "displayNumber": "number",
+      "responseKind": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ]
+    }
+  },
+  "diagram_labelling|text_entry|diagram": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "content": {
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "assetId": "string",
+            "anchorId": "string",
+            "itemId": "string",
+            "fieldId": "string"
+          }
+        ],
+        "diagram": {
+          "title": "string",
+          "assetId": "string",
+          "coordinateSpace": "string",
+          "callouts": [
+            {
+              "calloutId": "string",
+              "box": {
+                "x": "number",
+                "y": "number",
+                "width": "number",
+                "height": "number"
+              },
+              "inlines": [
+                {
+                  "type": "string",
+                  "responseSlotId": "string"
+                }
+              ],
+              "leaderLines": [
+                {
+                  "lineId": "string",
+                  "points": [
+                    {
+                      "x": "number",
+                      "y": "number"
+                    }
+                  ],
+                  "presentation": "string"
+                }
+              ],
+              "spatialDescription": "string"
+            }
+          ],
+          "anchors": [
+            {
+              "anchorId": "string",
+              "calloutId": "string",
+              "itemId": "string",
+              "responseSlotId": "string",
+              "featurePoint": {
+                "x": "number",
+                "y": "number"
+              }
+            }
+          ],
+          "readingOrder": [
+            "string"
+          ]
+        }
+      },
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "maxSelections": null,
+        "wordLimit": {
+          "maxWords": "number",
+          "allowNumber": "boolean",
+          "sourceText": "string"
+        },
+        "normalization": {
+          "unicode": "string",
+          "caseSensitive": "boolean",
+          "trim": "boolean",
+          "collapseWhitespace": "boolean",
+          "hyphenPolicy": "string",
+          "apostrophePolicy": "string"
+        }
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "responseKind": "string",
+      "displayNumber": "number",
+      "fieldId": "string",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string",
+          "verification": "string",
+          "sourceDerivation": "string",
+          "ledgerEntryId": "string"
+        }
+      ],
+      "normalization": {
+        "unicode": "string",
+        "caseSensitive": "boolean",
+        "trim": "boolean",
+        "collapseWhitespace": "boolean",
+        "hyphenPolicy": "string",
+        "apostrophePolicy": "string"
+      }
+    }
+  },
+  "yes_no_not_given|single_choice|statement_list": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "content": {
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "options": [
+              {
+                "optionId": "string",
+                "text": "string"
+              }
+            ]
+          }
+        ],
+        "choice": {
+          "presentation": "string",
+          "inputMode": "string",
+          "showOptionLabels": "boolean",
+          "clickTarget": "string"
+        }
+      },
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "minSelections": "number",
+        "maxSelections": "number",
+        "wordLimit": null
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "responseKind": "string",
+      "displayNumber": "number"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ]
+    }
+  },
+  "matching_sentence_endings|option_mapping|sentence_ending_gaps": {
+    "task": {
+      "taskId": "string",
+      "questionType": "string",
+      "interactionVariant": "string",
+      "layoutVariant": "string",
+      "heading": "string",
+      "instructions": [
+        "string"
+      ],
+      "responseSlotIds": [
+        "string"
+      ],
+      "content": {
+        "listTitle": "string",
+        "options": [
+          {
+            "optionId": "string",
+            "label": "string",
+            "text": "string"
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "string",
+            "targetType": "string",
+            "label": "string",
+            "itemId": "string"
+          }
+        ],
+        "items": [
+          {
+            "itemId": "string",
+            "text": "string",
+            "responseSlotIds": [
+              "string"
+            ],
+            "targetId": "string",
+            "inlines": [
+              {
+                "type": "string",
+                "text": "string"
+              }
+            ]
+          }
+        ],
+        "mapping": {
+          "presentation": "string",
+          "inputMode": "string",
+          "showOptionLabels": "boolean"
+        }
+      },
+      "rules": {
+        "optionReuse": "string",
+        "occupiedOptionBehavior": "string",
+        "responseOrder": "string",
+        "minSelections": "number",
+        "maxSelections": "number",
+        "wordLimit": null
+      }
+    },
+    "responseSlot": {
+      "responseSlotId": "string",
+      "taskId": "string",
+      "responseKind": "string",
+      "displayNumber": "number",
+      "targetId": "string"
+    },
+    "scoreSlot": {
+      "scoreSlotId": "string",
+      "taskId": "string",
+      "responseSlotIds": [
+        "string"
+      ],
+      "marks": "number",
+      "evaluation": "string",
+      "accepted": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ]
+    }
+  }
+}

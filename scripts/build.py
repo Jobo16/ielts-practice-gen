@@ -14,22 +14,39 @@ def script_json(value):
     return json.dumps(value, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c').replace('\u2028', '\\u2028').replace('\u2029', '\\u2029')
 
 
-def render(path):
+def render(path, overrides=None):
+    overrides = overrides or {}
     content = (ROOT / path).read_text(encoding='utf-8')
 
     def value(match):
         kind, name = match.groups()
-        obj = json.loads((ROOT / name).read_text(encoding='utf-8')) if kind == 'JSON' else render(name)
+        obj = overrides.get(name) if name in overrides else (json.loads((ROOT / name).read_text(encoding='utf-8')) if kind == 'JSON' else render(name, overrides))
         return script_json(obj)
 
     content = VALUE.sub(value, content)
-    return INCLUDE.sub(lambda match: render(match[1]), content)
+    return INCLUDE.sub(lambda match: render(match[1], overrides), content)
 
 
-def build():
+def engine_runtime():
+    return render('src/runtime/index.html', {
+        'data/translations/window-ielts-review-translations.json': None,
+        'data/translations/window-ielts-review-translation-source-binding.json': None,
+        'data/controller/const-t36-evidence-anchor-sidecar.json': {'entries': [], 'samplePassages': [], 'schemaVersion': 'reading-evidence.v1'},
+        'data/bilingual-link/const-sidecar.json': {'passages': []},
+    })
+
+
+def build(include_legacy=False):
     output = ROOT / 'dist'
     output.mkdir(exist_ok=True)
-    html = render('src/app/index.html')
+    if include_legacy:
+        legacy = render('src/app/index.html')
+        (output / 'legacy.html').write_text(legacy, encoding='utf-8')
+    runtime = engine_runtime()
+    (output / 'reading-runtime.html').write_text(runtime, encoding='utf-8')
+    sdk = '\n'.join(render(path) for path in ['src/app/composer.js', 'src/runtime/answer-grading.js', 'src/engine/content.js'])
+    (output / 'reading-engine.js').write_text(sdk, encoding='utf-8')
+    html = render('src/engine/index.html', {'src/runtime/index.html': runtime})
     if '<!-- @include ' in html or '__ZYZ_JSON__(' in html or '__ZYZ_HTML_STRING__(' in html:
         raise ValueError('Unexpanded build placeholder')
     data = html.encode('utf-8')
@@ -38,11 +55,13 @@ def build():
         'type': 'unsigned-local-reconstruction',
         'sha256': hashlib.sha256(data).hexdigest(),
         'bytes': len(data),
-        'sourceDistributionSha256': json.loads((ROOT / 'reference/recovery.json').read_text())['sourceSha256'],
     }
     (output / 'build.json').write_text(json.dumps(receipt, indent=2) + '\n')
     print(f'Built dist/index.html ({len(data):,} bytes); SHA-256 {receipt["sha256"]}')
 
 
 if __name__ == '__main__':
-    build()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--with-legacy', action='store_true', help='Also build the original bank reference app.')
+    build(parser.parse_args().with_legacy)

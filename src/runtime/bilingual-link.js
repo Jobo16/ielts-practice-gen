@@ -2,7 +2,7 @@
 (function zyzBilingualSentenceLinkDemo() {
   'use strict';
 
-  const sidecar = __ZYZ_JSON__("data/bilingual-link/const-sidecar.json");
+  const sidecar = window.__IELTS_V2_PACKAGE__?.readingContent?.bilingual || __ZYZ_JSON__("data/bilingual-link/const-sidecar.json");
   const LINK_CLASS = 'bilingual-link-fragment';
   const PREVIEW_CLASS = 'is-bilingual-preview';
   const PINNED_CLASS = 'is-bilingual-pinned';
@@ -477,4 +477,3 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true });
   else start();
 })();
-  

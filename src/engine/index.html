@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>阅读练习 · 自有题目</title>
+  <link rel="icon" href="data:,">
+  <style><!-- @include src/engine/style.css --></style>
+</head>
+<body>
+  <main>
+    <header><span class="brand">READING</span><span>自有题目</span></header>
+    <section id="library">
+      <h1>把你的题目变成阅读练习。</h1>
+      <p>导入文章、题目、答案和解析，在浏览器中完成作答与复盘。</p>
+      <div class="actions">
+        <label class="button">导入题目 JSON<input id="import-content" type="file" accept=".json,application/json"></label>
+        <button id="sample">试用示例题目</button>
+        <button id="download-sample">下载题目模板</button>
+      </div>
+      <p id="error" role="alert" hidden></p>
+      <article id="summary" hidden>
+        <h2 id="title"></h2><p id="details"></p>
+        <div class="actions"><button id="start" class="primary">开始 / 继续练习</button><button id="export-html">导出离线练习包</button><button id="export-json">导出题目 JSON</button></div>
+      </article>
+      <p class="hint">题目保存在当前浏览器，文件不会上传。修改后的题目使用独立作答记录。</p>
+      <details><summary>题目格式</summary><p>使用 reading-set.v1 格式。下载示例模板可查看文章段落、题型、答案及解析的写法；支持原引擎的 17 种阅读题型组合。PDF、Word 和图片需先转换为题目 JSON。</p><p>完整规范见仓库 docs/content-format.md。JSON 文件作为题目备份；练习包可直接离线打开。</p></details>
+    </section>
+    <section id="runner" hidden><div class="runner-bar"><button id="back">返回题目</button><span>答案自动保存在当前浏览器</span></div><iframe id="frame" title="自有题目阅读练习" allow="fullscreen"></iframe></section>
+    <footer>基于 PASSAGE 阅读引擎重建</footer>
+  </main>
+  <script><!-- @include src/app/composer.js --></script>
+  <script><!-- @include src/runtime/answer-grading.js --></script>
+  <script><!-- @include src/engine/content.js --></script>
+  <script><!-- @include src/engine/store.js --></script>
+  <script>window.__READING_TEMPLATE__ = __ZYZ_HTML_STRING__("src/runtime/index.html"); window.__READING_SAMPLE__ = __ZYZ_JSON__("examples/community-garden.json");</script>
+  <script><!-- @include src/engine/app.js --></script>
+</body>
+</html>

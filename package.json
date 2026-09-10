@@ -2,9 +2,10 @@
   "name": "zyz-passage-reconstructed",
   "version": "0.1.0",
   "private": true,
-  "description": "Editable reconstruction of the PASSAGE by ZYZ offline reading package",
+  "description": "Reusable IELTS reading renderer, grader and offline pack builder for custom question data",
   "scripts": {
     "build": "python3 scripts/build.py",
+    "build:legacy": "python3 scripts/build.py --with-legacy",
     "dev": "python3 scripts/serve.py",
     "check": "python3 scripts/check.py"
   }

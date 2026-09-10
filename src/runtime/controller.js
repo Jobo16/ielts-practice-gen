@@ -406,6 +406,15 @@
   }
 
   function reviewTranslationBinding(part) {
+    const ownUnits = window.__IELTS_V2_PACKAGE__?.readingContent?.translations?.[part?.passageId];
+    if (reviewAnswerAnalysisEnabled() && ownUnits) {
+      const expected = reviewTranslationSourceUnits(part);
+      const byId = new Map(ownUnits.map(unit => [unit.unitId, unit]));
+      for (const unit of expected) {
+        if (byId.has(unit.unitId) && byId.get(unit.unitId).sourceText !== unit.sourceText) return null;
+      }
+      return { passage: part, byId, expected };
+    }
     if (!reviewAnswerAnalysisEnabled() || !part?.passageId || !REVIEW_TRANSLATION_SIDECAR) return null;
     if (REVIEW_TRANSLATION_SIDECAR.translationRuntimeContractVersion !== 'zyz-reading-review-translation-runtime.v1' ||
         REVIEW_TRANSLATION_SIDECAR.translationSetId !== REVIEW_TRANSLATION_SET_ID ||
@@ -485,7 +494,7 @@
     sidecarScoreSlotCount: 2261,
     locatorEligibility: 'full-library-sidecar-with-five-human-decisions-accepted',
   });
-  const T36_EVIDENCE_ANCHOR_SIDECAR = __ZYZ_JSON__("data/controller/const-t36-evidence-anchor-sidecar.json");
+  const T36_EVIDENCE_ANCHOR_SIDECAR = window.__IELTS_V2_PACKAGE__?.readingContent?.evidence || __ZYZ_JSON__("data/controller/const-t36-evidence-anchor-sidecar.json");
   const t36SidecarByScoreSlot = new Map(T36_EVIDENCE_ANCHOR_SIDECAR.entries.map((entry) => [entry.scoreSlotId, entry]));
   const t36EvidenceIndexByScoreSlot = new Map();
   const t36RuntimeDiagnostics = [];
@@ -4233,11 +4242,13 @@
     }
     if (els.submitButton) {
       const isReturn = Boolean(state.submitted);
+      const returnLabel = window.__IELTS_V2_PACKAGE__?.readingContent
+        ? (window.parent === window ? '查看成绩' : '返回题目') : '返回练习包';
       const icon = els.submitButton.querySelector('[data-submit-button-icon]');
       const label = els.submitButton.querySelector('[data-submit-button-label]');
       els.submitButton.classList.toggle('is-return', isReturn);
-      els.submitButton.setAttribute('aria-label', isReturn ? '返回练习包' : 'Review your answers');
-      els.submitButton.title = isReturn ? '返回练习包' : 'Review your answers';
+      els.submitButton.setAttribute('aria-label', isReturn ? returnLabel : 'Review your answers');
+      els.submitButton.title = isReturn ? returnLabel : 'Review your answers';
       if (icon) {
         icon.classList.toggle('fa-check', !isReturn);
         icon.classList.toggle('fa-arrow-left', isReturn);
@@ -5506,6 +5517,10 @@
 
   function openSubmitDialog() {
     if (state.submitted) {
+      if (window.__IELTS_V2_PACKAGE__?.readingContent && window.parent !== window) {
+        window.parent.postMessage({ type: 'reading-engine.return' }, '*');
+        return;
+      }
       els.reviewBanner?.scrollIntoView({ block: 'start', behavior: 'smooth' });
       return;
     }
@@ -7754,5 +7769,3 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
   else init();
 })();
-
-    
