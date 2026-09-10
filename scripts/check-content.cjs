@@ -27,6 +27,8 @@ rejects(v => v.parts[0].tasks[0].content={}, /缺少/);
 rejects(v => v.translations.garden.unknown='错误', /段落不存在/);
 rejects(v => v.reviewEntries[0].evidence[0].quote='not in passage', /引文/);
 rejects(v => v.timerPolicy={enabled:true,durationSeconds:1,expiryAction:'submit'}, /计时/);
+const editorial = structuredClone(sample); editorial.reviewEntries[0].evidence[0] = {blockId:'garden.a',quote:'Editorial paraphrase',anchor:false};
+const editorialPkg=ReadingContent.compile(editorial); assert.equal(editorialPkg.review.entries[0].evidence[0].quote,'Editorial paraphrase'); assert.equal(editorialPkg.readingContent.evidence.entries[0].evidence[0].anchors.length,0);
 const hostile = structuredClone(sample); hostile.title='</script><script>window.injected=true</script>';
 const escaped = ReadingContent.render(ReadingContent.compile(hostile), '<script>const data=__IELTS_PACKAGE_JSON__;</script>');
 assert.equal((escaped.match(/<\/script>/g)||[]).length,1);

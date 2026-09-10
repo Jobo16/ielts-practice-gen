@@ -113,8 +113,8 @@
       array(review.evidence || [], `${path}.evidence`).forEach(e => {
         const block = blocks.get(e.blockId);
         if (!block || block.passageId !== taskParts.get(score.taskId).passage.passageId) fail(path, '证据段落不属于当前文章');
-        if (e.quote && !block.text.includes(e.quote)) fail(path, '证据引文必须与原文完全一致');
-        if (e.quote && e.startOffset === undefined && block.text.indexOf(e.quote) !== block.text.lastIndexOf(e.quote)) fail(path, '引文在段落中重复，请提供 startOffset');
+        if (e.anchor !== false && e.quote && !block.text.includes(e.quote)) fail(path, '证据引文必须与原文完全一致');
+        if (e.anchor !== false && e.quote && e.startOffset === undefined && block.text.indexOf(e.quote) !== block.text.lastIndexOf(e.quote)) fail(path, '引文在段落中重复，请提供 startOffset');
         if (e.startOffset !== undefined && (!Number.isInteger(e.startOffset) || e.startOffset < 0 || !e.quote || block.text.slice(e.startOffset, e.startOffset + e.quote.length) !== e.quote)) fail(path, 'startOffset 与证据引文不匹配');
       });
     });
@@ -170,7 +170,7 @@
     reviews.forEach(review => {
       const score = scores.get(review.scoreSlotId), part = taskParts.get(score.taskId);
       const evidence = (review.evidence || []).map((e, index) => {
-        const block = blocks.get(e.blockId), start = e.quote ? (e.startOffset ?? block.text.indexOf(e.quote)) : -1;
+        const block = blocks.get(e.blockId), start = e.quote && e.anchor !== false ? (e.startOffset ?? block.text.indexOf(e.quote)) : -1;
         return { evidenceIndex: index, blockId: e.blockId, anchors: start < 0 ? [] : [{
           anchorId: `${score.scoreSlotId}.${index}`, blockId: e.blockId, startOffset: start, endOffset: start + e.quote.length,
           sourceTextSha256: hash(block.text), sourceText: e.quote, role: 'primary-evidence', relation: 'supports-answer',

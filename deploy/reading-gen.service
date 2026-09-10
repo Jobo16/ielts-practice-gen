@@ -1,0 +1,22 @@
+[Unit]
+Description=IELTS Buddy Reading JSON to HTML service
+After=network.target
+
+[Service]
+Type=simple
+User=reading-gen
+Group=reading-gen
+WorkingDirectory=/opt/apps/ieltsbuddy-reading-gen/repo
+EnvironmentFile=/opt/stacks/ieltsbuddy-reading-gen/service.env
+ExecStart=/usr/bin/python3 scripts/serve.py --host 127.0.0.1 --port 14173 --no-build
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/opt/stacks/ieltsbuddy-reading-gen/data
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
