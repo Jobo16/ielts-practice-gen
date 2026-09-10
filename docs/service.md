@@ -29,7 +29,7 @@ npm run dev
 - 数据：`/opt/stacks/ieltsbuddy-reading-gen/data/reading.sqlite3`，由 reading-gen 用户持有。
 - 本地密钥副本：`.local/production.env`，权限 0600，不进 Git；后台登录使用其中 READING_ADMIN_TOKEN。
 
-发布只推送已提交源码，再由服务器快进拉取、构建和启动。未创建或推送 GitHub 仓库。
+发布只推送已提交源码，再由服务器快进拉取、构建和启动。GitHub 源码镜像为 https://github.com/Jobo16/ielts-reading-gen（本地 origin）；deploy 仍指向服务器私有 bare 仓库。GitHub 自动检查不会自动部署生产服务。
 
 ```sh
 git push deploy main

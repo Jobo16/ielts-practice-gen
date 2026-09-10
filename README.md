@@ -1,4 +1,14 @@
-# IELTS Reading · 自有题目引擎
+# IELTS Reading Gen
+
+[![Checks](https://github.com/Jobo16/ielts-reading-gen/actions/workflows/check.yml/badge.svg)](https://github.com/Jobo16/ielts-reading-gen/actions/workflows/check.yml)
+
+**把结构化 JSON 转换为可交互、可离线分发的雅思阅读练习 HTML。**
+
+[在线练习工具](https://ieltsbuddy-reading-gen.jobo.asia/) · [题库后台](https://ieltsbuddy-reading-gen.jobo.asia/admin) · [Agent 接入规范](docs/agent-guide.md) · [HTTP API](docs/openapi.json)
+
+支持 17 种阅读题型、自动评分、答案解析、译文和证据定位。提供简单的题库后台、HTTP API 与 Python CLI，适合由 Agent 将 PDF 等原始材料整理成 JSON，再交给本项目生成 HTML。PDF 识别和 OCR 由调用方负责。
+
+在线练习工具可直接试用原创示例；服务端打包 API 需要 API 密钥，管理题库需要独立的后台密钥。自行部署时可在本地回环地址无密钥运行。
 
 复用 PASSAGE by ZYZ 的阅读题型渲染、判分和复盘规则，让自己的题目也能变成可交互、可离线分发的阅读练习。
 
@@ -11,6 +21,8 @@
 需要 Python 3.10+ 和 Node.js 18+。没有 npm 依赖需要安装。
 
 ```sh
+git clone https://github.com/Jobo16/ielts-reading-gen.git
+cd ielts-reading-gen
 npm run dev
 ```
 
@@ -90,3 +102,9 @@ python3 scripts/reading_cli.py upload examples/community-garden.json
 ```
 
 CLI 默认连接本地 4173；远程设置 READING_SERVER、READING_API_TOKEN。upload 使用独立 READING_ADMIN_TOKEN。普通 build 不保存题库记录，返回可离线打开的 HTML。已部署到 https://ieltsbuddy-reading-gen.jobo.asia，后台路径 /admin，HTTPS 证书自动续期。
+
+## 回归验证与参与开发
+
+已使用原生参考数据覆盖 **170 篇文章、478 组题、2263 个作答位置和 17 种题型**，完成页面结构、题型截图、评分及公网 HTML 字节一致性检查。对照范围与已知引文差异见 [全题库验收报告](docs/bank-verification.md)。
+
+提交或 PR 会自动运行构建、数据与接口回归检查。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)；问题反馈请使用 [Issues](https://github.com/Jobo16/ielts-reading-gen/issues)。
