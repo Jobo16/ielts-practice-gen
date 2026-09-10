@@ -181,7 +181,8 @@ def handler_for(service):
                         if artifact:
                             raise ApiError(405, 'method_not_allowed', '请归档题目本身。')
                         db.execute('UPDATE question_sets SET archived=1 WHERE id=?', (ident,))
-                        return self.respond(200, {'ok': True, 'archived': True})
+                if method == 'DELETE':
+                    return self.respond(200, {'ok': True, 'archived': True})
                 if artifact:
                     return self.respond(200, row[1], 'text/html; charset=utf-8', {
                         'Content-Disposition': f'attachment; filename="reading-{ident[:12]}.html"', 'X-Artifact-SHA256': row[2]})
