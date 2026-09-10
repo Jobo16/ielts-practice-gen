@@ -1,0 +1,3 @@
+
+window.__IELTS_V2_PACKAGE__ = __IELTS_PACKAGE_JSON__;
+    

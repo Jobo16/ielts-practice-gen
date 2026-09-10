@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta name="zyz-reconstruction" content="unsigned-local-reconstruction">
+  <meta charset="utf-8">
+  <meta name="zyz-bilingual-sentence-link-full170-payload" content="T46R3-create-only-evidence-lifecycle-regression-repair-qa-awaiting-human-review">
+  <meta name="zyz-mock-band-record-qa" content="T45R1-create-only-qa-awaiting-human-review">
+  <meta name="zyz-bilingual-sentence-link-demo-payload" content="T44R1-retry3-three-passage-create-only">
+  <meta name="zyz-full170-exact-source-location-qa" content="full-library-evidence-sidecar-five-human-decisions-accepted-final-integration-create-only">
+  <meta name="zyz-t36-r5-demo" content="evidence-control-label-contrast-fix-create-only-awaiting-human-visual-review">
+  <meta name="zyz-t36-r3-demo-storage" content="isolated-from-formal-r4-t35-demos-t35a-t35b-t36-r1-and-t36-r2">
+  <meta name="signed" content="false">
+  <meta name="packaged" content="false">
+  <meta name="published" content="false">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+<style id="zyz-integrity-child-startup-style"><!-- @include src/app/styles/01.css --></style><!-- Reconstructed standalone entry: no original publisher signature. -->
+  <meta name="zyz-candidate-status" content="t41-charles-darwin-translation-hotfix-qa-awaiting-human-review">
+  <meta name="qa_integrity_signature" content="false">
+  <meta name="production_signed" content="false">
+  <title>PASSAGE by ZYZ</title>
+  <style><!-- @include src/app/styles/02.css --></style>
+  <style data-mock-band-record-qa="T45R1"><!-- @include src/app/styles/03.css --></style>
+</head>
+<body>
+  <div class="app-shell" id="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" data-route="home" aria-label="PASSAGE by ZYZ，返回首页">
+        <span class="brand-copy">
+          <strong>PASSAGE</strong>
+          <small>by ZYZ</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <button type="button" data-route="home" aria-current="page">首页</button>
+        <button type="button" data-route="practice">练习</button>
+        <button type="button" data-route="mock">模考</button>
+        <button type="button" data-route="records">记录</button>
+      </nav>
+      <span class="offline-badge" id="edition-badge" aria-label="当前版本，可离线使用">—</span>
+    </header>
+
+    <section class="resume-strip" id="resume-strip" aria-labelledby="resume-strip-title" hidden>
+      <div class="resume-strip-heading">
+        <span class="resume-strip-mark" aria-hidden="true"></span>
+        <div>
+          <p class="eyebrow">SAVED ON THIS DEVICE</p>
+          <h2 id="resume-strip-title">有未完成的练习</h2>
+        </div>
+      </div>
+      <div class="resume-session-list" id="resume-session-list"></div>
+    </section>
+
+    <main>
+      <section class="view is-active" data-view="home" aria-labelledby="home-title">
+        <div class="hero">
+          <div class="hero-copy-block">
+            <p class="eyebrow">A QUIET PAGE. A STEADY PACE.</p>
+            <h1 id="home-title">一页沉静，一路前行。</h1>
+            <div class="hero-actions">
+              <button class="primary-button" type="button" data-route="practice">开始练习</button>
+              <button class="secondary-button" type="button" data-route="mock">生成模考</button>
+            </div>
+          </div>
+          <div class="home-progress">
+            <p class="home-progress-title">本月完成进度</p>
+            <button class="progress-ring" id="home-progress-control" type="button" aria-label="高频加中频完成进度，点按切换范围">
+              <svg viewBox="0 0 172 172" role="img" aria-hidden="true">
+                <circle class="ring-track" cx="86" cy="86" r="75"></circle>
+                <circle class="ring-value" id="home-ring-value" cx="86" cy="86" r="75" pathLength="100"></circle>
+              </svg>
+              <span class="home-ring-center"><strong id="home-progress-percent">0%</strong><span id="home-progress-count">0 / 0 篇</span></span>
+            </button>
+            <span class="home-progress-scope" id="home-progress-scope">高频 + 中频</span>
+          </div>
+        </div>
+
+
+        <aside id="record-guide-home" class="record-guide-card" aria-labelledby="record-guide-home-title" hidden>
+          <button type="button" class="record-guide-dismiss" data-dismiss-record-guide aria-label="暂时关闭记录提示">×</button>
+          <h2 id="record-guide-home-title" data-record-guide-title>这里还没有练习记录</h2>
+          <div class="record-guide-path" data-record-guide-first-use>
+            <p>第一次使用？直接开始练习。</p>
+            <button type="button" class="text-button" data-route="practice">开始练习 <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="record-guide-path">
+            <p data-record-guide-copy></p>
+            <button type="button" class="text-button" data-open-record-guide>从旧版恢复记录 <span aria-hidden="true">→</span></button>
+          </div>
+        </aside>
+        <div class="stat-grid" aria-label="练习概览">
+          <article class="stat-card"><span>总作答时长</span><strong id="home-stat-time">—</strong></article>
+          <article class="stat-card"><span>答题总数</span><strong id="home-stat-questions">—</strong></article>
+          <article class="stat-card"><span>整体正确率</span><strong id="home-stat-accuracy">—</strong></article>
+          <article class="stat-card"><span>模考均分</span><strong id="home-stat-mock-average">—</strong></article>
+        </div>
+
+        <div class="home-grid">
+          <article class="feature-panel">
+            <div class="panel-heading"><div><p class="eyebrow">PRACTICE</p><h2>练习模式</h2></div><span class="icon-chip">按需</span></div>
+            <p>单篇、两篇或三篇完整练习；也可只做某一种完整题型。默认不限时，提交后显示答案与中文解析。</p>
+            <button class="text-button" type="button" data-route="practice">选择练习内容 <span>→</span></button>
+          </article>
+          <article class="feature-panel feature-panel-dark">
+            <div class="panel-heading"><div><p class="eyebrow">MOCK</p><h2>模考模式</h2></div><span class="icon-chip">60 min</span></div>
+            <p>自动选择一篇 P1、一篇 P2 和一篇 P3，共 40 题；优先本月高频和未做过的文章，到时自动提交。</p>
+            <button class="text-button" type="button" data-route="mock">生成一套模考 <span>→</span></button>
+          </article>
+        </div>
+        <p class="privacy-line">本页面不会联网；清除浏览器数据或更换设备前，请先在“记录”中导出备份。</p>
+      </section>
+
+      <section class="view" data-view="practice" aria-labelledby="practice-title">
+        <div class="page-heading">
+          <div><p class="eyebrow">PRACTICE</p><h1 id="practice-title">选择练习内容</h1><p class="page-description">最多选择三个篇章；按题型练习时，同篇可组合多个题型，并按原题顺序呈现。</p></div>
+          <div class="mode-switch" role="group" aria-label="练习范围">
+            <button type="button" data-practice-mode="full" aria-pressed="true">按篇章</button>
+            <button type="button" data-practice-mode="task" aria-pressed="false">按题型</button>
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-primary-row">
+            <label class="search-field"><span class="sr-only">搜索文章</span><input id="practice-search" type="search" placeholder="搜索英文或中文标题"></label>
+            <div class="filter-primary-actions" role="group" aria-label="题型与完成状态筛选">
+              <label class="type-filter"><span class="sr-only">按题型筛选</span><select id="question-type-filter"><option value="">全部题型</option></select></label>
+              <input id="unseen-only" type="checkbox" hidden>
+              <button id="unseen-only-button" class="unseen-filter-button" type="button" aria-pressed="false" aria-controls="passage-grid">
+                <svg class="unseen-filter-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 4h14l-5.2 6v4.3l-3.6 1.8V10L3 4Z"></path></svg>
+                <span>仅看未做</span>
+              </button>
+            </div>
+          </div>
+          <div class="filter-facet-row" role="group" aria-label="文章属性筛选">
+            <div class="filter-section">
+              <span class="filter-section-label" aria-hidden="true">篇章</span>
+              <div class="filter-group" id="position-filter" aria-label="Passage 位置">
+                <button type="button" data-value="1" aria-pressed="false">P1</button><button type="button" data-value="2" aria-pressed="false">P2</button><button type="button" data-value="3" aria-pressed="false">P3</button>
+              </div>
+            </div>
+            <div class="filter-section">
+              <span class="filter-section-label" aria-hidden="true">频次</span>
+              <div class="filter-group frequency-filter" id="frequency-filter" aria-label="频次">
+                <button type="button" data-value="high" aria-pressed="false">高频</button><button type="button" data-value="medium" aria-pressed="false">中频</button><button type="button" data-value="low" aria-pressed="false">低频</button>
+              </div>
+            </div>
+            <div class="filter-section difficulty-facet">
+              <span class="filter-section-label" aria-hidden="true">难度</span>
+              <div class="filter-group difficulty-filter" id="difficulty-filter" aria-label="相对难度；未选择表示全部难度">
+                <button type="button" data-value="easy" aria-pressed="false">偏易</button><button type="button" data-value="standard" aria-pressed="false">标准</button><button type="button" data-value="hard" aria-pressed="false">偏难</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="practice-layout">
+          <div class="results-column">
+            <div class="result-toolbar" data-qa-region="result-toolbar">
+              <div class="result-meta" data-qa-region="result-meta">
+                <span class="result-count" id="practice-result-count" aria-live="polite">正在载入文章…</span>
+                <span class="result-meta-separator" aria-hidden="true">·</span>
+                <button class="clear-filters" type="button" id="clear-practice-filters">清空筛选</button>
+              </div>
+              <div class="toolbar-actions">
+                <label class="sort-shell" data-qa-control="sort">
+                  <span class="sort-label" aria-hidden="true">排序</span>
+                  <select class="sort-control" id="sort-control" aria-label="文章排序">
+                    <option value="default">默认 P1→P3</option>
+                    <option value="frequency">频次 高→低</option>
+                    <option value="difficulty">难度 易→难</option>
+                    <option value="title">标题 A→Z</option>
+                  </select>
+                </label>
+                <div class="view-switch" role="group" aria-label="显示方式" data-qa-control="view-switch">
+                  <button type="button" data-view-mode="card" aria-pressed="true"><span class="view-icon view-icon-card" aria-hidden="true"><span></span></span>卡片</button>
+                  <button type="button" data-view-mode="list" aria-pressed="false"><span class="view-icon view-icon-list" aria-hidden="true"><span></span></span>列表</button>
+                </div>
+              </div>
+            </div>
+            <div class="passage-grid results" id="passage-grid" data-view="card" data-practice-mode="full" role="list" aria-label="文章结果"></div>
+          </div>
+          <aside class="selection-panel" aria-labelledby="selection-title">
+            <div class="selection-panel-header">
+              <div><p class="eyebrow">SELECTION</p><h2 id="selection-title">本次练习</h2></div>
+              <output id="selection-count" class="selection-count" aria-label="已选篇章数量">0 / 3 篇</output>
+            </div>
+            <div class="selection-panel-scroll">
+              <div id="selection-empty" class="empty-selection">从左侧选择 1–3 篇文章</div>
+              <ol id="selection-list" class="selection-list" aria-label="已选择的篇章与题型"></ol>
+
+              <section class="practice-timer-panel" id="practice-timer-panel" aria-labelledby="practice-timer-title">
+                <div class="timer-toggle-row">
+                  <div><strong id="practice-timer-title">练习计时</strong><small>默认关闭，按需要开启</small></div>
+                  <label class="switch-control">
+                    <input id="practice-timer-enabled" type="checkbox" aria-label="开启练习计时" aria-controls="practice-timer-options">
+                    <span aria-hidden="true"></span>
+                  </label>
+                </div>
+                <div class="practice-timer-options" id="practice-timer-options" data-practice-timer-options hidden>
+                  <div class="duration-options" id="practice-duration-options" role="group" aria-label="选择练习时长">
+                    <button type="button" data-minutes="20" aria-label="20 分钟" aria-pressed="false">20</button>
+                    <button type="button" data-minutes="40" aria-label="40 分钟" aria-pressed="false">40</button>
+                    <button type="button" data-minutes="60" aria-label="60 分钟" aria-pressed="false">60</button>
+                    <button type="button" data-minutes="custom" aria-pressed="false">自定义</button>
+                  </div>
+                  <label class="custom-duration" for="practice-duration-custom" hidden>
+                    <span>自定义时长</span>
+                    <span><input id="practice-duration-custom" type="number" min="1" max="180" step="1" inputmode="numeric" value="20"><b>分钟</b></span>
+                  </label>
+                  <fieldset class="timer-mode" id="practice-timer-mode">
+                    <legend class="sr-only">计时结束后的操作</legend>
+                    <label><input type="radio" name="practice-timer-mode" value="continue" checked><span>提醒并继续</span></label>
+                    <label><input type="radio" name="practice-timer-mode" value="submit"><span>自动提交</span></label>
+                  </fieldset>
+                </div>
+              </section>
+            </div>
+            <div class="selection-footer">
+              <p id="selection-summary" aria-live="polite">尚未选择文章 · 0 题 · 不限时</p>
+              <button id="start-practice" class="primary-button full-width" type="button" disabled>选择文章后开始</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="view" data-view="mock" aria-labelledby="mock-title">
+        <div class="page-heading">
+          <div><p class="eyebrow">MOCK</p><h1 id="mock-title">生成一套完整模考</h1><p class="page-description">固定 P1 + P2 + P3，共 40 题、60 分钟，到时自动提交。</p></div>
+          <div class="mode-switch" role="group" aria-label="模考选取方式">
+            <button type="button" data-mock-mode="auto" aria-pressed="true">智能生成</button>
+            <button type="button" data-mock-mode="manual" aria-pressed="false">自行选择</button>
+          </div>
+        </div>
+        <div class="mock-grid">
+          <section class="mock-settings" aria-labelledby="mock-settings-title">
+            <h2 id="mock-settings-title">选取文章</h2>
+            <div id="mock-auto-controls">
+              <div class="mock-difficulty-panel">
+                <div class="mock-filter-heading"><strong>候选难度（可多选）</strong><small>未选择时包含全部难度</small></div>
+                <div class="filter-group difficulty-filter mock-difficulty-filter" id="mock-difficulty-filter" aria-label="智能生成候选难度；未选择表示全部难度">
+                  <button type="button" data-value="easy" aria-pressed="false">偏易</button><button type="button" data-value="standard" aria-pressed="false">标准</button><button type="button" data-value="hard" aria-pressed="false">偏难</button>
+                </div>
+              </div>
+              <fieldset>
+                <legend>本月频次（可多选）</legend>
+                <label class="choice-card frequency-high"><input type="checkbox" name="mock-frequency" value="high" checked><span><strong>高频</strong><small>优先出现</small></span></label>
+                <label class="choice-card frequency-medium"><input type="checkbox" name="mock-frequency" value="medium" checked><span><strong>中频</strong><small>适度补充</small></span></label>
+                <label class="choice-card frequency-low"><input type="checkbox" name="mock-frequency" value="low"><span><strong>低频</strong><small>暂不优先</small></span></label>
+              </fieldset>
+              <label class="priority-toggle"><input id="mock-unseen-priority" type="checkbox" checked><span><strong>未做过优先</strong><small>没有合适未做文章时，自动使用已做文章补足。</small></span></label>
+              <button id="generate-mock" class="secondary-button full-width" type="button">换一套</button>
+            </div>
+            <div id="mock-manual-controls" class="manual-mock-controls" hidden>
+              <p>按 P1、P2、P3 分步选择。频次与难度会保留，切换篇章时搜索词会清空。</p>
+              <div class="manual-mock-tabs" role="tablist" aria-label="选择模考篇章位置">
+                <button type="button" role="tab" data-manual-mock-position-tab="1" aria-selected="true">P1</button>
+                <button type="button" role="tab" data-manual-mock-position-tab="2" aria-selected="false">P2</button>
+                <button type="button" role="tab" data-manual-mock-position-tab="3" aria-selected="false">P3</button>
+              </div>
+              <div class="manual-mock-filter-panel">
+                <label class="manual-mock-search"><span class="sr-only">搜索当前篇章的文章</span><input id="manual-mock-search" type="search" placeholder="搜索 P1 英文或中文标题"></label>
+                <small class="manual-filter-note">频次和难度都可多选；不选具体项时显示全部。</small>
+                <div class="manual-filter-row">
+                  <span>频次</span>
+                  <div class="filter-group manual-filter-group" id="manual-mock-frequency-filter" aria-label="自行选择候选频次">
+                    <button type="button" data-value="" aria-pressed="true">全部频次</button>
+                    <button type="button" data-value="high" aria-pressed="false">高频</button>
+                    <button type="button" data-value="medium" aria-pressed="false">中频</button>
+                    <button type="button" data-value="low" aria-pressed="false">低频</button>
+                  </div>
+                </div>
+                <div class="manual-filter-row">
+                  <span>难度</span>
+                  <div class="filter-group manual-filter-group" id="manual-mock-difficulty-filter" aria-label="自行选择候选难度">
+                    <button type="button" data-value="" aria-pressed="true">全部难度</button>
+                    <button type="button" data-value="easy" aria-pressed="false">偏易</button>
+                    <button type="button" data-value="standard" aria-pressed="false">标准</button>
+                    <button type="button" data-value="hard" aria-pressed="false">偏难</button>
+                  </div>
+                </div>
+              </div>
+              <div class="manual-mock-result-line"><span id="manual-mock-result-count">正在载入文章…</span><strong id="manual-mock-current-selection">P1 尚未选择</strong></div>
+              <div id="manual-mock-list" class="manual-mock-list" role="list" aria-label="P1 候选文章" tabindex="0"></div>
+            </div>
+          </section>
+          <section class="mock-preview" aria-labelledby="mock-preview-title">
+            <div class="panel-heading"><div><p class="eyebrow">PREVIEW</p><h2 id="mock-preview-title">本次模考</h2></div><div class="mock-summary-badges"><span class="mock-total">40 题</span><span class="mock-duration">60 分钟</span></div></div>
+            <div class="surprise-mode-row" id="mock-surprise-row">
+              <div><strong id="mock-surprise-title">惊喜模式</strong><small id="mock-surprise-description">开启后会立即换成一套新组合，篇章将在开考后揭晓</small></div>
+              <label class="switch-control">
+                <input id="mock-surprise-enabled" type="checkbox" aria-label="开启惊喜模式">
+                <span aria-hidden="true"></span>
+              </label>
+            </div>
+            <p id="mock-selection-message" class="mock-selection-message" hidden></p>
+            <ol id="mock-selection" class="mock-selection" aria-live="polite"></ol>
+            <div class="mock-status-strip" aria-label="模考状态">
+              <div class="mock-status-item mock-time-status"><span>限时作答</span><strong>60:00</strong><small>计时结束自动提交</small></div>
+              <div class="mock-status-item"><span>组合状态</span><strong id="mock-combination-status">3 / 3 篇</strong><small id="mock-combination-detail">P1 + P2 + P3 已就绪</small></div>
+            </div>
+            <button id="start-mock" class="primary-button full-width" type="button">开始模考</button>
+          </section>
+        </div>
+      </section>
+
+      <section class="view" data-view="records" aria-labelledby="records-title">
+        <div class="page-heading records-heading">
+          <div>
+            <p class="eyebrow">RECORDS</p>
+            <h1 id="records-title">练习记录</h1>
+            <p class="page-description records-heading-copy">看见每一次进步。学习记录保存在当前设备，不会自动上传；请定期备份。</p>
+          </div>
+          <div class="record-actions">
+            <button id="open-latest-achievement" class="primary-button record-achievement-action" type="button"><span aria-hidden="true">✦</span>生成成就卡</button>
+            <button id="export-full-backup" class="secondary-button record-backup-action" type="button"><span aria-hidden="true">↓</span>立即完整备份</button>
+            <button id="export-records" type="button" hidden aria-hidden="true" tabindex="-1">兼容导出</button>
+            <input id="import-records" type="file" accept="application/json,.json" hidden aria-hidden="true" tabindex="-1">
+          </div>
+        </div>
+
+        <aside id="record-guide-records" class="record-guide-card" aria-labelledby="record-guide-records-title" hidden>
+          <button type="button" class="record-guide-dismiss" data-dismiss-record-guide aria-label="暂时关闭记录提示">×</button>
+          <h2 id="record-guide-records-title" data-record-guide-title>这里还没有练习记录</h2>
+          <p data-record-guide-copy></p>
+          <button type="button" class="text-button" data-open-record-guide>从旧版恢复记录 <span aria-hidden="true">→</span></button>
+        </aside>
+        <div class="record-stat-grid stat-grid" aria-label="练习记录概览">
+          <article class="stat-card"><span>总作答时长</span><strong id="record-time">0 分钟</strong></article>
+          <article class="stat-card"><span>答题总数</span><strong id="record-questions">0 题</strong><small id="record-attempts" hidden aria-hidden="true">0 次完成</small></article>
+          <article class="stat-card"><span>整体正确率</span><strong id="record-accuracy">—</strong></article>
+          <article class="stat-card"><span>模考均分</span><strong id="record-mock-count">—</strong><small id="record-mock-average" hidden aria-hidden="true">平均 —</small></article>
+        </div>
+        <div class="records-layout">
+          <section class="records-panel record-part-performance" aria-labelledby="record-part-title">
+            <header class="records-panel-heading"><h2 id="record-part-title">篇章表现</h2><small>全部记录 · 累计正确率</small></header>
+            <div class="record-part-body">
+              <div class="record-part-row"><span>P1</span><strong id="record-p1-accuracy">—</strong><div class="record-part-track"><i id="record-p1-bar"></i></div></div>
+              <div class="record-part-row"><span>P2</span><strong id="record-p2-accuracy">—</strong><div class="record-part-track"><i id="record-p2-bar"></i></div></div>
+              <div class="record-part-row"><span>P3</span><strong id="record-p3-accuracy">—</strong><div class="record-part-track"><i id="record-p3-bar"></i></div></div>
+              <div class="record-part-mock"><span>平均模考分数</span><strong id="record-side-mock-average">—</strong></div>
+            </div>
+          </section>
+          <section class="records-panel records-history" aria-labelledby="recent-records-title">
+            <header class="records-panel-heading records-history-heading">
+              <div class="records-history-title"><h2 id="recent-records-title" tabindex="-1">学习记录</h2><small id="record-list-count">共 0 次</small></div>
+              <div id="record-filter" class="record-filter" role="group" aria-label="筛选学习记录">
+                <button type="button" data-record-filter="all" aria-pressed="true">全部 <span id="record-filter-all-count">0</span></button>
+                <button type="button" data-record-filter="practice" aria-pressed="false">练习 <span id="record-filter-practice-count">0</span></button>
+                <button type="button" data-record-filter="mock" aria-pressed="false">模考 <span id="record-filter-mock-count">0</span></button>
+              </div>
+            </header>
+            <div id="record-list" class="record-list"><div class="empty-records">尚无提交记录</div></div>
+          </section>
+          <details class="records-recovery">
+            <summary><span>数据恢复</span><small>仅在需要时使用</small><span aria-hidden="true">⌄</span></summary>
+            <div><p>更换设备或本机记录异常时再使用。选择文件后，会先说明合并规则并请你确认。</p><label class="secondary-button file-button">选择备份文件<input id="import-full-backup" type="file" accept="application/json,.json"></label></div>
+          </details>
+        </div>
+        <div class="records-danger records-footer-actions"><button type="button" class="text-button record-guide-help-link" data-open-record-guide>备份与导入说明</button><button id="clear-records" type="button">清空全部记录</button></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>本地重建版 · Made with care by <a href="https://www.xiaohongshu.com/user/profile/5b4d76744eacab058489e72f" target="_blank" rel="noopener noreferrer">ZYZ READING WALKS</a></span></footer>
+  </div>
+
+
+  <dialog id="record-import-confirm" class="record-guide-dialog" aria-labelledby="record-import-confirm-title" aria-describedby="record-import-confirm-copy">
+    <h2 id="record-import-confirm-title" tabindex="-1">导入完整备份</h2>
+    <div id="record-import-confirm-copy">
+      <p>将把备份中的练习记录、复盘现场和偏好设置合并到本机。</p>
+      <p class="record-guide-note">练习记录和复盘现场不会覆盖本机较新的内容；如有同一时间但内容不同的记录，会保留本机内容。偏好设置会按备份合并。</p>
+      <p>是否继续恢复？</p>
+    </div>
+    <div class="record-guide-dialog-actions">
+      <button id="record-import-cancel" type="button" class="secondary-button">取消</button>
+      <button id="record-import-confirm-button" type="button" class="primary-button">确认导入</button>
+    </div>
+  </dialog>
+
+  <dialog id="record-backup-guide" class="record-guide-dialog" aria-labelledby="record-backup-guide-title" aria-describedby="record-backup-guide-intro">
+    <h2 id="record-backup-guide-title" tabindex="-1">把旧记录带到这里</h2>
+    <p id="record-backup-guide-intro">记录保存在浏览器中。更新文件、更换打开位置、浏览器或设备后，这里可能看不到原来的记录；这不代表旧记录一定已被删除。</p>
+    <ol>
+      <li><strong>回到旧版，保存完整备份</strong>用原来的浏览器，在原来的位置打开旧 HTML 文件。进入「练习记录」，点击「立即完整备份」，保存下载的 JSON 文件。</li>
+      <li><strong>回到新版，选择备份文件</strong>打开新版 HTML，进入「练习记录」→「数据恢复」→「选择备份文件」。选择刚保存的完整备份 JSON，阅读合并说明后再确认。</li>
+      <li><strong>核对记录和复盘</strong>检查记录数量、成绩和用时，并打开「查看复盘」，核对答案、Highlight 与 Notes。暂时不要删除旧 HTML 或原 JSON。</li>
+    </ol>
+    <p class="record-guide-note">第一次使用可以直接开始练习，无需导入。若旧版也看不到记录，或没有「立即完整备份」按钮，请先保留旧文件并联系老师；不要清理浏览器数据。部分旧版备份或标注可能不兼容，导入后仍需核对。</p>
+    <div class="record-guide-dialog-actions">
+      <button id="record-guide-choose-file" type="button" class="primary-button">选择备份文件</button>
+      <button id="record-guide-close" type="button" class="secondary-button">返回</button>
+    </div>
+  </dialog>
+
+  <div class="sr-only" id="view-announcement" aria-live="polite"></div>
+
+  <section class="runner" id="runner" hidden aria-label="PASSAGE by ZYZ 阅读答题页面">
+    <div class="runner-toolbar sr-only" aria-live="polite">
+      <strong id="runner-title">PASSAGE by ZYZ</strong>
+      <span id="runner-status">进行中</span>
+    </div>
+    <div id="runner-pan-viewport" class="runner-pan-viewport">
+      <div id="runner-canvas" class="runner-canvas">
+        <iframe id="practice-frame" title="PASSAGE by ZYZ 阅读练习答题页面" allow="fullscreen *" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div id="achievement-dialog" class="achievement-backdrop" hidden>
+    <section class="achievement-dialog" role="dialog" aria-modal="true" aria-labelledby="achievement-title" tabindex="-1">
+      <header class="achievement-dialog-header">
+        <div><p class="eyebrow">MILESTONE</p><h2 id="achievement-title">个人成就卡</h2><p>选择想分享的学习数字，再保存为图片。</p></div>
+        <button id="close-achievement" type="button" aria-label="关闭学习成就卡">×</button>
+      </header>
+      <div class="achievement-builder">
+        <div class="achievement-controls">
+          <section class="achievement-control-group">
+            <div class="achievement-control-label"><label for="achievement-name">学生姓名或昵称（选填）</label><small>中文最多 8 字 · 英文最多 12 字符</small></div>
+            <input id="achievement-name" type="text" placeholder="不填写则不显示姓名" autocomplete="off" spellcheck="false">
+            <p id="achievement-name-note" class="achievement-control-note" aria-live="polite">姓名默认留空，只用于本次生成。</p>
+          </section>
+          <section class="achievement-control-group">
+            <div class="achievement-control-label"><span>主角数字</span><small>卡片上最大的一项</small></div>
+            <div id="achievement-hero-options" class="achievement-choice-grid">
+              <label><input type="radio" name="achievement-hero" value="time" checked><span>累计作答时长</span></label>
+              <label><input type="radio" name="achievement-hero" value="questions"><span>累计作答题数</span></label>
+              <label><input type="radio" name="achievement-hero" value="accuracy"><span>整体正确率</span></label>
+              <label><input type="radio" name="achievement-hero" value="mock"><span>平均模考分数</span></label>
+            </div>
+          </section>
+          <section class="achievement-control-group">
+            <div class="achievement-control-label"><span>补充数据</span><small id="achievement-extra-count">已选 4 / 4</small></div>
+            <div id="achievement-extra-options" class="achievement-choice-grid achievement-extra-options">
+              <label><input type="checkbox" value="questions" checked><span>累计作答</span></label>
+              <label><input type="checkbox" value="attempts"><span>完成次数</span></label>
+              <label class="achievement-wide-choice"><input type="checkbox" value="parts" checked><span>P1–P3 正确率</span></label>
+              <label><input type="checkbox" value="mock" checked><span>模考平均分</span></label>
+              <label><input type="checkbox" value="sets"><span>完整模考套数</span></label>
+              <label><input type="checkbox" value="accuracy"><span>整体正确率</span></label>
+              <label><input type="checkbox" value="perfect" checked><span>满分篇章</span></label>
+            </div>
+          </section>
+          <p id="achievement-empty-message" class="achievement-empty-message" hidden>还没有已提交记录。</p>
+        </div>
+        <div class="achievement-preview"><canvas id="achievement-canvas" width="1080" height="1350" aria-label="学习成就卡预览"></canvas></div>
+      </div>
+      <div class="achievement-dialog-actions">
+        <button id="cancel-achievement" class="secondary-button" type="button">关闭</button>
+        <button id="download-achievement" class="primary-button" type="button">保存图片</button>
+      </div>
+    </section>
+  </div>
+
+  <div id="action-dialog-backdrop" class="action-dialog-backdrop" hidden>
+    <section id="action-dialog" class="action-dialog" role="alertdialog" aria-modal="true" aria-labelledby="action-dialog-title" aria-describedby="action-dialog-description" tabindex="-1">
+      <header class="action-dialog-header">
+        <p id="action-dialog-eyebrow" class="eyebrow">请确认</p>
+        <h2 id="action-dialog-title">确认操作</h2>
+      </header>
+      <p id="action-dialog-description" class="action-dialog-description"></p>
+      <p id="action-dialog-status" class="action-dialog-status" role="status" aria-live="polite" hidden></p>
+      <label id="action-dialog-phrase-group" class="action-dialog-phrase" for="action-dialog-phrase" hidden>
+        <span>请输入“<strong id="action-dialog-phrase-label">清空</strong>”以确认</span>
+        <input id="action-dialog-phrase" type="text" autocomplete="off" spellcheck="false">
+      </label>
+      <div class="action-dialog-actions">
+        <button id="action-dialog-backup" class="secondary-button action-dialog-backup" type="button" hidden>先导出完整备份</button>
+        <button id="action-dialog-alternate" class="action-dialog-alternate" type="button" hidden>放弃本次模考</button>
+        <span class="action-dialog-action-spacer" aria-hidden="true"></span>
+        <button id="action-dialog-cancel" class="secondary-button" type="button">取消</button>
+        <button id="action-dialog-confirm" class="danger-button" type="button">确认</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script><!-- @include src/app/library.js --></script>
+  <script><!-- @include src/app/manifest.js --></script>
+  <script><!-- @include src/app/edition.js --></script>
+  <script><!-- @include src/app/runtime-template.js --></script>
+  <script><!-- @include src/app/composer.js --></script>
+  <script><!-- @include src/app/record-store.js --></script>
+  <script><!-- @include src/app/app.js --></script>
+</body>
+</html>

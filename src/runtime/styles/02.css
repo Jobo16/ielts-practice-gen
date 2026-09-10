@@ -1,0 +1,5 @@
+
+      .zyz-exam-mark{box-sizing:border-box;width:92px;height:29px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #254f59;border-radius:8px;background:#f7f1f0;color:#173f48;font:800 20px/1 Arial,sans-serif;letter-spacing:.09em}
+      body.is-high-contrast .zyz-exam-mark,body.contrast-white-black .zyz-exam-mark{background:#000;color:#fff;border-color:#fff}
+      body.contrast-yellow-black .zyz-exam-mark{background:#000;color:#ffeb3b;border-color:#ffeb3b}
+    

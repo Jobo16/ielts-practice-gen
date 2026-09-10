@@ -1,0 +1,2980 @@
+{
+  "schemaVersion": "zyz-reading-trusted-legacy-replay.v1",
+  "sourceReleaseVersion": "2026-09-02-r4",
+  "sourceReleaseSha256": "c9a3fd07d427afc718456a68284a7831bc74a60c2b9626f35d459e33cd65fbc5",
+  "sourcePayloadSha256": "176b99225d0d42acdd4626672da2e866625f0acb2549a0600fc61fc1784d255e",
+  "entries": [
+    {
+      "passageId": "passage.b007.p2-061.stress-less",
+      "source": {
+        "passageId": "passage.b007.p2-061.stress-less",
+        "title": "Stress Less",
+        "titleZh": "工作压力",
+        "catalogPassageId": "P2-061",
+        "passagePosition": 2,
+        "difficulty_current": 3.5,
+        "source": {
+          "packageId": "package.b007.p2-061.stress-less.v2.wave4",
+          "contentVersion": "1.0.0-b007.wave4",
+          "partId": "part.b007.p2-061",
+          "sourcePackageSha256": "c78dd5ccb1da9104dfd9022c440b3f012e66e040f44f1236a9a99f68468efb29"
+        },
+        "part": {
+          "partId": "part.b007.p2-061",
+          "ordinal": 2,
+          "label": "PASSAGE 2",
+          "instruction": "Read the passage and answer Questions 14–26.",
+          "passage": {
+            "passageId": "passage.b007.p2-061.stress-less",
+            "label": "READING PASSAGE 2",
+            "title": "Stress Less",
+            "blocks": [
+              {
+                "blockId": "block.b007.p2-061.p01",
+                "type": "paragraph",
+                "text": "How busy is too busy? For some it means sometimes having to have a short lunch; for others it may mean missing lunch altogether. For a few, it is not being able to take a day off once a month. Then there is a group of people for whom working every evening and weekend is normal, and feeling stressed is taken for granted. For most senior executives, workloads swing between extremely busy and frenzied. Neil Plumridge, vice-president of a management consultancy company, says that his weeks vary from a ‘manageable’ 45 hours to 80 hours, but average 60 hours.",
+                "role": "paragraph",
+                "extensions": {
+                  "sourceFormatting": {
+                    "sourceUnitRole": "paragraph"
+                  }
+                }
+              },
+              {
+                "blockId": "block.b007.p2-061.p02",
+                "type": "paragraph",
+                "text": "Three signs warn Plumridge about his workload: sleep, scheduling and family. He knows he is doing too much when he gets less than six hours’ sleep for three consecutive nights, when he is constantly having to reschedule appointments, and when he misses a family birthday or anniversary. ‘Then,’ he says, ‘I know things are out of control.’ Plumridge states that stress is often caused by his having unrealistic expectations of himself. ‘I’ll promise a client that I’ll do something tomorrow, and then I’ll promise another client that I’ll do the same thing, when I know it’s not going to happen. I could have said: “Why don’t I give that to you in 48 hours?” The client wouldn’t care.’",
+                "role": "paragraph",
+                "extensions": {
+                  "sourceFormatting": {
+                    "sourceUnitRole": "paragraph"
+                  }
+                }
+              },
+              {
+                "blockId": "block.b007.p2-061.p03",
+                "type": "paragraph",
+                "text": "Over-committing is something people experience as an individual problem. However, new research indicates that people may be designed to over-commit. A study in the Journal of Experimental Psychology shows that people always believe that they will be less busy in the future. This is a misapprehension according to the authors of the report, Gal Zauberman of the University of North Carolina and John Lynch of Duke University. ‘On average, an individual will be just as busy two weeks or a month from now as he or she is today. But that is not how it appears in everyday life,’ they say. ‘People make commitments long in advance that they would never make if the same commitments required immediate action. They discount future time investments relatively steeply.’",
+                "role": "paragraph",
+                "extensions": {
+                  "sourceFormatting": {
+                    "sourceUnitRole": "paragraph",
+                    "italicText": [
+                      "Journal of Experimental Psychology"
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "block.b007.p2-061.p04",
+                "type": "paragraph",
+                "text": "Being ‘too busy’ is highly subjective, but for any individual there are some concrete signs of stress: disturbed sleep and declining mental and physical health are the most common examples. Figures for National Workers’ Compensation (insurance against injury caused by work) show that stress causes the most loss of time of any workplace injury: employees suffering stress are absent from work for an average of 16.6 weeks. The effects of stress are also expensive. The Australian Government insurer reports that, in 2003–2004, claims for stress-related psychological injury accounted for 7% of insurance claims, but almost 27% of the amount paid out in claim payments.",
+                "role": "paragraph",
+                "extensions": {
+                  "sourceFormatting": {
+                    "sourceUnitRole": "paragraph"
+                  }
+                }
+              },
+              {
+                "blockId": "block.b007.p2-061.p05",
+                "type": "paragraph",
+                "text": "Experts say the key to dealing with stress is not to focus on relief — a game of golf or a massage — but to reassess workloads. Neil Plumridge says he makes it a priority to work out what has to change: that might mean allocating extra staff to a job, allowing more time, or changing expectations. He also relies on the advice of colleagues, saying that his peers coach each other on business problems: ‘Just a fresh pair of eyes over an issue can help,’ he states.",
+                "role": "paragraph",
+                "extensions": {
+                  "sourceFormatting": {
+                    "sourceUnitRole": "paragraph"
+                  }
+                }
+              },
+              {
+                "blockId": "block.b007.p2-061.p06",
+                "type": "paragraph",
+                "text": "Executive stress is not confined to big organisations. Vanessa Stoykov has been running her own advertising agency and public relations business for seven years. Her company has grown so fast that it appeared on the Business Review Weekly ‘Fast 100’ list of fastest-growing small enterprises in 2004, just after Stoykov had her first child. In 2005, revenue was projected to double to $2.4 million. She had just had her second child. With a fast-growing business and two small children, Stoykov says she has mastered the art of caring for children, typing, and talking on the phone at the same time. But, unlike many others, she appears to thrive on the mental stimulation of running her own business, despite the stress.",
+                "role": "paragraph",
+                "extensions": {
+                  "sourceFormatting": {
+                    "sourceUnitRole": "paragraph",
+                    "italicText": [
+                      "Business Review Weekly"
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "block.b007.p2-061.p07",
+                "type": "paragraph",
+                "text": "Jan Elsner, a psychologist who specialises in executive coaching, says that doing well on a demanding workload is typical of senior executives. Some people work best with high-adrenaline periods followed by quieter times, while others thrive under sustained pressure. Elsner’s practice is based on a movement known as positive psychology, a school of thought that argues that positive experiences — feeling engaged and challenged, for example — do not balance out negative experiences such as stress; instead they help people increase their resilience over time. Elsner says that many of the senior business people she coaches are increasingly relying more on regulating stress through methods such as meditation. She points to research showing that meditation can alter the biochemistry of the brain and the way that brains and bodies react to stress.",
+                "role": "paragraph",
+                "extensions": {
+                  "sourceFormatting": {
+                    "sourceUnitRole": "paragraph"
+                  }
+                }
+              },
+              {
+                "blockId": "block.b007.p2-061.p08",
+                "type": "paragraph",
+                "text": "Some experts believe there is too much emphasis on treating job stress as an individual problem. Tony LaMontagne, of the University of Melbourne, says that while personality traits do have some effect on stress, it is systemic stressors — qualities of job roles and organisations themselves — that have a far greater effect. His recent research shows that the major predictor of stress is the level of job control a person has. The best type of job combines challenging work with high autonomy. The worst jobs combine challenging work and low control. People with demanding jobs but little autonomy have up to four times the probability of depression and more than double the risk of heart attack.",
+                "role": "paragraph",
+                "extensions": {
+                  "sourceFormatting": {
+                    "sourceUnitRole": "paragraph"
+                  }
+                }
+              }
+            ]
+          },
+          "tasks": [
+            {
+              "taskId": "task.b007.p2-061.features.q14-18",
+              "questionType": "matching_features",
+              "interactionVariant": "option_mapping",
+              "layoutVariant": "matching_grid",
+              "heading": "Questions 14–18",
+              "instructions": [
+                "Look at the following statements and the list of people below. Match each statement with the correct person, A–D. You may use any letter more than once."
+              ],
+              "instructionInlines": [
+                [
+                  {
+                    "style": "text",
+                    "text": "Look at the following statements and the list of people below. Match each statement with the correct person, "
+                  },
+                  {
+                    "style": "strong",
+                    "text": "A–D"
+                  },
+                  {
+                    "style": "text",
+                    "text": ". You may use any letter more than once."
+                  }
+                ]
+              ],
+              "instructionProfile": {
+                "ruleId": "matching-features-grid.v1",
+                "evidence": "official-analogue",
+                "source": "B007 paired DOCX/PDF task adapted to the verified IELTS computer Matching Features grid.",
+                "notes": "Paper answer-sheet wording and the NB label are removed; the repeat-use rule is stated directly in the computer rubric."
+              },
+              "responseSlotIds": [
+                "response.b007.p2-061.q14",
+                "response.b007.p2-061.q15",
+                "response.b007.p2-061.q16",
+                "response.b007.p2-061.q17",
+                "response.b007.p2-061.q18"
+              ],
+              "rules": {
+                "optionReuse": "allowed",
+                "occupiedOptionBehavior": "reuse",
+                "responseOrder": "target-bound",
+                "minSelections": 1,
+                "maxSelections": 1,
+                "wordLimit": null
+              },
+              "evidenceLevel": "official-analogue",
+              "content": {
+                "listTitle": "List of People",
+                "options": [
+                  {
+                    "optionId": "option.b007.p2-061.features.01",
+                    "label": "A",
+                    "text": "Neil Plumridge"
+                  },
+                  {
+                    "optionId": "option.b007.p2-061.features.02",
+                    "label": "B",
+                    "text": "Gal Zauberman and John Lynch"
+                  },
+                  {
+                    "optionId": "option.b007.p2-061.features.03",
+                    "label": "C",
+                    "text": "Jan Elsner"
+                  },
+                  {
+                    "optionId": "option.b007.p2-061.features.04",
+                    "label": "D",
+                    "text": "Tony LaMontagne"
+                  }
+                ],
+                "targets": [
+                  {
+                    "targetId": "target.b007.p2-061.q14",
+                    "targetType": "question",
+                    "label": "Question 14",
+                    "itemId": "item.b007.p2-061.q14"
+                  },
+                  {
+                    "targetId": "target.b007.p2-061.q15",
+                    "targetType": "question",
+                    "label": "Question 15",
+                    "itemId": "item.b007.p2-061.q15"
+                  },
+                  {
+                    "targetId": "target.b007.p2-061.q16",
+                    "targetType": "question",
+                    "label": "Question 16",
+                    "itemId": "item.b007.p2-061.q16"
+                  },
+                  {
+                    "targetId": "target.b007.p2-061.q17",
+                    "targetType": "question",
+                    "label": "Question 17",
+                    "itemId": "item.b007.p2-061.q17"
+                  },
+                  {
+                    "targetId": "target.b007.p2-061.q18",
+                    "targetType": "question",
+                    "label": "Question 18",
+                    "itemId": "item.b007.p2-061.q18"
+                  }
+                ],
+                "items": [
+                  {
+                    "itemId": "item.b007.p2-061.q14",
+                    "text": "High-level workers tend to react positively to stress",
+                    "responseSlotIds": [
+                      "response.b007.p2-061.q14"
+                    ],
+                    "targetId": "target.b007.p2-061.q14"
+                  },
+                  {
+                    "itemId": "item.b007.p2-061.q15",
+                    "text": "Stress levels are increased by trying to please customers",
+                    "responseSlotIds": [
+                      "response.b007.p2-061.q15"
+                    ],
+                    "targetId": "target.b007.p2-061.q15"
+                  },
+                  {
+                    "itemId": "item.b007.p2-061.q16",
+                    "text": "Support from other workers may relieve stress",
+                    "responseSlotIds": [
+                      "response.b007.p2-061.q16"
+                    ],
+                    "targetId": "target.b007.p2-061.q16"
+                  },
+                  {
+                    "itemId": "item.b007.p2-061.q17",
+                    "text": "Lack of independence at work is often responsible for stress",
+                    "responseSlotIds": [
+                      "response.b007.p2-061.q17"
+                    ],
+                    "targetId": "target.b007.p2-061.q17"
+                  },
+                  {
+                    "itemId": "item.b007.p2-061.q18",
+                    "text": "Workers commonly expect their workloads to lessen over time",
+                    "responseSlotIds": [
+                      "response.b007.p2-061.q18"
+                    ],
+                    "targetId": "target.b007.p2-061.q18"
+                  }
+                ],
+                "mapping": {
+                  "presentation": "grid",
+                  "inputMode": "single-click",
+                  "showOptionLabels": true
+                }
+              }
+            },
+            {
+              "taskId": "task.b007.p2-061.single.q19-21",
+              "questionType": "multiple_choice",
+              "interactionVariant": "single_choice",
+              "layoutVariant": "option_list",
+              "heading": "Questions 19–21",
+              "instructions": [
+                "Choose the correct answer."
+              ],
+              "instructionInlines": [
+                [
+                  {
+                    "style": "text",
+                    "text": "Choose the correct answer."
+                  }
+                ]
+              ],
+              "instructionProfile": {
+                "ruleId": "single-choice.v1",
+                "evidence": "official-direct",
+                "source": "https://ielts.inspera.com/player/?assessmentRunId=189731922&context=exam",
+                "notes": "Official computer sample directly observed: full-row radio choices with paper letters hidden."
+              },
+              "responseSlotIds": [
+                "response.b007.p2-061.q19",
+                "response.b007.p2-061.q20",
+                "response.b007.p2-061.q21"
+              ],
+              "content": {
+                "items": [
+                  {
+                    "itemId": "item.b007.p2-061.q19",
+                    "text": "Which of the following is NOT mentioned by Neil Plumridge as an indication that his workload is too heavy?",
+                    "responseSlotIds": [
+                      "response.b007.p2-061.q19"
+                    ],
+                    "options": [
+                      {
+                        "optionId": "option.b007.p2-061.single.q19.01",
+                        "text": "an inability to keep to his schedule"
+                      },
+                      {
+                        "optionId": "option.b007.p2-061.single.q19.02",
+                        "text": "inattention to family celebrations"
+                      },
+                      {
+                        "optionId": "option.b007.p2-061.single.q19.03",
+                        "text": "a lack of concentration on a task"
+                      },
+                      {
+                        "optionId": "option.b007.p2-061.single.q19.04",
+                        "text": "a period of insufficient sleep"
+                      }
+                    ],
+                    "textInlines": [
+                      {
+                        "style": "text",
+                        "text": "Which of the following is "
+                      },
+                      {
+                        "style": "strong",
+                        "text": "NOT"
+                      },
+                      {
+                        "style": "text",
+                        "text": " mentioned by Neil Plumridge as an indication that his workload is too heavy?"
+                      }
+                    ]
+                  },
+                  {
+                    "itemId": "item.b007.p2-061.q20",
+                    "text": "Which method of lessening work stress is NOT suggested by Neil Plumridge?",
+                    "responseSlotIds": [
+                      "response.b007.p2-061.q20"
+                    ],
+                    "options": [
+                      {
+                        "optionId": "option.b007.p2-061.single.q20.01",
+                        "text": "rethinking ideas of what can be achieved"
+                      },
+                      {
+                        "optionId": "option.b007.p2-061.single.q20.02",
+                        "text": "extending the deadline for completing the task"
+                      },
+                      {
+                        "optionId": "option.b007.p2-061.single.q20.03",
+                        "text": "using more workers on a project"
+                      },
+                      {
+                        "optionId": "option.b007.p2-061.single.q20.04",
+                        "text": "taking more time off for sport or other recreation"
+                      }
+                    ],
+                    "textInlines": [
+                      {
+                        "style": "text",
+                        "text": "Which method of lessening work stress is "
+                      },
+                      {
+                        "style": "strong",
+                        "text": "NOT"
+                      },
+                      {
+                        "style": "text",
+                        "text": " suggested by Neil Plumridge?"
+                      }
+                    ]
+                  },
+                  {
+                    "itemId": "item.b007.p2-061.q21",
+                    "text": "According to Jan Elsner, meditation offers a method of",
+                    "responseSlotIds": [
+                      "response.b007.p2-061.q21"
+                    ],
+                    "options": [
+                      {
+                        "optionId": "option.b007.p2-061.single.q21.01",
+                        "text": "taking a worker’s mind off his troubles."
+                      },
+                      {
+                        "optionId": "option.b007.p2-061.single.q21.02",
+                        "text": "changing the physical response to stress."
+                      },
+                      {
+                        "optionId": "option.b007.p2-061.single.q21.03",
+                        "text": "resting more effectively."
+                      },
+                      {
+                        "optionId": "option.b007.p2-061.single.q21.04",
+                        "text": "encouraging executives to take breaks."
+                      }
+                    ]
+                  }
+                ],
+                "choice": {
+                  "presentation": "full-row-radio",
+                  "inputMode": "single-click",
+                  "showOptionLabels": false,
+                  "clickTarget": "full-row"
+                }
+              },
+              "rules": {
+                "optionReuse": "not-applicable",
+                "occupiedOptionBehavior": "not-applicable",
+                "responseOrder": "not-applicable",
+                "minSelections": 0,
+                "maxSelections": 1,
+                "wordLimit": null
+              },
+              "evidenceLevel": "official-direct"
+            },
+            {
+              "taskId": "task.b007.p2-061.summary.q22-26",
+              "questionType": "summary_completion",
+              "interactionVariant": "text_entry",
+              "layoutVariant": "prose",
+              "heading": "Questions 22–26",
+              "instructions": [
+                "Complete the summary. Write NO MORE THAN TWO WORDS AND/OR A NUMBER from the text for each answer."
+              ],
+              "instructionInlines": [
+                [
+                  {
+                    "style": "text",
+                    "text": "Complete the summary. Write "
+                  },
+                  {
+                    "style": "strong",
+                    "text": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+                  },
+                  {
+                    "style": "text",
+                    "text": " from the text for each answer."
+                  }
+                ]
+              ],
+              "instructionProfile": {
+                "ruleId": "summary-completion-text.v1",
+                "evidence": "official-analogue",
+                "source": "B007 paired DOCX/PDF Summary Completion wording adapted to the established computer prose convention.",
+                "notes": "Paper answer-sheet wording is removed; the unboxed title, two source paragraphs, and complete word/number limit are retained."
+              },
+              "responseSlotIds": [
+                "response.b007.p2-061.q22",
+                "response.b007.p2-061.q23",
+                "response.b007.p2-061.q24",
+                "response.b007.p2-061.q25",
+                "response.b007.p2-061.q26"
+              ],
+              "rules": {
+                "optionReuse": "not-applicable",
+                "occupiedOptionBehavior": "not-applicable",
+                "responseOrder": "not-applicable",
+                "maxSelections": null,
+                "wordLimit": {
+                  "maxWords": 2,
+                  "allowNumber": true,
+                  "sourceText": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+                },
+                "normalization": {
+                  "unicode": "NFKC",
+                  "caseSensitive": false,
+                  "trim": true,
+                  "collapseWhitespace": true,
+                  "hyphenPolicy": "equivalent",
+                  "apostrophePolicy": "equivalent"
+                }
+              },
+              "evidenceLevel": "official-analogue",
+              "content": {
+                "listTitle": "Stress: its effects and how to reduce it",
+                "targets": [
+                  {
+                    "targetId": "target.b007.p2-061.q22",
+                    "targetType": "blank",
+                    "itemId": "item.b007.p2-061.summary.para01",
+                    "fieldId": "field.b007.p2-061.q22"
+                  },
+                  {
+                    "targetId": "target.b007.p2-061.q23",
+                    "targetType": "blank",
+                    "itemId": "item.b007.p2-061.summary.para01",
+                    "fieldId": "field.b007.p2-061.q23"
+                  },
+                  {
+                    "targetId": "target.b007.p2-061.q24",
+                    "targetType": "blank",
+                    "itemId": "item.b007.p2-061.summary.para01",
+                    "fieldId": "field.b007.p2-061.q24"
+                  },
+                  {
+                    "targetId": "target.b007.p2-061.q25",
+                    "targetType": "blank",
+                    "itemId": "item.b007.p2-061.summary.para02",
+                    "fieldId": "field.b007.p2-061.q25"
+                  },
+                  {
+                    "targetId": "target.b007.p2-061.q26",
+                    "targetType": "blank",
+                    "itemId": "item.b007.p2-061.summary.para02",
+                    "fieldId": "field.b007.p2-061.q26"
+                  }
+                ],
+                "sections": [
+                  {
+                    "sectionId": "section.b007.p2-061.summary",
+                    "label": "",
+                    "items": [
+                      {
+                        "itemId": "item.b007.p2-061.summary.para01",
+                        "text": "Statistics on workers’ compensation show that people take more time off work due to stress than for any other ________ at work. On average, workers who take time off because of stress stay away for ________. This absence comes at a high price — while the number of insurance claims due to stress amount to only ________ of the total, they account for a much higher proportion of the cost of claim payments.",
+                        "responseSlotIds": [
+                          "response.b007.p2-061.q22",
+                          "response.b007.p2-061.q23",
+                          "response.b007.p2-061.q24"
+                        ],
+                        "inlines": [
+                          {
+                            "type": "text",
+                            "text": "Statistics on workers’ compensation show that people take more time off work due to stress than for any other "
+                          },
+                          {
+                            "type": "response",
+                            "responseSlotId": "response.b007.p2-061.q22"
+                          },
+                          {
+                            "type": "text",
+                            "text": " at work. On average, workers who take time off because of stress stay away for "
+                          },
+                          {
+                            "type": "response",
+                            "responseSlotId": "response.b007.p2-061.q23"
+                          },
+                          {
+                            "type": "text",
+                            "text": ". This absence comes at a high price — while the number of insurance claims due to stress amount to only "
+                          },
+                          {
+                            "type": "response",
+                            "responseSlotId": "response.b007.p2-061.q24"
+                          },
+                          {
+                            "type": "text",
+                            "text": " of the total, they account for a much higher proportion of the cost of claim payments."
+                          }
+                        ]
+                      },
+                      {
+                        "itemId": "item.b007.p2-061.summary.para02",
+                        "text": "Experts believe that seeking to relieve stress through physical therapies such as sport or ________ may be less effective than simply reviewing your ________.",
+                        "responseSlotIds": [
+                          "response.b007.p2-061.q25",
+                          "response.b007.p2-061.q26"
+                        ],
+                        "inlines": [
+                          {
+                            "type": "text",
+                            "text": "Experts believe that seeking to relieve stress through physical therapies such as sport or "
+                          },
+                          {
+                            "type": "response",
+                            "responseSlotId": "response.b007.p2-061.q25"
+                          },
+                          {
+                            "type": "text",
+                            "text": " may be less effective than simply reviewing your "
+                          },
+                          {
+                            "type": "response",
+                            "responseSlotId": "response.b007.p2-061.q26"
+                          },
+                          {
+                            "type": "text",
+                            "text": "."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "extensions": {
+                "sourceFormatting": {
+                  "summaryTitleBold": true,
+                  "unboxed": true,
+                  "paragraphCount": 2,
+                  "paragraphBreaksPreserved": true
+                }
+              }
+            }
+          ]
+        },
+        "responseSlots": [
+          {
+            "responseSlotId": "response.b007.p2-061.q14",
+            "taskId": "task.b007.p2-061.features.q14-18",
+            "displayNumber": 14,
+            "responseKind": "option",
+            "targetId": "target.b007.p2-061.q14"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q15",
+            "taskId": "task.b007.p2-061.features.q14-18",
+            "displayNumber": 15,
+            "responseKind": "option",
+            "targetId": "target.b007.p2-061.q15"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q16",
+            "taskId": "task.b007.p2-061.features.q14-18",
+            "displayNumber": 16,
+            "responseKind": "option",
+            "targetId": "target.b007.p2-061.q16"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q17",
+            "taskId": "task.b007.p2-061.features.q14-18",
+            "displayNumber": 17,
+            "responseKind": "option",
+            "targetId": "target.b007.p2-061.q17"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q18",
+            "taskId": "task.b007.p2-061.features.q14-18",
+            "displayNumber": 18,
+            "responseKind": "option",
+            "targetId": "target.b007.p2-061.q18"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q19",
+            "taskId": "task.b007.p2-061.single.q19-21",
+            "displayNumber": 19,
+            "responseKind": "option"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q20",
+            "taskId": "task.b007.p2-061.single.q19-21",
+            "displayNumber": 20,
+            "responseKind": "option"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q21",
+            "taskId": "task.b007.p2-061.single.q19-21",
+            "displayNumber": 21,
+            "responseKind": "option"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q22",
+            "taskId": "task.b007.p2-061.summary.q22-26",
+            "displayNumber": 22,
+            "responseKind": "text",
+            "fieldId": "field.b007.p2-061.q22",
+            "targetId": "target.b007.p2-061.q22"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q23",
+            "taskId": "task.b007.p2-061.summary.q22-26",
+            "displayNumber": 23,
+            "responseKind": "text",
+            "fieldId": "field.b007.p2-061.q23",
+            "targetId": "target.b007.p2-061.q23"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q24",
+            "taskId": "task.b007.p2-061.summary.q22-26",
+            "displayNumber": 24,
+            "responseKind": "text",
+            "fieldId": "field.b007.p2-061.q24",
+            "targetId": "target.b007.p2-061.q24"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q25",
+            "taskId": "task.b007.p2-061.summary.q22-26",
+            "displayNumber": 25,
+            "responseKind": "text",
+            "fieldId": "field.b007.p2-061.q25",
+            "targetId": "target.b007.p2-061.q25"
+          },
+          {
+            "responseSlotId": "response.b007.p2-061.q26",
+            "taskId": "task.b007.p2-061.summary.q22-26",
+            "displayNumber": 26,
+            "responseKind": "text",
+            "fieldId": "field.b007.p2-061.q26",
+            "targetId": "target.b007.p2-061.q26"
+          }
+        ],
+        "scoreSlots": [
+          {
+            "scoreSlotId": "score.b007.p2-061.q14",
+            "taskId": "task.b007.p2-061.features.q14-18",
+            "responseSlotIds": [
+              "response.b007.p2-061.q14"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b007.p2-061.features.03"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q15",
+            "taskId": "task.b007.p2-061.features.q14-18",
+            "responseSlotIds": [
+              "response.b007.p2-061.q15"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b007.p2-061.features.01"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q16",
+            "taskId": "task.b007.p2-061.features.q14-18",
+            "responseSlotIds": [
+              "response.b007.p2-061.q16"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b007.p2-061.features.01"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q17",
+            "taskId": "task.b007.p2-061.features.q14-18",
+            "responseSlotIds": [
+              "response.b007.p2-061.q17"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b007.p2-061.features.04"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q18",
+            "taskId": "task.b007.p2-061.features.q14-18",
+            "responseSlotIds": [
+              "response.b007.p2-061.q18"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b007.p2-061.features.02"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q19",
+            "taskId": "task.b007.p2-061.single.q19-21",
+            "responseSlotIds": [
+              "response.b007.p2-061.q19"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b007.p2-061.single.q19.03"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q20",
+            "taskId": "task.b007.p2-061.single.q19-21",
+            "responseSlotIds": [
+              "response.b007.p2-061.q20"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b007.p2-061.single.q20.04"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q21",
+            "taskId": "task.b007.p2-061.single.q19-21",
+            "responseSlotIds": [
+              "response.b007.p2-061.q21"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b007.p2-061.single.q21.02"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q22",
+            "taskId": "task.b007.p2-061.summary.q22-26",
+            "responseSlotIds": [
+              "response.b007.p2-061.q22"
+            ],
+            "marks": 1,
+            "evaluation": "normalized-text",
+            "accepted": [
+              {
+                "kind": "text",
+                "value": "injury",
+                "verification": "canonical",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b007.p2-061.q22.injury"
+              }
+            ],
+            "normalization": {
+              "unicode": "NFKC",
+              "caseSensitive": false,
+              "trim": true,
+              "collapseWhitespace": true,
+              "hyphenPolicy": "equivalent",
+              "apostrophePolicy": "equivalent"
+            }
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q23",
+            "taskId": "task.b007.p2-061.summary.q22-26",
+            "responseSlotIds": [
+              "response.b007.p2-061.q23"
+            ],
+            "marks": 1,
+            "evaluation": "normalized-text",
+            "accepted": [
+              {
+                "kind": "text",
+                "value": "16.6 weeks",
+                "verification": "canonical",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b007.p2-061.q23.16-6-weeks"
+              }
+            ],
+            "normalization": {
+              "unicode": "NFKC",
+              "caseSensitive": false,
+              "trim": true,
+              "collapseWhitespace": true,
+              "hyphenPolicy": "equivalent",
+              "apostrophePolicy": "equivalent"
+            }
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q24",
+            "taskId": "task.b007.p2-061.summary.q22-26",
+            "responseSlotIds": [
+              "response.b007.p2-061.q24"
+            ],
+            "marks": 1,
+            "evaluation": "normalized-text",
+            "accepted": [
+              {
+                "kind": "text",
+                "value": "7%",
+                "verification": "canonical",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b007.p2-061.q24.7"
+              }
+            ],
+            "normalization": {
+              "unicode": "NFKC",
+              "caseSensitive": false,
+              "trim": true,
+              "collapseWhitespace": true,
+              "hyphenPolicy": "equivalent",
+              "apostrophePolicy": "equivalent"
+            }
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q25",
+            "taskId": "task.b007.p2-061.summary.q22-26",
+            "responseSlotIds": [
+              "response.b007.p2-061.q25"
+            ],
+            "marks": 1,
+            "evaluation": "normalized-text",
+            "accepted": [
+              {
+                "kind": "text",
+                "value": "massage",
+                "verification": "canonical",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b007.p2-061.q25.massage"
+              }
+            ],
+            "normalization": {
+              "unicode": "NFKC",
+              "caseSensitive": false,
+              "trim": true,
+              "collapseWhitespace": true,
+              "hyphenPolicy": "equivalent",
+              "apostrophePolicy": "equivalent"
+            }
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q26",
+            "taskId": "task.b007.p2-061.summary.q22-26",
+            "responseSlotIds": [
+              "response.b007.p2-061.q26"
+            ],
+            "marks": 1,
+            "evaluation": "normalized-text",
+            "accepted": [
+              {
+                "kind": "text",
+                "value": "workloads",
+                "verification": "canonical",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b007.p2-061.q26.workloads"
+              }
+            ],
+            "normalization": {
+              "unicode": "NFKC",
+              "caseSensitive": false,
+              "trim": true,
+              "collapseWhitespace": true,
+              "hyphenPolicy": "equivalent",
+              "apostrophePolicy": "equivalent"
+            }
+          }
+        ],
+        "reviewEntries": [
+          {
+            "scoreSlotId": "score.b007.p2-061.q14",
+            "answerDisplay": "C — Jan Elsner",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p07",
+                "location": "正文第7段，第1至2句",
+                "quote": "doing well on a demanding workload is typical of senior executives. Some people work best with high-adrenaline periods followed by quieter times, while others thrive under sustained pressure.",
+                "translation": "在高强度工作负荷下表现良好是高级管理人员的典型特点。有些人在高肾上腺素阶段之后配合较平静时期时表现最佳，另一些人则能在持续压力下蓬勃发展。"
+              }
+            ],
+            "explanation": "题干中的 high-level workers 对应 senior executives，react positively 对应 doing well、work best 和 thrive；这是 Jan Elsner 的观点，因此选 C。",
+            "distractors": [
+              "Vanessa Stoykov 也能在压力下保持兴奋，但她不在备选人物表中；该概括由 Jan Elsner 提出。"
+            ],
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "高级管理人员往往会对压力作出积极反应。"
+              }
+            },
+            "questionTranslation": "高级管理人员往往会对压力作出积极反应。"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q15",
+            "answerDisplay": "A — Neil Plumridge",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p02",
+                "location": "正文第2段，末段引语",
+                "quote": "I’ll promise a client that I’ll do something tomorrow, and then I’ll promise another client that I’ll do the same thing, when I know it’s not going to happen.",
+                "translation": "我会答应一个客户明天完成某件事，接着又向另一个客户作出同样承诺，即使我知道根本做不到。"
+              }
+            ],
+            "explanation": "Neil Plumridge 把压力归因于对自己设定不现实的期望；为取悦多个客户而过度承诺正是具体表现，因此选 A。",
+            "distractors": [
+              "Gal Zauberman 和 John Lynch 讨论人们低估未来忙碌程度，不是客户压力。"
+            ],
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "试图满足客户会提高压力水平。"
+              }
+            },
+            "questionTranslation": "试图满足客户会提高压力水平。"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q16",
+            "answerDisplay": "A — Neil Plumridge",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p05",
+                "location": "正文第5段，末2句",
+                "quote": "He also relies on the advice of colleagues, saying that his peers coach each other on business problems: ‘Just a fresh pair of eyes over an issue can help,’",
+                "translation": "他也依靠同事的建议，并说同级同事会就业务问题相互指导：“换一双新眼睛看看问题就能有所帮助。”"
+              }
+            ],
+            "explanation": "support from other workers 对应 colleagues 的 advice 和 peers coach each other；发言者是 Neil Plumridge，因此选 A。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "其他同事的支持可能缓解压力。"
+              }
+            },
+            "questionTranslation": "其他同事的支持可能缓解压力。"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q17",
+            "answerDisplay": "D — Tony LaMontagne",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p08",
+                "location": "正文第8段，中部",
+                "quote": "the major predictor of stress is the level of job control a person has.",
+                "translation": "压力的主要预测因素是一个人拥有的工作控制权。"
+              }
+            ],
+            "explanation": "lack of independence 对应 low control 和 little autonomy；这一研究结论由 Tony LaMontagne 提出，因此选 D。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "工作中缺乏自主权往往会造成压力。"
+              }
+            },
+            "questionTranslation": "工作中缺乏自主权往往会造成压力。"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q18",
+            "answerDisplay": "B — Gal Zauberman and John Lynch",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p03",
+                "location": "正文第3段，第3句",
+                "quote": "people always believe that they will be less busy in the future.",
+                "translation": "人们总认为自己将来会没有现在这么忙。"
+              }
+            ],
+            "explanation": "less busy in the future 与 workloads to lessen over time 同义；该研究的作者是 Gal Zauberman 和 John Lynch，因此选 B。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "人们通常认为自己的工作量会随着时间推移而减少。"
+              }
+            },
+            "questionTranslation": "人们通常认为自己的工作量会随着时间推移而减少。"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q19",
+            "answerDisplay": "a lack of concentration on a task",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p02",
+                "location": "正文第2段，第1至2句",
+                "quote": "Three signs warn Plumridge about his workload: sleep, scheduling and family. He knows he is doing too much when he gets less than six hours’ sleep for three consecutive nights, when he is constantly having to reschedule appointments, and when he misses a family birthday or anniversary.",
+                "translation": "Plumridge 用三类迹象判断工作量是否过重：睡眠、日程和家庭。他若连续三晚睡眠不足六小时、不断改约，或错过家人的生日或纪念日，就知道工作已经过量。"
+              }
+            ],
+            "explanation": "原文列出睡眠不足、不断调整日程和错过家庭纪念日，没有提到“无法集中注意力”，因此选 a lack of concentration on a task。",
+            "distractors": [
+              "A 对应 constantly having to reschedule appointments；B 对应 misses a family birthday or anniversary；D 对应 less than six hours’ sleep。"
+            ],
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "下列哪一项没有被 Neil Plumridge 提到作为工作量过重的迹象？"
+              }
+            },
+            "questionTranslation": "下列哪一项没有被 Neil Plumridge 提到作为工作量过重的迹象？"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q20",
+            "answerDisplay": "taking more time off for sport or other recreation",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p05",
+                "location": "正文第5段，第1至2句",
+                "quote": "the key to dealing with stress is not to focus on relief — a game of golf or a massage — but to reassess workloads. Neil Plumridge says he makes it a priority to work out what has to change: that might mean allocating extra staff to a job, allowing more time, or changing expectations.",
+                "translation": "应对压力的关键并非靠打高尔夫或按摩来暂时缓解，而是重新评估工作量。Neil Plumridge 认为应先确定要改变什么，例如增加人手、延长时间或调整预期。"
+              }
+            ],
+            "explanation": "A、B、C 分别对应 changing expectations、allowing more time 和 allocating extra staff；休假参加运动或娱乐没有被他作为方法提出，因此选 taking more time off for sport or other recreation。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "下列哪一种减轻工作压力的方法不是 Neil Plumridge 建议的？"
+              }
+            },
+            "questionTranslation": "下列哪一种减轻工作压力的方法不是 Neil Plumridge 建议的？"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q21",
+            "answerDisplay": "changing the physical response to stress.",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p07",
+                "location": "正文第7段，末句",
+                "quote": "meditation can alter the biochemistry of the brain and the way that brains and bodies react to stress.",
+                "translation": "冥想可以改变大脑的生物化学状态，以及大脑和身体对压力作出反应的方式。"
+              }
+            ],
+            "explanation": "alter the biochemistry 和改变大脑、身体的反应方式，直接对应 changing the physical response to stress，因此选该项。",
+            "distractors": [
+              "原文没有说冥想只是转移注意、提高休息效率或鼓励管理者暂停工作。"
+            ],
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "根据 Jan Elsner 的观点，冥想提供了一种什么方法？"
+              }
+            },
+            "questionTranslation": "根据 Jan Elsner 的观点，冥想提供了一种什么方法？"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q22",
+            "answerDisplay": "injury",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p04",
+                "location": "正文第4段，第2句",
+                "quote": "stress causes the most loss of time of any workplace injury",
+                "translation": "在所有工伤类型中，压力造成的时间损失最多。"
+              }
+            ],
+            "explanation": "题干用 take more time off 改写 most loss of time，并已给出 at work；空格填 injury 即可构成 any other injury at work。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "工伤赔偿统计表明，因压力而休假的时间超过任何其他________造成的休假时间。"
+              }
+            },
+            "questionTranslation": "工伤赔偿统计表明，因压力而休假的时间超过任何其他________造成的休假时间。"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q23",
+            "answerDisplay": "16.6 weeks",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p04",
+                "location": "正文第4段，第2句",
+                "quote": "employees suffering stress are absent from work for an average of 16.6 weeks",
+                "translation": "承受压力的员工平均缺勤 16.6 周。"
+              }
+            ],
+            "explanation": "stay away 对应 are absent from work，On average 对应 an average of；时长为原文连续表达 16.6 weeks。",
+            "formatNotes": [
+              "答案必须同时保留数值与单位；只填数值 16.6 不完整"
+            ],
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "因压力休假的员工平均会离岗________。"
+              }
+            },
+            "questionTranslation": "因压力休假的员工平均会离岗________。"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q24",
+            "answerDisplay": "7%",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p04",
+                "location": "正文第4段，末句",
+                "quote": "claims for stress-related psychological injury accounted for 7% of insurance claims",
+                "translation": "与压力相关的心理伤害索赔占全部保险索赔的 7%。"
+              }
+            ],
+            "explanation": "amount to 与 accounted for 同义，题干问占总数的比例，原文给出的数字是 7%。",
+            "formatNotes": [
+              "百分号属于原文数值表达的一部分；只填 7 会遗漏单位"
+            ],
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "压力相关保险索赔只占全部索赔的________。"
+              }
+            },
+            "questionTranslation": "压力相关保险索赔只占全部索赔的________。"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q25",
+            "answerDisplay": "massage",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p05",
+                "location": "正文第5段，第1句",
+                "quote": "not to focus on relief — a game of golf or a massage — but to reassess workloads",
+                "translation": "不要只关注打高尔夫或按摩等缓解方式，而应重新评估工作量。"
+              }
+            ],
+            "explanation": "sport 对应 a game of golf，or 后与其并列的身体疗法是 massage。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "通过运动或________等身体疗法来缓解压力。"
+              }
+            },
+            "questionTranslation": "通过运动或________等身体疗法来缓解压力。"
+          },
+          {
+            "scoreSlotId": "score.b007.p2-061.q26",
+            "answerDisplay": "workloads",
+            "evidence": [
+              {
+                "blockId": "block.b007.p2-061.p05",
+                "location": "正文第5段，第1句",
+                "quote": "not to focus on relief — a game of golf or a massage — but to reassess workloads",
+                "translation": "不要把重点放在打高尔夫或按摩等临时缓解上，而要重新评估工作量。"
+              }
+            ],
+            "explanation": "reviewing 对应 reassess，所重新审视的对象是 workloads，因此填原文复数形式 workloads。",
+            "formatNotes": [
+              "答案须保留定位句中的复数形式"
+            ],
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "这些方式可能不如直接重新审视你的________有效。"
+              }
+            },
+            "questionTranslation": "这些方式可能不如直接重新审视你的________有效。"
+          }
+        ],
+        "sourceFiles": [
+          {
+            "filename": "P2 - Stress Less.docx",
+            "sha256": "a71fa8946a7e810393e69c1916e522a148330e4bea85c422952d672b4734fc4d",
+            "role": "combined",
+            "authority": "user-designated"
+          },
+          {
+            "filename": "117. P2 - Stress Less 工作压力.pdf",
+            "sha256": "be9a1276c35000a9360900faad3ab5e859e33d554dea2c5fbf74b2167c87aa12",
+            "role": "combined",
+            "authority": "user-designated"
+          }
+        ],
+        "reviewLanguage": {
+          "schemaVersion": "ielts-reading-review-language-policy.v0",
+          "language": "zh-CN",
+          "passageId": "passage.b007.p2-061.stress-less",
+          "total": 13,
+          "ready": 13,
+          "blocked": 0,
+          "coveragePercent": 100,
+          "status": "zh-CN-primary",
+          "englishEvidenceQuotesAllowed": true,
+          "issues": []
+        },
+        "composition": {
+          "fullPassage": {
+            "selectable": true,
+            "blockers": [],
+            "packageClosure": "complete",
+            "sourcePassageCompleteness": "full",
+            "expectedResponseCount": 13,
+            "actualResponseCount": 13
+          },
+          "taskGroups": [
+            {
+              "taskId": "task.b007.p2-061.features.q14-18",
+              "label": "Questions 14–18",
+              "questionType": "matching_features",
+              "questionTypeLabel": "Matching Features",
+              "interactionVariant": "option_mapping",
+              "layoutVariant": "matching_grid",
+              "responseCount": 5,
+              "maxMarks": 5,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b007.p2-061.stress-less",
+                "taskId": "task.b007.p2-061.features.q14-18",
+                "total": 5,
+                "ready": 5,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            },
+            {
+              "taskId": "task.b007.p2-061.single.q19-21",
+              "label": "Questions 19–21",
+              "questionType": "multiple_choice",
+              "questionTypeLabel": "Multiple Choice（单选）",
+              "interactionVariant": "single_choice",
+              "layoutVariant": "option_list",
+              "responseCount": 3,
+              "maxMarks": 3,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b007.p2-061.stress-less",
+                "taskId": "task.b007.p2-061.single.q19-21",
+                "total": 3,
+                "ready": 3,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            },
+            {
+              "taskId": "task.b007.p2-061.summary.q22-26",
+              "label": "Questions 22–26",
+              "questionType": "summary_completion",
+              "questionTypeLabel": "Summary Completion（无选项）",
+              "interactionVariant": "text_entry",
+              "layoutVariant": "prose",
+              "responseCount": 5,
+              "maxMarks": 5,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b007.p2-061.stress-less",
+                "taskId": "task.b007.p2-061.summary.q22-26",
+                "total": 5,
+                "ready": 5,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            }
+          ]
+        }
+      },
+      "passage": {
+        "passageId": "passage.b007.p2-061.stress-less",
+        "title": "Stress Less",
+        "titleZh": "工作压力",
+        "catalogPassageId": "P2-061",
+        "passagePosition": 2,
+        "difficulty_current": 3.5,
+        "monthlyFrequency": {
+          "month": "2026-09",
+          "frequency_tier": "高频"
+        },
+        "questionCount": 13,
+        "maxMarks": 13,
+        "questionTypes": [
+          "Matching Features",
+          "Multiple Choice（单选）",
+          "Summary Completion（无选项）"
+        ],
+        "reviewLanguage": {
+          "schemaVersion": "ielts-reading-review-language-policy.v0",
+          "language": "zh-CN",
+          "passageId": "passage.b007.p2-061.stress-less",
+          "total": 13,
+          "ready": 13,
+          "blocked": 0,
+          "coveragePercent": 100,
+          "status": "zh-CN-primary",
+          "englishEvidenceQuotesAllowed": true,
+          "issues": []
+        },
+        "composition": {
+          "fullPassage": {
+            "selectable": true,
+            "blockers": [],
+            "packageClosure": "complete",
+            "sourcePassageCompleteness": "full",
+            "expectedResponseCount": 13,
+            "actualResponseCount": 13
+          },
+          "taskGroups": [
+            {
+              "taskId": "task.b007.p2-061.features.q14-18",
+              "label": "Questions 14–18",
+              "questionType": "matching_features",
+              "questionTypeLabel": "Matching Features",
+              "interactionVariant": "option_mapping",
+              "layoutVariant": "matching_grid",
+              "responseCount": 5,
+              "maxMarks": 5,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b007.p2-061.stress-less",
+                "taskId": "task.b007.p2-061.features.q14-18",
+                "total": 5,
+                "ready": 5,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            },
+            {
+              "taskId": "task.b007.p2-061.single.q19-21",
+              "label": "Questions 19–21",
+              "questionType": "multiple_choice",
+              "questionTypeLabel": "Multiple Choice（单选）",
+              "interactionVariant": "single_choice",
+              "layoutVariant": "option_list",
+              "responseCount": 3,
+              "maxMarks": 3,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b007.p2-061.stress-less",
+                "taskId": "task.b007.p2-061.single.q19-21",
+                "total": 3,
+                "ready": 3,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            },
+            {
+              "taskId": "task.b007.p2-061.summary.q22-26",
+              "label": "Questions 22–26",
+              "questionType": "summary_completion",
+              "questionTypeLabel": "Summary Completion（无选项）",
+              "interactionVariant": "text_entry",
+              "layoutVariant": "prose",
+              "responseCount": 5,
+              "maxMarks": 5,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b007.p2-061.stress-less",
+                "taskId": "task.b007.p2-061.summary.q22-26",
+                "total": 5,
+                "ready": 5,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            }
+          ]
+        },
+        "selectable": true,
+        "blockers": []
+      }
+    },
+    {
+      "passageId": "passage.b006.p3-044.insect-inspired-robots",
+      "source": {
+        "passageId": "passage.b006.p3-044.insect-inspired-robots",
+        "title": "Insect-inspired robots",
+        "titleZh": "昆虫机器人",
+        "catalogPassageId": "P3-044",
+        "passagePosition": 3,
+        "difficulty_current": 4.5,
+        "source": {
+          "packageId": "package.b006.p3-044.insect-inspired-robots.v2.wave6",
+          "contentVersion": "1.0.0-b006.wave6.v0215.review-v039",
+          "partId": "part.b006.p3-044",
+          "sourcePackageSha256": "b1571af979be15f99156bc890d89e5784ff12466eb1315e654365b441d9a5ca7"
+        },
+        "part": {
+          "partId": "part.b006.p3-044",
+          "ordinal": 3,
+          "label": "PASSAGE 3",
+          "instruction": "Read the passage and answer Questions 27–40.",
+          "passage": {
+            "passageId": "passage.b006.p3-044.insect-inspired-robots",
+            "label": "READING PASSAGE 3",
+            "title": "Insect-inspired robots",
+            "blocks": [
+              {
+                "blockId": "block.b006.p3-044.p01",
+                "type": "paragraph",
+                "role": "standfirst",
+                "text": "A recent conference reports on developments in biorobotics",
+                "extensions": {
+                  "sourceFormatting": {
+                    "italicText": [
+                      "A recent conference reports on developments in biorobotics"
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "block.b006.p3-044.p02",
+                "type": "paragraph",
+                "role": "section",
+                "label": "A",
+                "text": "A tiny insect navigates its way across featureless salt-pans. A cockroach successfully works out how to scramble over an obstacle. The mantis shrimp scans its aquatic world through hyperspectral eyes. Using the most basic of equipment and brains tinier than a pin-head, insects constantly solve complex problems of movement, vision and navigation – processing data that would challenge a super-computer. How they do it is driving one of the most exciting new fields of technology – biomimetics and biorobotics, the imitation of insect systems to control man-made machines. Delegates at a recent conference presented some outcomes of their work in this area."
+              },
+              {
+                "blockId": "block.b006.p3-044.p03",
+                "type": "paragraph",
+                "role": "section",
+                "label": "B",
+                "text": "Dr Alex Zelinsky suggested that the method by which wasps use landmarks to find their way back to the nest may one day be part of a system for navigating cars that know where to go. A research team led by Dr Zelinsky has shown that a robot can navigate its way among 50 different landmarks by recognising them individually using a panoramic camera. “The inspiration came from biology, where wasps use a practical method turn back and look to orient themselves as they emerge from their nest. By flying to and fro, they look at the wasp nest from different angles and perspectives so they can recognise it again,” he explained. The robot’s panoramic camera logs the surrounding area and its key landmarks, which are then stored in its computer according to how reliable they are as navigational aids. The landmarks are then scaled, from small to large, so that the robot can recognise whether it is getting closer to or further away from them. Their location is built into a map in its mind, which operates at different scales and instructs the robot whether to turn left or right at a particular mark. The technology provides a general way for a machine to navigate an unknown landscape.",
+                "extensions": {
+                  "sourceFormatting": {
+                    "italicText": [
+                      "know",
+                      "turn back and look",
+                      "mind"
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "block.b006.p3-044.p04",
+                "type": "paragraph",
+                "role": "section",
+                "label": "C",
+                "text": "For three decades, Professor Ruediger Wehner has journeyed from Switzerland to the Sahara Desert where Cataglyphis, a tiny ant with a brain weighing just 0.1 mg, performs acts of navigational genius when it leaves its nest, forages for food and returns successfully. Cataglyphis uses polarised light, caused when air molecules scatter light, to orient and steer itself. Wehner’s team found that the ant has a set of specialised photoreceptors along the upper rim of its eyes that detect polarised light, while other receptors perform different navigational tasks. As the sun moves, the ant notes its direction each time it leaves the nest and updates its internal compass. Using other eye receptors it stores a snapshot image of landmarks close to the nest entrance in its eyes and compares this with what it sees as it returns. The ant also has a way of measuring distance travelled, while a path integrator periodically informs the ant of its current position relative to its point of departure. Rather than integrate all the information it receives in its brain, the ant actually performs a number of complex calculations in different organs. Like a super-computer, the ant has many separate sub-routines going on simultaneously.\n\nUsing the ant’s ability to steer by polarised light and to store and reuse landscape images, Wehner and colleagues have built “Sahabot,” a small vehicle that uses polarisers and a CCD camera to store 360° images of its surroundings. It navigates by using polarised sunlight and comparing the current images of landmarks to the ones in its memory.",
+                "extensions": {
+                  "sourceFormatting": {
+                    "italicText": [
+                      "Cataglyphis",
+                      "snapshot",
+                      "path integrator"
+                    ],
+                    "paragraphBreaks": "preserve"
+                  }
+                }
+              },
+              {
+                "blockId": "block.b006.p3-044.p05",
+                "type": "paragraph",
+                "role": "section",
+                "label": "D",
+                "text": "Professor Robert Michelson had a different desert challenge – to design a flying robot that can not only navigate but also stay aloft and hover in the thin atmosphere of Mars. Drawing inspiration from insect flight, he has gone beyond nature to devise a completely new concept for a flying machine. The “Entomopter” is a sort of double-ended dragonfly whose wings beat reciprocally. Michelson says that the flapping-wing design gives the craft unusually high lift compared with a fixed-wing flyer, enabling it to fly slowly or hover in the thin Martian air – whereas a fixed-wing craft would have to move at more than 400 km/h and could not stop to explore."
+              },
+              {
+                "blockId": "block.b006.p3-044.p06",
+                "type": "paragraph",
+                "role": "section",
+                "label": "E",
+                "text": "Engineer Roger Quinn and entomologist Professor Roy Ritzmann are taking their inspiration from cockroaches. According to Quinn and Ritzmann, the ability of cockroaches to run very fast over rough terrain may one day give rise to a completely new all-terrain vehicle with six legs, or maybe even wheel-like legs called “whegs.” The key to the cockroach’s remarkable cross-country performance lies partly in the fact that its legs do a lot of the thinking without having to consult the brain. Quinn and Ritzmann are drawing on cockroach skills to create robotic walkers and control strategies that capture the remarkable capacity of these insects to traverse complex terrain and navigate safely toward goals while avoiding obstacles. The team has already designed a series of robots that run on six legs or on whegs, enabling them to handle surprisingly rugged terrain.",
+                "extensions": {
+                  "sourceFormatting": {
+                    "italicText": [
+                      "thinking"
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "block.b006.p3-044.p07",
+                "type": "paragraph",
+                "role": "section",
+                "label": "F",
+                "text": "International experts believe there are tremendous opportunities in biorobotics. However, delegates at the conference had differing visions for the future of the science. While some were concerned that the initial applications of biorobotics may be military, others, such as Dr Barbara Webb, predicted swarms of tiny, cheap, insect-like robots as society’s cleaners and collectors. Sonja Kleinlogel hoped the study of the hyperspectral eyes of the mantis shrimp might yield remote sensors that can watch over the environmental health of our oceans. Several delegates were concerned about the ethical implications of biorobotics and urged that close attention be paid to this as the science and technologies develop."
+              }
+            ],
+            "extensions": {
+              "sourceFormatting": {
+                "sourceTitleVisible": true,
+                "labelBold": true,
+                "standfirstItalic": true,
+                "timingInstructionItalic": true,
+                "timingQuestionRangeBold": [
+                  "Questions 27-40"
+                ],
+                "paragraphSemantics": "Six sections A–F; section C contains two source prose paragraphs within one section."
+              }
+            }
+          },
+          "tasks": [
+            {
+              "taskId": "task.b006.p3-044.section.q27-32",
+              "questionType": "matching_information",
+              "interactionVariant": "option_mapping",
+              "layoutVariant": "matching_grid",
+              "heading": "Questions 27–32",
+              "instructions": [
+                "The text has six sections, A–F. Which section contains the following information?"
+              ],
+              "instructionInlines": [
+                [
+                  {
+                    "style": "text",
+                    "text": "The text has six sections, "
+                  },
+                  {
+                    "style": "strong",
+                    "text": "A–F"
+                  },
+                  {
+                    "style": "text",
+                    "text": ". Which section contains the following information?"
+                  }
+                ]
+              ],
+              "instructionProfile": {
+                "ruleId": "matching-information-grid.v1",
+                "evidence": "official-analogue",
+                "source": "User-designated DOCX/PDF adapted to the verified computer matching family.",
+                "notes": "Each of the six sections is used once in this source item set."
+              },
+              "responseSlotIds": [
+                "response.b006.p3-044.q27",
+                "response.b006.p3-044.q28",
+                "response.b006.p3-044.q29",
+                "response.b006.p3-044.q30",
+                "response.b006.p3-044.q31",
+                "response.b006.p3-044.q32"
+              ],
+              "content": {
+                "options": [
+                  {
+                    "optionId": "option.b006.p3-044.section.a",
+                    "label": "A",
+                    "text": "Section A",
+                    "sourceBlockId": "block.b006.p3-044.p02"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.section.b",
+                    "label": "B",
+                    "text": "Section B",
+                    "sourceBlockId": "block.b006.p3-044.p03"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.section.c",
+                    "label": "C",
+                    "text": "Section C",
+                    "sourceBlockId": "block.b006.p3-044.p04"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.section.d",
+                    "label": "D",
+                    "text": "Section D",
+                    "sourceBlockId": "block.b006.p3-044.p05"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.section.e",
+                    "label": "E",
+                    "text": "Section E",
+                    "sourceBlockId": "block.b006.p3-044.p06"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.section.f",
+                    "label": "F",
+                    "text": "Section F",
+                    "sourceBlockId": "block.b006.p3-044.p07"
+                  }
+                ],
+                "targets": [
+                  {
+                    "targetId": "target.b006.p3-044.q27",
+                    "targetType": "question",
+                    "label": "Question 27",
+                    "itemId": "item.b006.p3-044.q27"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q28",
+                    "targetType": "question",
+                    "label": "Question 28",
+                    "itemId": "item.b006.p3-044.q28"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q29",
+                    "targetType": "question",
+                    "label": "Question 29",
+                    "itemId": "item.b006.p3-044.q29"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q30",
+                    "targetType": "question",
+                    "label": "Question 30",
+                    "itemId": "item.b006.p3-044.q30"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q31",
+                    "targetType": "question",
+                    "label": "Question 31",
+                    "itemId": "item.b006.p3-044.q31"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q32",
+                    "targetType": "question",
+                    "label": "Question 32",
+                    "itemId": "item.b006.p3-044.q32"
+                  }
+                ],
+                "items": [
+                  {
+                    "itemId": "item.b006.p3-044.q27",
+                    "text": "positive and negative possibilities for the use of insect-inspired robots",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q27"
+                    ],
+                    "targetId": "target.b006.p3-044.q27"
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.q28",
+                    "text": "how perceived size is used as an aid to navigation",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q28"
+                    ],
+                    "targetId": "target.b006.p3-044.q28"
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.q29",
+                    "text": "an example of decision-making taking place in the limbs",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q29"
+                    ],
+                    "targetId": "target.b006.p3-044.q29"
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.q30",
+                    "text": "a description of a potential aid in space exploration",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q30"
+                    ],
+                    "targetId": "target.b006.p3-044.q30"
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.q31",
+                    "text": "the range of skills that have inspired biorobotics",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q31"
+                    ],
+                    "targetId": "target.b006.p3-044.q31"
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.q32",
+                    "text": "how a variety of navigational methods operate at the same time",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q32"
+                    ],
+                    "targetId": "target.b006.p3-044.q32"
+                  }
+                ],
+                "mapping": {
+                  "presentation": "grid",
+                  "inputMode": "single-click",
+                  "showOptionLabels": true
+                }
+              },
+              "rules": {
+                "optionReuse": "forbidden",
+                "occupiedOptionBehavior": "transfer",
+                "responseOrder": "target-bound",
+                "minSelections": 1,
+                "maxSelections": 1,
+                "wordLimit": null
+              },
+              "evidenceLevel": "official-analogue"
+            },
+            {
+              "taskId": "task.b006.p3-044.summary.q33-36",
+              "questionType": "short_answer",
+              "interactionVariant": "text_entry",
+              "layoutVariant": "short_question_list",
+              "heading": "Questions 33–36",
+              "instructions": [
+                "Answer the questions below. Write NO MORE THAN THREE WORDS from the text for each answer."
+              ],
+              "instructionInlines": [
+                [
+                  {
+                    "style": "text",
+                    "text": "Answer the questions below. Write "
+                  },
+                  {
+                    "style": "strong",
+                    "text": "NO MORE THAN THREE WORDS"
+                  },
+                  {
+                    "style": "text",
+                    "text": " from the text for each answer."
+                  }
+                ]
+              ],
+              "instructionProfile": {
+                "ruleId": "short-answer-text.v1",
+                "evidence": "local-adaptation",
+                "source": "Official Reading Short Answer semantics plus the verified computer text-entry interaction.",
+                "notes": "Paper answer-sheet wording is removed; each question owns one final inline response."
+              },
+              "responseSlotIds": [
+                "response.b006.p3-044.q33",
+                "response.b006.p3-044.q34",
+                "response.b006.p3-044.q35",
+                "response.b006.p3-044.q36"
+              ],
+              "rules": {
+                "optionReuse": "not-applicable",
+                "occupiedOptionBehavior": "not-applicable",
+                "responseOrder": "not-applicable",
+                "maxSelections": null,
+                "wordLimit": {
+                  "maxWords": 3,
+                  "allowNumber": false,
+                  "sourceText": "NO MORE THAN THREE WORDS"
+                },
+                "normalization": {
+                  "unicode": "NFKC",
+                  "caseSensitive": false,
+                  "trim": true,
+                  "collapseWhitespace": true,
+                  "hyphenPolicy": "equivalent",
+                  "apostrophePolicy": "equivalent"
+                }
+              },
+              "evidenceLevel": "local-adaptation",
+              "content": {
+                "targets": [
+                  {
+                    "targetId": "target.b006.p3-044.q33",
+                    "targetType": "question",
+                    "itemId": "item.b006.p3-044.summary.prose.01",
+                    "fieldId": "field.b006.p3-044.q33"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q34",
+                    "targetType": "question",
+                    "itemId": "item.b006.p3-044.summary.prose.02",
+                    "fieldId": "field.b006.p3-044.q34"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q35",
+                    "targetType": "question",
+                    "itemId": "item.b006.p3-044.summary.prose.03",
+                    "fieldId": "field.b006.p3-044.q35"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q36",
+                    "targetType": "question",
+                    "itemId": "item.b006.p3-044.summary.prose.04",
+                    "fieldId": "field.b006.p3-044.q36"
+                  }
+                ],
+                "items": [
+                  {
+                    "itemId": "item.b006.p3-044.summary.prose.01",
+                    "text": "Which creature sees particularly well under water? ________",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q33"
+                    ],
+                    "inlines": [
+                      {
+                        "type": "text",
+                        "text": "Which creature sees particularly well under water? "
+                      },
+                      {
+                        "type": "response",
+                        "responseSlotId": "response.b006.p3-044.q33"
+                      }
+                    ]
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.summary.prose.02",
+                    "text": "In addition to a computer, what technical equipment is fitted in Dr Zelinsky’s robot? ________",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q34"
+                    ],
+                    "inlines": [
+                      {
+                        "type": "text",
+                        "text": "In addition to a computer, what technical equipment is fitted in Dr Zelinsky’s robot? "
+                      },
+                      {
+                        "type": "response",
+                        "responseSlotId": "response.b006.p3-044.q34"
+                      }
+                    ]
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.summary.prose.03",
+                    "text": "Where is the Cataglyphis ant found? ________",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q35"
+                    ],
+                    "inlines": [
+                      {
+                        "type": "text",
+                        "text": "Where is the Cataglyphis ant found? "
+                      },
+                      {
+                        "type": "response",
+                        "responseSlotId": "response.b006.p3-044.q35"
+                      }
+                    ]
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.summary.prose.04",
+                    "text": "What atmospheric effect helps the Cataglyphis ant to know its direction? ________",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q36"
+                    ],
+                    "inlines": [
+                      {
+                        "type": "text",
+                        "text": "What atmospheric effect helps the Cataglyphis ant to know its direction? "
+                      },
+                      {
+                        "type": "response",
+                        "responseSlotId": "response.b006.p3-044.q36"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "extensions": {
+                "sourceFormatting": {
+                  "taskItems": [
+                    {
+                      "itemId": "item.b006.p3-044.summary.prose.03",
+                      "italicText": [
+                        "Cataglyphis"
+                      ]
+                    },
+                    {
+                      "itemId": "item.b006.p3-044.summary.prose.04",
+                      "italicText": [
+                        "Cataglyphis"
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "taskId": "task.b006.p3-044.robot.q37-40",
+              "questionType": "matching_features",
+              "interactionVariant": "option_mapping",
+              "layoutVariant": "matching_grid",
+              "heading": "Questions 37–40",
+              "instructions": [
+                "Look at the following people and the list of robots below. Match each person or people with the correct robot, A–G."
+              ],
+              "instructionInlines": [
+                [
+                  {
+                    "style": "text",
+                    "text": "Look at the following people and the list of robots below. Match each person or people with the correct robot, "
+                  },
+                  {
+                    "style": "strong",
+                    "text": "A–G"
+                  },
+                  {
+                    "style": "text",
+                    "text": "."
+                  }
+                ]
+              ],
+              "instructionProfile": {
+                "ruleId": "matching-features-grid.v1",
+                "evidence": "official-analogue",
+                "source": "User-designated DOCX/PDF adapted to the verified computer matching family.",
+                "notes": "Source has no repeat-use sentence; selected robot descriptions transfer on use."
+              },
+              "responseSlotIds": [
+                "response.b006.p3-044.q37",
+                "response.b006.p3-044.q38",
+                "response.b006.p3-044.q39",
+                "response.b006.p3-044.q40"
+              ],
+              "content": {
+                "listTitle": "List of Robots",
+                "options": [
+                  {
+                    "optionId": "option.b006.p3-044.robot.a",
+                    "label": "A",
+                    "text": "a robot that makes use of light as well as stored images for navigational purposes"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.robot.b",
+                    "label": "B",
+                    "text": "a robot that can contribute to environmental health"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.robot.c",
+                    "label": "C",
+                    "text": "a robot that can move over difficult surfaces"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.robot.d",
+                    "label": "D",
+                    "text": "a robot that categorises information from the environment according to its usefulness"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.robot.e",
+                    "label": "E",
+                    "text": "a robot that can be used to clean surfaces and collect rubbish"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.robot.f",
+                    "label": "F",
+                    "text": "a robot that has improved on the ability of the insect on which it is based"
+                  },
+                  {
+                    "optionId": "option.b006.p3-044.robot.g",
+                    "label": "G",
+                    "text": "a robot that can replace soldiers in war"
+                  }
+                ],
+                "targets": [
+                  {
+                    "targetId": "target.b006.p3-044.q37",
+                    "targetType": "question",
+                    "label": "Question 37",
+                    "itemId": "item.b006.p3-044.q37"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q38",
+                    "targetType": "question",
+                    "label": "Question 38",
+                    "itemId": "item.b006.p3-044.q38"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q39",
+                    "targetType": "question",
+                    "label": "Question 39",
+                    "itemId": "item.b006.p3-044.q39"
+                  },
+                  {
+                    "targetId": "target.b006.p3-044.q40",
+                    "targetType": "question",
+                    "label": "Question 40",
+                    "itemId": "item.b006.p3-044.q40"
+                  }
+                ],
+                "items": [
+                  {
+                    "itemId": "item.b006.p3-044.q37",
+                    "text": "Dr Alex Zelinsky",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q37"
+                    ],
+                    "targetId": "target.b006.p3-044.q37"
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.q38",
+                    "text": "Professor Ruediger Wehner",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q38"
+                    ],
+                    "targetId": "target.b006.p3-044.q38"
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.q39",
+                    "text": "Professor Robert Michelson",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q39"
+                    ],
+                    "targetId": "target.b006.p3-044.q39"
+                  },
+                  {
+                    "itemId": "item.b006.p3-044.q40",
+                    "text": "Roger Quinn and Professor Roy Ritzmann",
+                    "responseSlotIds": [
+                      "response.b006.p3-044.q40"
+                    ],
+                    "targetId": "target.b006.p3-044.q40"
+                  }
+                ],
+                "mapping": {
+                  "presentation": "grid",
+                  "inputMode": "single-click",
+                  "showOptionLabels": true
+                }
+              },
+              "rules": {
+                "optionReuse": "forbidden",
+                "occupiedOptionBehavior": "transfer",
+                "responseOrder": "target-bound",
+                "minSelections": 1,
+                "maxSelections": 1,
+                "wordLimit": null
+              },
+              "evidenceLevel": "official-analogue"
+            }
+          ]
+        },
+        "responseSlots": [
+          {
+            "responseSlotId": "response.b006.p3-044.q27",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseKind": "option",
+            "displayNumber": 27,
+            "targetId": "target.b006.p3-044.q27"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q28",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseKind": "option",
+            "displayNumber": 28,
+            "targetId": "target.b006.p3-044.q28"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q29",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseKind": "option",
+            "displayNumber": 29,
+            "targetId": "target.b006.p3-044.q29"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q30",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseKind": "option",
+            "displayNumber": 30,
+            "targetId": "target.b006.p3-044.q30"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q31",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseKind": "option",
+            "displayNumber": 31,
+            "targetId": "target.b006.p3-044.q31"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q32",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseKind": "option",
+            "displayNumber": 32,
+            "targetId": "target.b006.p3-044.q32"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q33",
+            "taskId": "task.b006.p3-044.summary.q33-36",
+            "responseKind": "text",
+            "displayNumber": 33,
+            "fieldId": "field.b006.p3-044.q33",
+            "targetId": "target.b006.p3-044.q33"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q34",
+            "taskId": "task.b006.p3-044.summary.q33-36",
+            "responseKind": "text",
+            "displayNumber": 34,
+            "fieldId": "field.b006.p3-044.q34",
+            "targetId": "target.b006.p3-044.q34"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q35",
+            "taskId": "task.b006.p3-044.summary.q33-36",
+            "responseKind": "text",
+            "displayNumber": 35,
+            "fieldId": "field.b006.p3-044.q35",
+            "targetId": "target.b006.p3-044.q35"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q36",
+            "taskId": "task.b006.p3-044.summary.q33-36",
+            "responseKind": "text",
+            "displayNumber": 36,
+            "fieldId": "field.b006.p3-044.q36",
+            "targetId": "target.b006.p3-044.q36"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q37",
+            "taskId": "task.b006.p3-044.robot.q37-40",
+            "responseKind": "option",
+            "displayNumber": 37,
+            "targetId": "target.b006.p3-044.q37"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q38",
+            "taskId": "task.b006.p3-044.robot.q37-40",
+            "responseKind": "option",
+            "displayNumber": 38,
+            "targetId": "target.b006.p3-044.q38"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q39",
+            "taskId": "task.b006.p3-044.robot.q37-40",
+            "responseKind": "option",
+            "displayNumber": 39,
+            "targetId": "target.b006.p3-044.q39"
+          },
+          {
+            "responseSlotId": "response.b006.p3-044.q40",
+            "taskId": "task.b006.p3-044.robot.q37-40",
+            "responseKind": "option",
+            "displayNumber": 40,
+            "targetId": "target.b006.p3-044.q40"
+          }
+        ],
+        "scoreSlots": [
+          {
+            "scoreSlotId": "score.b006.p3-044.q27",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseSlotIds": [
+              "response.b006.p3-044.q27"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b006.p3-044.section.f"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q28",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseSlotIds": [
+              "response.b006.p3-044.q28"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b006.p3-044.section.b"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q29",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseSlotIds": [
+              "response.b006.p3-044.q29"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b006.p3-044.section.e"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q30",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseSlotIds": [
+              "response.b006.p3-044.q30"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b006.p3-044.section.d"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q31",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseSlotIds": [
+              "response.b006.p3-044.q31"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b006.p3-044.section.a"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q32",
+            "taskId": "task.b006.p3-044.section.q27-32",
+            "responseSlotIds": [
+              "response.b006.p3-044.q32"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b006.p3-044.section.c"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q33",
+            "taskId": "task.b006.p3-044.summary.q33-36",
+            "responseSlotIds": [
+              "response.b006.p3-044.q33"
+            ],
+            "marks": 1,
+            "evaluation": "normalized-text",
+            "accepted": [
+              {
+                "kind": "text",
+                "value": "mantis shrimp",
+                "verification": "canonical",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b006.p3-044.q33.canonical"
+              }
+            ],
+            "normalization": {
+              "unicode": "NFKC",
+              "caseSensitive": false,
+              "trim": true,
+              "collapseWhitespace": true,
+              "hyphenPolicy": "equivalent",
+              "apostrophePolicy": "equivalent"
+            }
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q34",
+            "taskId": "task.b006.p3-044.summary.q33-36",
+            "responseSlotIds": [
+              "response.b006.p3-044.q34"
+            ],
+            "marks": 1,
+            "evaluation": "normalized-text",
+            "accepted": [
+              {
+                "kind": "text",
+                "value": "panoramic camera",
+                "verification": "canonical",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b006.p3-044.q34.canonical"
+              },
+              {
+                "kind": "text",
+                "value": "a panoramic camera",
+                "verification": "verified-alternate",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b006.p3-044.q34.alternate-1"
+              }
+            ],
+            "normalization": {
+              "unicode": "NFKC",
+              "caseSensitive": false,
+              "trim": true,
+              "collapseWhitespace": true,
+              "hyphenPolicy": "equivalent",
+              "apostrophePolicy": "equivalent"
+            }
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q35",
+            "taskId": "task.b006.p3-044.summary.q33-36",
+            "responseSlotIds": [
+              "response.b006.p3-044.q35"
+            ],
+            "marks": 1,
+            "evaluation": "normalized-text",
+            "accepted": [
+              {
+                "kind": "text",
+                "value": "the Sahara Desert",
+                "verification": "canonical",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b006.p3-044.q35.canonical"
+              },
+              {
+                "kind": "text",
+                "value": "Sahara Desert",
+                "verification": "verified-alternate",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b006.p3-044.q35.alternate-1"
+              }
+            ],
+            "normalization": {
+              "unicode": "NFKC",
+              "caseSensitive": false,
+              "trim": true,
+              "collapseWhitespace": true,
+              "hyphenPolicy": "equivalent",
+              "apostrophePolicy": "equivalent"
+            }
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q36",
+            "taskId": "task.b006.p3-044.summary.q33-36",
+            "responseSlotIds": [
+              "response.b006.p3-044.q36"
+            ],
+            "marks": 1,
+            "evaluation": "normalized-text",
+            "accepted": [
+              {
+                "kind": "text",
+                "value": "polarised light",
+                "verification": "canonical",
+                "sourceDerivation": "contiguous",
+                "ledgerEntryId": "ledger.b006.p3-044.q36.canonical"
+              }
+            ],
+            "normalization": {
+              "unicode": "NFKC",
+              "caseSensitive": false,
+              "trim": true,
+              "collapseWhitespace": true,
+              "hyphenPolicy": "equivalent",
+              "apostrophePolicy": "equivalent"
+            }
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q37",
+            "taskId": "task.b006.p3-044.robot.q37-40",
+            "responseSlotIds": [
+              "response.b006.p3-044.q37"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b006.p3-044.robot.d"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q38",
+            "taskId": "task.b006.p3-044.robot.q37-40",
+            "responseSlotIds": [
+              "response.b006.p3-044.q38"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b006.p3-044.robot.a"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q39",
+            "taskId": "task.b006.p3-044.robot.q37-40",
+            "responseSlotIds": [
+              "response.b006.p3-044.q39"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b006.p3-044.robot.f"
+              }
+            ]
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q40",
+            "taskId": "task.b006.p3-044.robot.q37-40",
+            "responseSlotIds": [
+              "response.b006.p3-044.q40"
+            ],
+            "marks": 1,
+            "evaluation": "exact-option",
+            "accepted": [
+              {
+                "kind": "option-id",
+                "value": "option.b006.p3-044.robot.c"
+              }
+            ]
+          }
+        ],
+        "reviewEntries": [
+          {
+            "scoreSlotId": "score.b006.p3-044.q27",
+            "answerDisplay": "Section F",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p07",
+                "location": "正文 F 节，前中部",
+                "quote": "some were concerned that the initial applications of biorobotics may be military, others, such as Dr Barbara Webb, predicted swarms of tiny, cheap, insect-like robots as society’s cleaners and collectors",
+                "translation": "一些人担心仿生机器人最初可能用于军事；另一些人则设想廉价昆虫机器人充当社会的清洁者和收集者。"
+              }
+            ],
+            "explanation": "军事用途是负面担忧，清洁和收集用途是正面设想，两面信息都在 F 节，因此选 Section F。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "提到昆虫启发机器人用途的正面与负面可能性。"
+              }
+            },
+            "questionTranslation": "提到昆虫启发机器人用途的正面与负面可能性。"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q28",
+            "answerDisplay": "Section B",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p03",
+                "location": "正文 B 节，后部",
+                "quote": "The landmarks are then scaled, from small to large, so that the robot can recognise whether it is getting closer to or further away from them.",
+                "translation": "地标随后按从小到大进行尺度处理，使机器人判断自己是在靠近还是远离它们。"
+              }
+            ],
+            "explanation": "感知地标大小与距离变化的关系直接用于导航，位于 B 节，因此选 Section B。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "说明如何利用感知到的大小来辅助导航。"
+              }
+            },
+            "questionTranslation": "说明如何利用感知到的大小来辅助导航。"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q29",
+            "answerDisplay": "Section E",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p06",
+                "location": "正文 E 节，中部",
+                "quote": "its legs do a lot of the thinking without having to consult the brain",
+                "translation": "它的腿无需请示大脑就承担了许多“思考”。"
+              }
+            ],
+            "explanation": "题干 decision-making in the limbs 对应腿部直接“思考”，位于 E 节，因此选 Section E。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "举例说明决策在肢体中进行。"
+              }
+            },
+            "questionTranslation": "举例说明决策在肢体中进行。"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q30",
+            "answerDisplay": "Section D",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p05",
+                "location": "正文 D 节，前部",
+                "quote": "to design a flying robot that can not only navigate but also stay aloft and hover in the thin atmosphere of Mars",
+                "translation": "设计一种能在火星稀薄大气中导航、保持飞行并悬停的机器人。"
+              }
+            ],
+            "explanation": "火星飞行机器人是潜在太空探索工具，位于 D 节，因此选 Section D。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "描述一种潜在的太空探索工具。"
+              }
+            },
+            "questionTranslation": "描述一种潜在的太空探索工具。"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q31",
+            "answerDisplay": "Section A",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p02",
+                "location": "正文 A 节，前部",
+                "quote": "insects constantly solve complex problems of movement, vision and navigation",
+                "translation": "昆虫不断解决运动、视觉和导航方面的复杂问题。"
+              }
+            ],
+            "explanation": "movement、vision、navigation 构成多种技能范围，位于 A 节，因此选 Section A。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "列出启发仿生机器人的技能范围。"
+              }
+            },
+            "questionTranslation": "列出启发仿生机器人的技能范围。"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q32",
+            "answerDisplay": "Section C",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p04",
+                "location": "正文 C 节，第一段末部",
+                "quote": "Like a super-computer, the ant has many separate sub-routines going on simultaneously.",
+                "translation": "像超级计算机一样，蚂蚁有许多独立的子程序同时运行。"
+              }
+            ],
+            "explanation": "simultaneously 与题干 at the same time 对应，多种导航计算在 C 节并行完成，因此选 Section C。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "说明多种导航方法如何同时运行。"
+              }
+            },
+            "questionTranslation": "说明多种导航方法如何同时运行。"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q33",
+            "answerDisplay": "mantis shrimp",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p02",
+                "location": "正文 A 节，开头",
+                "quote": "The mantis shrimp scans its aquatic world through hyperspectral eyes.",
+                "translation": "螳螂虾用高光谱眼睛扫描其水下世界。"
+              }
+            ],
+            "explanation": "aquatic world 与 under water 对应，生物名称为 mantis shrimp。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "哪种生物在水下视力特别好？"
+              }
+            },
+            "questionTranslation": "哪种生物在水下视力特别好？"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q34",
+            "answerDisplay": "panoramic camera",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p03",
+                "location": "正文 B 节，前部",
+                "quote": "a robot can navigate its way among 50 different landmarks by recognising them individually using a panoramic camera",
+                "translation": "机器人使用全景相机逐一识别 50 个不同地标，从而在其间导航。"
+              }
+            ],
+            "explanation": "问题问 computer 之外的设备，原文直接给出 panoramic camera；带冠词 a 的原文连续写法也不超限。",
+            "formatNotes": [
+              "冠词可保留也可省略：a panoramic camera 与 panoramic camera 都是原文连续设备名且不超限"
+            ],
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "除了计算机，Zelinsky 的机器人还安装了什么技术设备？"
+              }
+            },
+            "questionTranslation": "除了计算机，Zelinsky 的机器人还安装了什么技术设备？"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q35",
+            "answerDisplay": "the Sahara Desert",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p04",
+                "location": "正文 C 节，第一段开头",
+                "quote": "has journeyed from Switzerland to the Sahara Desert where Cataglyphis, a tiny ant",
+                "translation": "他从瑞士前往撒哈拉沙漠，那里生活着微小的 Cataglyphis 蚂蚁。"
+              }
+            ],
+            "explanation": "where 引出该蚂蚁所在地，完整原文地点为 the Sahara Desert；省略冠词后的 Sahara Desert 仍是连续专名且不超限。",
+            "formatNotes": [
+              "冠词可省略：the Sahara Desert 与 Sahara Desert 均指同一地点；专名须保留完整拼写"
+            ],
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "Cataglyphis 蚂蚁生活在哪里？"
+              }
+            },
+            "questionTranslation": "Cataglyphis 蚂蚁生活在哪里？"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q36",
+            "answerDisplay": "polarised light",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p04",
+                "location": "正文 C 节，第一段前部",
+                "quote": "Cataglyphis uses polarised light, caused when air molecules scatter light, to orient and steer itself.",
+                "translation": "Cataglyphis 利用空气分子散射光所形成的偏振光来确定方向并前进。"
+              }
+            ],
+            "explanation": "题干 atmospheric effect 对应空气分子散射产生的 polarised light。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "哪种大气效应帮助 Cataglyphis 判断方向？"
+              }
+            },
+            "questionTranslation": "哪种大气效应帮助 Cataglyphis 判断方向？"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q37",
+            "answerDisplay": "a robot that categorises information from the environment according to its usefulness",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p03",
+                "location": "正文 B 节，中后部",
+                "quote": "The robot’s panoramic camera logs the surrounding area and its key landmarks, which are then stored in its computer according to how reliable they are as navigational aids.",
+                "translation": "机器人的全景相机记录周围区域和关键地标，随后按它们作为导航辅助的可靠程度存入计算机。"
+              }
+            ],
+            "explanation": "按导航价值给环境地标分类，对应 a robot that categorises information from the environment according to its usefulness。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "一种根据环境信息的有用程度对其分类的机器人"
+              }
+            },
+            "questionTranslation": "一种根据环境信息的有用程度对其分类的机器人"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q38",
+            "answerDisplay": "a robot that makes use of light as well as stored images for navigational purposes",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p04",
+                "location": "正文 C 节，第二段",
+                "quote": "It navigates by using polarised sunlight and comparing the current images of landmarks to the ones in its memory.",
+                "translation": "它利用偏振阳光，并把当前地标图像与记忆中的图像比较来导航。"
+              }
+            ],
+            "explanation": "同时使用光和储存图像，正对应选项 A。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "一种同时利用光线和储存图像进行导航的机器人"
+              }
+            },
+            "questionTranslation": "一种同时利用光线和储存图像进行导航的机器人"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q39",
+            "answerDisplay": "a robot that has improved on the ability of the insect on which it is based",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p05",
+                "location": "正文 D 节，中部",
+                "quote": "he has gone beyond nature to devise a completely new concept for a flying machine",
+                "translation": "他超越自然，设计出一种全新的飞行器概念。"
+              }
+            ],
+            "explanation": "gone beyond nature 表明机器人改进并超越了所模仿昆虫的能力，对应选项 F。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "一种在所仿生昆虫的能力基础上有所提升的机器人"
+              }
+            },
+            "questionTranslation": "一种在所仿生昆虫的能力基础上有所提升的机器人"
+          },
+          {
+            "scoreSlotId": "score.b006.p3-044.q40",
+            "answerDisplay": "a robot that can move over difficult surfaces",
+            "evidence": [
+              {
+                "blockId": "block.b006.p3-044.p06",
+                "location": "正文 E 节，末句",
+                "quote": "robots that run on six legs or on whegs, enabling them to handle surprisingly rugged terrain",
+                "translation": "这些机器人用六条腿或轮腿行走，能够应对异常崎岖的地形。"
+              }
+            ],
+            "explanation": "rugged terrain 与 difficult surfaces 对应，因此选项 C。",
+            "extensions": {
+              "zhReviewV01": {
+                "questionTranslation": "一种可以在复杂表面上移动的机器人"
+              }
+            },
+            "questionTranslation": "一种可以在复杂表面上移动的机器人"
+          }
+        ],
+        "sourceFiles": [
+          {
+            "filename": "P3 - Insect-inspired robots.docx",
+            "sha256": "b904da99c9272424919e4e399fe3d2d78ee353541a0cc68edba500e500117e6e",
+            "role": "combined",
+            "authority": "user-designated"
+          },
+          {
+            "filename": "70. P3 - Insect-inspired robots 昆虫机器人.pdf",
+            "sha256": "8bbf7363cdd9adea9d468b27ec40a5c551055bfa2926b4d679cf84628fc75140",
+            "role": "combined",
+            "authority": "user-designated"
+          }
+        ],
+        "reviewLanguage": {
+          "schemaVersion": "ielts-reading-review-language-policy.v0",
+          "language": "zh-CN",
+          "passageId": "passage.b006.p3-044.insect-inspired-robots",
+          "total": 14,
+          "ready": 14,
+          "blocked": 0,
+          "coveragePercent": 100,
+          "status": "zh-CN-primary",
+          "englishEvidenceQuotesAllowed": true,
+          "issues": []
+        },
+        "composition": {
+          "fullPassage": {
+            "selectable": true,
+            "blockers": [],
+            "packageClosure": "complete",
+            "sourcePassageCompleteness": "full",
+            "expectedResponseCount": 14,
+            "actualResponseCount": 14
+          },
+          "taskGroups": [
+            {
+              "taskId": "task.b006.p3-044.section.q27-32",
+              "label": "Questions 27–32",
+              "questionType": "matching_information",
+              "questionTypeLabel": "Matching Information",
+              "interactionVariant": "option_mapping",
+              "layoutVariant": "matching_grid",
+              "responseCount": 6,
+              "maxMarks": 6,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b006.p3-044.insect-inspired-robots",
+                "taskId": "task.b006.p3-044.section.q27-32",
+                "total": 6,
+                "ready": 6,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            },
+            {
+              "taskId": "task.b006.p3-044.summary.q33-36",
+              "label": "Questions 33–36",
+              "questionType": "short_answer",
+              "questionTypeLabel": "Short Answer",
+              "interactionVariant": "text_entry",
+              "layoutVariant": "short_question_list",
+              "responseCount": 4,
+              "maxMarks": 4,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b006.p3-044.insect-inspired-robots",
+                "taskId": "task.b006.p3-044.summary.q33-36",
+                "total": 4,
+                "ready": 4,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            },
+            {
+              "taskId": "task.b006.p3-044.robot.q37-40",
+              "label": "Questions 37–40",
+              "questionType": "matching_features",
+              "questionTypeLabel": "Matching Features",
+              "interactionVariant": "option_mapping",
+              "layoutVariant": "matching_grid",
+              "responseCount": 4,
+              "maxMarks": 4,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b006.p3-044.insect-inspired-robots",
+                "taskId": "task.b006.p3-044.robot.q37-40",
+                "total": 4,
+                "ready": 4,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            }
+          ]
+        }
+      },
+      "passage": {
+        "passageId": "passage.b006.p3-044.insect-inspired-robots",
+        "title": "Insect-inspired robots",
+        "titleZh": "昆虫机器人",
+        "catalogPassageId": "P3-044",
+        "passagePosition": 3,
+        "difficulty_current": 4.5,
+        "monthlyFrequency": {
+          "month": "2026-09",
+          "frequency_tier": "高频"
+        },
+        "questionCount": 14,
+        "maxMarks": 14,
+        "questionTypes": [
+          "Matching Information",
+          "Short Answer",
+          "Matching Features"
+        ],
+        "reviewLanguage": {
+          "schemaVersion": "ielts-reading-review-language-policy.v0",
+          "language": "zh-CN",
+          "passageId": "passage.b006.p3-044.insect-inspired-robots",
+          "total": 14,
+          "ready": 14,
+          "blocked": 0,
+          "coveragePercent": 100,
+          "status": "zh-CN-primary",
+          "englishEvidenceQuotesAllowed": true,
+          "issues": []
+        },
+        "composition": {
+          "fullPassage": {
+            "selectable": true,
+            "blockers": [],
+            "packageClosure": "complete",
+            "sourcePassageCompleteness": "full",
+            "expectedResponseCount": 14,
+            "actualResponseCount": 14
+          },
+          "taskGroups": [
+            {
+              "taskId": "task.b006.p3-044.section.q27-32",
+              "label": "Questions 27–32",
+              "questionType": "matching_information",
+              "questionTypeLabel": "Matching Information",
+              "interactionVariant": "option_mapping",
+              "layoutVariant": "matching_grid",
+              "responseCount": 6,
+              "maxMarks": 6,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b006.p3-044.insect-inspired-robots",
+                "taskId": "task.b006.p3-044.section.q27-32",
+                "total": 6,
+                "ready": 6,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            },
+            {
+              "taskId": "task.b006.p3-044.summary.q33-36",
+              "label": "Questions 33–36",
+              "questionType": "short_answer",
+              "questionTypeLabel": "Short Answer",
+              "interactionVariant": "text_entry",
+              "layoutVariant": "short_question_list",
+              "responseCount": 4,
+              "maxMarks": 4,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b006.p3-044.insect-inspired-robots",
+                "taskId": "task.b006.p3-044.summary.q33-36",
+                "total": 4,
+                "ready": 4,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            },
+            {
+              "taskId": "task.b006.p3-044.robot.q37-40",
+              "label": "Questions 37–40",
+              "questionType": "matching_features",
+              "questionTypeLabel": "Matching Features",
+              "interactionVariant": "option_mapping",
+              "layoutVariant": "matching_grid",
+              "responseCount": 4,
+              "maxMarks": 4,
+              "reviewLanguage": {
+                "schemaVersion": "ielts-reading-review-language-policy.v0",
+                "language": "zh-CN",
+                "passageId": "passage.b006.p3-044.insect-inspired-robots",
+                "taskId": "task.b006.p3-044.robot.q37-40",
+                "total": 4,
+                "ready": 4,
+                "blocked": 0,
+                "coveragePercent": 100,
+                "status": "zh-CN-primary",
+                "englishEvidenceQuotesAllowed": true,
+                "issues": []
+              },
+              "selectable": true,
+              "blockers": []
+            }
+          ]
+        },
+        "selectable": true,
+        "blockers": []
+      }
+    }
+  ]
+}

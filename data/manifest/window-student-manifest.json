@@ -1,0 +1,3408 @@
+{
+  "schemaVersion": "zyz-reading-monthly-manifest.v1",
+  "releaseId": "zyz-reading-student-practice.2026-09.full-170-t48r1.2d8e200ab60e65cd",
+  "month": "2026-09",
+  "title": "ZYZ 阅读练习 · 2026-09 · Full-170",
+  "passages": [
+    {
+      "passageId": "passage.b002.p1-021.humans-food",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-003.survivor-story",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-007.ahead-of-its-time",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.matching-variants.features-main.ambergris",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-043.important-language-development",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-030.airborne-dentists",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 2.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-005.cane-toad",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p1-052.triumph-of-the-city",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.castle",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "both-columns-same",
+        "requiresContentReview": false,
+        "note": "F/H 均被修改且同值，按该值导入",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-047.caral",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-041.carnivorous-plants",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p1-058.deep-sea-discovery",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-027.dust-american-west",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-054.dyes-fabric-dyeing",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-051.effect-and-cause",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-010.fishbourne-roman-palace",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p1-033.footprints-in-the-mud",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-042.food-desert",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-034.investing-in-the-future",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-006.katherine-mansfield",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 2.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p1-039.listening-to-the-ocean",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.giraffe",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p1-063.scented-plants",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "heuristic-correction",
+        "requiresContentReview": false,
+        "note": "F 列录入 33，判定为明显重复按键/录入异常；建议修正为 3.0，保留本审计记录",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p1-011.sleep-study",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.socotra-island",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p1-024.sorry-who-are-you",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-017.sydney-opera-house",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p1-031.blockbuster-phenomenon",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-013.burgess-shale",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p1-045.clipper-races",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.plastics",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-038.silk-industry",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.olive-oil",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p1-037.extinction-cave-bear",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-035.history-bar-code",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "teacher-suggestion-column",
+        "requiresContentReview": false,
+        "note": "H 被修改而 F 未改，取 H 作为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-050.british-wool-industry",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.pencil.standard",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 2 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.pencil.flow-chart",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 2.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-036.business-cards",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p1-061.the-last-man-who-knew-everything",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-026.weather-forecasting",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p1-028.the-pyramid-of-cestius",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p1-064.rise-fall-detective-stories",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "both-columns-same",
+        "requiresContentReview": false,
+        "note": "F/H 均被修改且同值，按该值导入",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-040.slow-food-organization",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p1-065.tuatara-new-zealand",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 2,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-048.unsung-sense",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-025.whale-goes-to-court",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p1-055.think-small",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-022.tunnelling-thames",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b002.p1-018.what-lucy-taught-us",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 2.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-049.why-good-ideas-fail",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b003.p1-053.wood",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p2-055.a-mechanical-friend-for-children",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-014.talbot-park",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "teacher-suggestion-column",
+        "requiresContentReview": false,
+        "note": "H 被修改而 F 未改，取 H 作为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-017.western-celebrity",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-002.golden-textile",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-047.antarctic-research",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-028.camouflaged-creatures",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-052.biomimicry",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-040.biophilic-design",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-010.bird-migration",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p2-062.born-to-trade",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-045.coins-first-money",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 3.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p2-008.corporate-social-responsibility",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-049.decision-fatigue",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-029.organisational-design",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-025.growing-more-for-less",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-039.herbal-medicines",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-020.plants-talk",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "teacher-suggestion-column",
+        "requiresContentReview": false,
+        "note": "H 被修改而 F 未改，取 H 作为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-042.how-to-be-happy",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p2-050.how-well-do-people-concentrate",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-053.insect-decision-making",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p2-058.intelligent-behaviour-in-birds",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p2-063.investment-shares-versus-other-assets",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p2-022.jellyfish-dominant-species",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p2-012.keeping-the-water-away",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-007.learning-from-the-romans",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p2-023.mammoth-kill",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-021.mind-music",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p2-031.multi-tasking-and-the-brain",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-038.nanotechnology",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.filter",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-006.playing-soccer",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.diagram.roller",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-024.stop-eating-meat",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-011.waste-disposal",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p2-061.stress-less",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-046.surviving-city-life",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-033.malaria-italy",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p2-030.the-constant-evolution-of-the-humble-tomato",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p2-064.the-dingo-debate",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-009.attine-ants",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-018.fashion-industry",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 3.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-051.invasive-species",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-048.importance-being-playful",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-015.the-importance-of-law",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-054.internal-body-clock",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-043.myth-eight-hour-sleep",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.origin-and-development-of-applause",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "高",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-034.asteroid-earth",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-036.power-of-smell",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 3.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.graffiti",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-035.return-monkey-life",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-013.ferret",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-003.tasmanian-tiger",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.climate",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "低",
+        "source": "independent-content-review",
+        "requiresContentReview": true,
+        "note": "航海日志、历法和风力术语使正文略密，但题目整体按原文顺序推进，年份表格与前段 Summary 定位直接；主要难点集中在两项多选的干扰辨析，综合仍属标准 P2。",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-037.urban-regeneration",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-001.walking-and-shoes",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-044.war-of-the-plants",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b005.p2-041.who-wrote-shakespeare",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b004.p2-004.eating-less",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-002.australian-landscapes",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-005.verbal-messages",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-004.all-in-family",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-040.megafauna",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p3-064.book-review-the-discovery-of-slowness",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-018.charles-darwin-evolutionary-psychology",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 4.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.matching-variants.features-main.childs-play",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-009.childrens-literature",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-024.class-size",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-021.flower-power",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-051.images-and-places",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 4.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-032.patient-safety",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-044.insect-inspired-robots",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p3-048.inside-the-mind-of-a-fan",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-025.jean-piaget",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-037.living-dunes",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 4.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-053.look-who-was-talking",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-050.ancient-rome",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-045.marketing-information-age",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.mercator-the-map-maker",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-034.neanderthal-technology",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-019.on-art-and-artists",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "低",
+        "source": "independent-content-review",
+        "requiresContentReview": true,
+        "note": "艺术审美论述有抽象性，且连续两组匹配增加跨段扫描量；不过村景、山景、兔子、象等例证边界鲜明，Summary 也集中在相邻段落，综合正好落在标准 P3。",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p3-065.pacific-navigation-and-voyaging",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-023.petrol-power",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 4.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-010.rebranding-art-museums",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-027.research-teaching-styles",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-035.risk-taking",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-008.robert-louis-stevenson",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-054.sea-change-salinity",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-012.headphones",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-038.star-performers",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-007.mona",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-026.termite-mounds",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-055.animal-connection",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-014.art-of-deception",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 4.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-042.causes-linguistic-change",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p3-049.the-costs-of-brand-loyalty",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "高",
+        "source": "user-explicit-chat",
+        "requiresContentReview": false,
+        "note": "Teacher explicitly confirmed difficulty 4.5 in chat on 2026-08-24."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p3-066.the-hazards-of-multitasking",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "低",
+        "source": "independent-content-review",
+        "requiresContentReview": true,
+        "note": "虽有前额叶、海马体等术语，但论点单一且层层解释，每位研究者基本对应独立段落；人物匹配和脑区 Summary 都能局部顺序定位，整体比常规 P3 更友好。",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.authoring.margaret",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-020.origin-language",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-047.peopling-patagonia",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p3-067.the-piraha-people-of-brazil",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b007.p3-046.the-robbers-cave-study",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-006.strange-world-sight",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-031.tuatara",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-001.voynich-manuscript",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-033.whale-culture",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-039.social-history",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 5,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-015.musical-expert",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-016.deaf-to-music",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4,
+        "confidence": "中",
+        "source": "unchanged-prefill",
+        "requiresContentReview": false,
+        "note": "未改动 F/H，保留模板预填教师建议",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏易",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b006.p3-036.who-looks-after-children",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "中",
+        "source": "content-review-and-current-column",
+        "requiresContentReview": true,
+        "note": "P3 基准为 4.5；匹配段落、单选与有选项 Summary 的组合需要跨段定位，采纳教师在 F 列填入的 4.5。",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b008.p3-068.yawning",
+      "contentRevision": 1,
+      "frequency": "low",
+      "difficulty_current": 5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.2",
+        "effectiveDate": "2026-08-24",
+        "baseline": 4.5,
+        "value": 5,
+        "confidence": "中",
+        "source": "current-column-as-teacher-input",
+        "requiresContentReview": false,
+        "note": "F 被修改而 H 未改，按用户说明将 F 解析为最终教师意图",
+        "sourceWorkbookSha256": "2519b6d310864a00bef7a882dce4362308b5a33d05f476e03dcfd8091cc837a7"
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b010.p1-079.the-life-of-beatrix-potter",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.3",
+        "effectiveDate": "2026-08-31",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "高",
+        "source": "teacher-estimated",
+        "status": "user-final-confirmed",
+        "editable": false,
+        "reviewState": "closed",
+        "requiresContentReview": false,
+        "note": "Task 09 final user decision; NEW-009 is bound to the current unsigned integration candidate."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b009.p2-073.why-don-t-we-sleep",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.3",
+        "effectiveDate": "2026-08-31",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "高",
+        "source": "teacher-estimated",
+        "status": "user-final-confirmed",
+        "editable": false,
+        "reviewState": "closed",
+        "requiresContentReview": false,
+        "note": "Task 09 final user decision; NEW-012 is bound to the current unsigned integration candidate."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b011.new-005.a-brief-history-of-tea",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 3,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.3",
+        "effectiveDate": "2026-08-31",
+        "baseline": 2.5,
+        "value": 3,
+        "confidence": "高",
+        "source": "teacher-estimated",
+        "status": "user-final-confirmed",
+        "editable": false,
+        "reviewState": "closed",
+        "requiresContentReview": false,
+        "note": "Task 09 final user decision; NEW-005 is bound to the current unsigned integration candidate."
+      },
+      "relativeDifficultyLabel": "偏难",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b011.new-006.rubber",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.3",
+        "effectiveDate": "2026-08-31",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "高",
+        "source": "teacher-estimated",
+        "status": "user-final-confirmed",
+        "editable": false,
+        "reviewState": "closed",
+        "requiresContentReview": false,
+        "note": "Task 09 final user decision; NEW-006 is bound to the current unsigned integration candidate."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b011.new-010.the-origin-of-paper",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 2.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.3",
+        "effectiveDate": "2026-08-31",
+        "baseline": 2.5,
+        "value": 2.5,
+        "confidence": "高",
+        "source": "teacher-estimated",
+        "status": "user-final-confirmed",
+        "editable": false,
+        "reviewState": "closed",
+        "requiresContentReview": false,
+        "note": "Task 09 final user decision; NEW-010 is bound to the current unsigned integration candidate."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b011.new-014.introduction-to-a-book-about-the-assessment-of-carbon-footprints",
+      "contentRevision": 1,
+      "frequency": "medium",
+      "difficulty_current": 3.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.3",
+        "effectiveDate": "2026-08-31",
+        "baseline": 3.5,
+        "value": 3.5,
+        "confidence": "高",
+        "source": "teacher-estimated",
+        "status": "user-final-confirmed",
+        "editable": false,
+        "reviewState": "closed",
+        "requiresContentReview": false,
+        "note": "Task 09 final user decision; NEW-014 is bound to the current unsigned integration candidate."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    },
+    {
+      "passageId": "passage.b011.new-018.the-significant-role-of-mother-tongue-in-education",
+      "contentRevision": 1,
+      "frequency": "high",
+      "difficulty_current": 4.5,
+      "difficultyAssessment": {
+        "schemaVersion": "teacher-difficulty-assessment.v0.3",
+        "effectiveDate": "2026-08-31",
+        "baseline": 4.5,
+        "value": 4.5,
+        "confidence": "高",
+        "source": "teacher-estimated",
+        "status": "user-final-confirmed",
+        "editable": false,
+        "reviewState": "closed",
+        "requiresContentReview": false,
+        "note": "Task 09 final user decision; NEW-018 is bound to the current unsigned integration candidate."
+      },
+      "relativeDifficultyLabel": "标准",
+      "mockEligible": true,
+      "enabled": true
+    }
+  ]
+}

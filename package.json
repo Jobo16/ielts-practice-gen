@@ -1,0 +1,11 @@
+{
+  "name": "zyz-passage-reconstructed",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Editable reconstruction of the PASSAGE by ZYZ offline reading package",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "dev": "python3 scripts/serve.py",
+    "check": "python3 scripts/check.py"
+  }
+}

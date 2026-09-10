@@ -1,0 +1,38 @@
+
+/* T52 record backup guidance: presentation only */
+.record-guide-card { position:relative; margin:0 0 24px; padding:22px 56px 22px 24px; border:1px solid #d9dfda; border-radius:18px; background:#f1f5f0; color:#263b32; }
+.record-guide-card[hidden] { display:none; }
+.record-guide-card h2 { margin:0 0 8px; font-size:19px; line-height:1.45; }
+.record-guide-card p { margin:0 0 12px; max-width:850px; line-height:1.75; font-size:14px; }
+.record-guide-card .record-guide-dismiss { position:absolute; top:14px; right:14px; width:32px; height:32px; border:0; border-radius:50%; background:transparent; color:#496055; font-size:23px; cursor:pointer; }
+.record-guide-card button:focus-visible, .record-guide-dialog button:focus-visible { outline:3px solid #567a65; outline-offset:4px; }
+.record-guide-dialog { box-sizing:border-box; width:min(620px,calc(100vw - 32px)); max-height:calc(100dvh - 40px); overflow:auto; padding:28px; border:1px solid #d9dfda; border-radius:22px; color:#263b32; background:#fcfcf8; box-shadow:0 24px 90px #152b3540; }
+.record-guide-dialog::backdrop { background:#102a3266; }
+.record-guide-dialog h2 { font-size:24px; margin:0 0 12px; }
+.record-guide-dialog p,.record-guide-dialog li { font-size:14px; line-height:1.8; }
+.record-guide-dialog ol { padding-left:23px; }
+.record-guide-dialog li { padding-left:5px; margin:0 0 16px; }
+.record-guide-dialog li strong { display:block; font-size:16px; }
+.record-guide-note { background:#edf1ec; border-radius:12px; padding:13px 16px; }
+.record-guide-dialog-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+.record-guide-help-link { align-self:center; white-space:normal; }
+[data-view="records"] .records-footer-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:8px 20px; }
+[data-view="records"] .records-footer-actions > button { display:inline-flex; align-items:center; justify-content:center; min-height:40px; margin:0; padding:8px 10px; border:0; border-radius:8px; background:transparent; font:inherit; font-size:12px; font-weight:500; line-height:1.5; text-decoration:none; cursor:pointer; }
+[data-view="records"] .records-footer-actions > .record-guide-help-link { color:var(--brand); }
+[data-view="records"] .records-footer-actions > #clear-records { color:#9c3b35; }
+[data-view="records"] .records-footer-actions > button:hover { background:rgba(73,59,69,.06); }
+[data-view="records"] .records-footer-actions > button:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
+@media(max-width:600px) { .record-guide-card { padding:18px 44px 18px 18px; } .record-guide-dialog { padding:22px 20px; } .record-guide-dialog-actions > button { width:100%; } }
+/* END T52 record backup guidance */
+/* T54 home guidance: two clear paths within the existing theme. */
+#record-guide-home { margin:24px 0 28px; background:#faf7f8; border-color:#e0d7df; color:var(--ink); }
+#record-guide-home h2 { margin-bottom:12px; }
+#record-guide-home .record-guide-dismiss { color:var(--muted); }
+#record-guide-home .record-guide-path { display:flex; align-items:baseline; flex-wrap:wrap; gap:6px 18px; }
+#record-guide-home .record-guide-path + .record-guide-path { margin-top:12px; }
+#record-guide-home .record-guide-path[hidden] { display:none; }
+#record-guide-home .record-guide-path p { flex:0 1 auto; min-width:0; margin:0; max-width:100%; font-size:16px; line-height:1.68; }
+#record-guide-home .record-guide-path .text-button { flex:0 1 auto; min-height:0; max-width:100%; font-size:16px; line-height:1.68; color:var(--brand); white-space:normal; text-align:left; }
+#record-guide-home .record-guide-path .text-button:focus-visible { outline:2px solid var(--brand); outline-offset:4px; }
+/* END T54 home guidance */
+

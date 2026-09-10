@@ -1,0 +1,404 @@
+<!doctype html>
+<!-- Self-contained IELTS Reading homework runtime template; student-practice-pack.v0.4-review-quality-2d-v0.3.21; answers and reviews are embedded for after-submit feedback. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#ffffff">
+    <title>ZYZ 阅读练习</title>
+    <link rel="icon" href="data:,">
+    <style><!-- @include src/runtime/styles/01.css --></style>
+    <script><!-- @include src/runtime/question-registry.js --></script>
+    <script><!-- @include src/runtime/question-renderers.js --></script>
+    <script><!-- @include src/runtime/answer-grading.js --></script>
+    <script><!-- @include src/runtime/homework-report.js --></script>
+    <script><!-- @include src/runtime/attempt-ledger.js --></script>
+    <script><!-- @include src/runtime/ed25519-compat.js --></script>
+    <script><!-- @include src/runtime/package-slot.js --></script>
+    <script><!-- @include src/runtime/translations.js --></script>
+    <script><!-- @include src/runtime/controller.js --></script>
+  <style><!-- @include src/runtime/styles/02.css --></style>  <meta name="zyz-bilingual-sentence-link-demo" content="T44R1-retry3-create-only-qa-awaiting-human-review">
+  <style data-bilingual-sentence-link-demo="T44R1-retry3"><!-- @include src/runtime/styles/03.css --></style>
+<style id="t53-question-flags-style"><!-- @include src/runtime/styles/04.css --></style>
+</head>
+  <body>
+    <a class="skip-link" href="#exam-shell">Skip to the reading test</a>
+
+    <div id="app-pan-viewport" class="app-pan-viewport">
+    <div id="app" class="app" data-mode="practice">
+      <header id="app-header" class="app-header">
+        <div class="header-brand">
+          <span class="zyz-exam-mark" role="img" aria-label="ZYZ"><span>ZYZ</span></span>
+          <span class="test-taker-stack">
+            <span id="test-taker-id" class="test-taker-id">Test taker ID</span>
+            <output id="timer" class="test-timer" aria-label="Time remaining" hidden></output>
+          </span>
+        </div>
+
+        <div class="header-actions" aria-label="Test tools">
+          <div
+            id="connection-status"
+            class="header-status"
+            role="status"
+            aria-label="Connected"
+          >
+            <span class="header-tool-icon fa-icon fa-wifi" aria-hidden="true"></span>
+            <span class="sr-only">Connected</span>
+          </div>
+
+          <button
+            id="messages-button"
+            class="icon-button"
+            type="button"
+            aria-label="Messages"
+            aria-controls="messages-view"
+            aria-expanded="false"
+          >
+            <span class="header-tool-icon fa-icon fa-bell-o" aria-hidden="true"></span>
+          </button>
+
+          <button
+            id="options-button"
+            class="icon-button"
+            type="button"
+            aria-label="Options"
+            aria-controls="options-menu"
+            aria-expanded="false"
+            aria-haspopup="dialog"
+          >
+            <span class="header-tool-icon fa-icon fa-bars" aria-hidden="true"></span>
+          </button>
+
+          <button
+            id="show-notes-button"
+            class="icon-button"
+            type="button"
+            aria-label="Show notes"
+            aria-controls="notes-host"
+            aria-pressed="false"
+          >
+            <span class="header-tool-icon fa-icon fa-pencil-square-o" aria-hidden="true"></span>
+          </button>
+        </div>
+      </header>
+
+      <section id="part-intro" class="part-intro" aria-labelledby="part-title">
+        <div class="part-intro-copy">
+          <h1 id="part-title">Part 1</h1>
+          <p id="part-instruction">Read the text and answer questions 1–13.</p>
+        </div>
+        <span id="t35-part-review-utility-host" class="t35-review-utility-host t35-part-review-utility-host" aria-label="复盘工具">
+          <span id="t36-review-mode-tools" class="t36-review-mode-tools" hidden>
+          <div id="t35-review-view-control" class="t35-review-view-control" role="radiogroup" aria-label="复盘视图" hidden>
+            <label class="t35-review-view-option">
+              <input class="t35-review-view-radio" type="radio" name="t35-review-view" value="self-correction">
+              <span class="t35-review-view-label">自主订正</span>
+            </label>
+            <label class="t35-review-view-option">
+              <input class="t35-review-view-radio" type="radio" name="t35-review-view" value="answer-analysis" checked>
+              <span class="t35-review-view-label">答案解析</span>
+            </label>
+          </div>
+          <span id="t36-evidence-mode-slot" class="t36-evidence-mode-slot"></span>
+          </span>
+          <span id="part-fullscreen-host" class="fullscreen-host part-fullscreen-host">
+            <button id="fullscreen-button" class="fullscreen-button" type="button" aria-label="进入全屏" title="进入全屏" hidden>
+              <span id="fullscreen-icon" class="fa-icon fa-expand" aria-hidden="true"></span>
+            </button>
+          </span>
+          <button id="review-collapse-button" class="review-overview-toggle review-overview-collapse-button" type="button" aria-label="收起顶部信息" title="收起顶部信息" aria-controls="part-intro review-banner" aria-expanded="true" hidden>
+            <span class="fa-icon fa-chevron-up" aria-hidden="true"></span>
+          </button>
+        </span>
+      </section>
+
+      <section
+        id="review-banner"
+        class="review-banner"
+        aria-labelledby="review-title"
+        aria-live="polite"
+        hidden
+      >
+        <div class="review-identity">
+          <h2 id="review-title" class="sr-only">练习结果</h2>
+          <div class="review-assignment-identity">
+            <p id="review-assignment-title" class="review-assignment-title"></p>
+            <p class="review-scope"><span class="review-meta-label">文章：</span><span id="review-passages"></span></p>
+            <p class="review-submission"><span class="review-meta-label">提交：</span><time id="review-submitted-at"></time></p>
+            <p id="review-timer-meta" class="review-timer-meta" hidden></p>
+          </div>
+        </div>
+        <dl class="review-metrics" aria-label="本次练习概览">
+          <div class="review-metric review-metric-score">
+            <dt>得分</dt>
+            <dd id="review-score" class="review-score"></dd>
+          </div>
+          <div id="review-band-metric" class="review-metric review-metric-band" hidden>
+            <dt>参考 Band</dt>
+            <dd id="review-band"></dd>
+          </div>
+          <div class="review-metric review-metric-accuracy">
+            <dt>正确率</dt>
+            <dd id="review-accuracy"></dd>
+          </div>
+          <div class="review-metric review-metric-completion">
+            <dt>已作答</dt>
+            <dd id="review-completion"></dd>
+          </div>
+          <div class="review-metric review-metric-elapsed">
+            <dt>用时</dt>
+            <dd id="review-elapsed"></dd>
+          </div>
+        </dl>
+        <div id="review-part-scores" class="review-part-scores" aria-label="各篇得分、正确率与用时"></div>
+        <div class="review-controls">
+          <div class="review-actions">
+            <button id="open-homework-receipt-button" class="primary-button" type="button" aria-haspopup="dialog" aria-controls="homework-receipt-dialog">
+              练习小结
+            </button>
+            <button id="reset-practice-button" class="secondary-button" type="button">
+              再次练习
+            </button>
+          </div>
+          <div class="review-legend" aria-label="答题状态图例">
+            <span class="review-key review-key-correct">正确</span>
+            <span class="review-key review-key-partial">部分正确</span>
+            <span class="review-key review-key-incorrect">错误</span>
+            <span class="review-key review-key-unanswered">未作答</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="review-compact-bar" class="review-compact-bar" aria-label="复盘概览" hidden>
+        <span class="review-compact-context"><strong>复盘</strong><span aria-hidden="true">·</span><strong id="review-compact-part">Part 1</strong></span>
+        <span class="review-compact-metrics"><strong>得分 <span id="review-compact-score"></span></strong><span aria-hidden="true">·</span><span>用时 <span id="review-compact-elapsed"></span></span></span>
+        <span id="t35-review-compact-utility-host" class="t35-review-utility-host t35-review-compact-utility-host" aria-label="复盘工具">
+          <span id="review-compact-fullscreen-host" class="fullscreen-host review-compact-fullscreen-host"></span>
+          <button id="review-expand-button" class="review-overview-toggle review-overview-expand-button" type="button" aria-controls="part-intro review-banner" aria-expanded="false">
+            <span>展开顶部信息</span><span class="fa-icon fa-chevron-down" aria-hidden="true"></span>
+          </button>
+        </span>
+      </section>
+
+      <main id="exam-shell" class="exam-shell" tabindex="-1">
+        <section
+          id="passage-pane"
+          class="exam-pane passage-pane"
+          aria-labelledby="passage-pane-title"
+          tabindex="0"
+        >
+          <h2 id="passage-pane-title" class="sr-only">Reading passage</h2>
+          <article id="passage-content" class="pane-content passage-content">
+            <p class="loading-copy">Loading passage…</p>
+          </article>
+        </section>
+
+        <div
+          id="splitter"
+          class="splitter"
+          role="separator"
+          aria-label="Resize the reading passage and questions"
+          aria-orientation="vertical"
+          aria-valuemin="30"
+          aria-valuemax="70"
+          aria-valuenow="50"
+          tabindex="0"
+        >
+          <span class="splitter-handle" aria-hidden="true"><span class="splitter-glyph fa-icon fa-arrows-h"></span></span>
+        </div>
+
+        <section
+          id="questions-pane"
+          class="exam-pane questions-pane"
+          aria-labelledby="questions-pane-title"
+          tabindex="0"
+        >
+          <h2 id="questions-pane-title" class="sr-only">Questions</h2>
+          <div id="questions-content" class="pane-content questions-content" aria-live="polite">
+            <p class="loading-copy">Loading questions…</p>
+          </div>
+
+          <aside id="review-detail" class="review-detail" aria-live="polite" hidden></aside>
+        </section>
+
+        <nav id="pane-nav" class="pane-nav" aria-label="Question group navigation">
+          <button
+            id="prev-button"
+            class="pane-nav-button pane-nav-previous"
+            type="button"
+            aria-label="Previous question group"
+            disabled
+          >
+            <span class="fa-icon fa-arrow-left" aria-hidden="true"></span>
+          </button>
+          <button
+            id="next-button"
+            class="pane-nav-button pane-nav-next"
+            type="button"
+            aria-label="Next question group"
+          >
+            <span class="fa-icon fa-arrow-right" aria-hidden="true"></span>
+          </button>
+        </nav>
+      </main>
+
+      <footer id="question-footer" class="question-footer">
+        <div id="footer-content" class="footer-content">
+          <nav id="part-nav" class="part-nav" aria-label="Parts and questions">
+            <!-- Part blocks are created from the immutable homework snapshot. -->
+          </nav>
+
+          <button
+            id="submit-button"
+            class="submit-button"
+            type="button"
+            aria-label="Review your answers"
+            aria-controls="submit-dialog"
+            aria-haspopup="dialog"
+            title="Review your answers"
+          >
+            <span class="fa-icon fa-check" data-submit-button-icon aria-hidden="true"></span>
+            <span class="submit-button-label" data-submit-button-label hidden></span>
+          </button>
+        </div>
+      </footer>
+    </div>
+    </div>
+
+    <div id="timer-start-gate" class="timer-start-gate" hidden>
+      <section class="timer-start-card" role="dialog" aria-modal="true" aria-labelledby="timer-start-title" aria-describedby="timer-start-description" tabindex="-1">
+        <p class="timer-start-eyebrow">TIMED PRACTICE</p>
+        <h2 id="timer-start-title">Start timed practice?</h2>
+        <p id="timer-start-description">The timer starts only when you press the button. Once started, it cannot be paused.</p>
+        <p id="timer-start-limit" class="timer-start-limit"></p>
+        <button id="timer-start-button" class="primary-button" type="button">Start timed practice</button>
+      </section>
+    </div>
+
+    <section
+      id="messages-view"
+      class="overlay-view messages-view"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="messages-title"
+      hidden
+    >
+      <header class="overlay-header">
+        <h2 id="messages-title">Messages</h2>
+        <button
+          id="messages-close-button"
+          class="overlay-close-button"
+          type="button"
+          aria-label="Close messages"
+        >
+          <span class="fa-icon fa-times" aria-hidden="true"></span>
+        </button>
+      </header>
+      <div id="messages-content" class="overlay-content">
+        <p id="messages-empty-state" class="sr-only">No messages.</p>
+      </div>
+    </section>
+
+    <section
+      id="options-menu"
+      class="overlay-view options-view"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="options-title"
+      hidden
+    >
+      <header class="overlay-header options-header">
+        <button id="options-back-button" class="options-back-button" type="button" hidden><span class="fa-icon fa-chevron-left" aria-hidden="true"></span><span>Options</span></button>
+        <h2 id="options-title" tabindex="-1">Options</h2>
+        <button id="options-close-button" class="overlay-close-button" type="button" aria-label="Close options"><span class="fa-icon fa-times" aria-hidden="true"></span></button>
+      </header>
+      <main id="options-content" class="options-content"></main>
+    </section>
+
+    <div
+      id="selection-menu"
+      class="selection-menu"
+      role="toolbar"
+      aria-label="Selected text actions"
+      hidden
+    >
+      <button id="note-action" type="button" aria-label="Create note" title="Note (a)">
+        <span class="selection-action-icon selection-note-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" focusable="false">
+            <path fill="currentColor" fill-rule="nonzero" d="M15 0c.27 0 .505.099.703.297A.961.961 0 0116 1v15l-4-3H1a.974.974 0 01-.703-.29A.953.953 0 010 12V1C0 .719.096.482.29.29A.966.966 0 011 0h14zM7 3l-.469.063c-.312.041-.656.187-1.031.437-.375.25-.719.646-1.031 1.188C4.156 5.229 4 6 4 7l.002.063.006.062a.896.896 0 01.008.11l-.002.074-.006.066a1.447 1.447 0 00.43 1.188C4.729 8.854 5.082 9 5.5 9c.417 0 .77-.146 1.063-.438C6.854 8.271 7 7.918 7 7.5c0-.417-.146-.77-.438-1.063A1.447 1.447 0 005.5 6c-.073 0-.146.005-.219.016-.073.01-.14.026-.203.046.177-1.03.542-1.632 1.094-1.804L7 4V3zm5 0l-.469.063c-.312.041-.656.187-1.031.437-.375.25-.719.646-1.031 1.188C9.156 5.229 9 6 9 7l.002.063.006.062a.896.896 0 01.008.11l-.002.074-.006.066a1.447 1.447 0 00.43 1.188c.291.291.645.437 1.062.437.417 0 .77-.146 1.063-.438.291-.291.437-.645.437-1.062 0-.417-.146-.77-.438-1.063A1.447 1.447 0 0010.5 6c-.073 0-.146.005-.219.016-.073.01-.14.026-.203.046.177-1.03.542-1.632 1.094-1.804L12 4V3z"></path>
+          </svg>
+        </span>
+        <span class="selection-action-label" data-selection-label>Note</span>
+      </button>
+      <button id="highlight-action" type="button" aria-label="Create highlight" title="Highlight (h)">
+        <span class="selection-action-icon selection-highlight-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" focusable="false">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15H1h11zm-.5-6v2l-1 1v-2l1-1zm.5-7v6h-2V2h2zm0-1h-2 2zm0 8h-2 2z"></path>
+          </svg>
+        </span>
+        <span class="selection-action-icon selection-delete-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" focusable="false">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 4h12l-2 11H4L2 4zM1 1h14H1z"></path>
+          </svg>
+        </span>
+        <span class="selection-action-label" data-selection-label>Highlight</span>
+      </button>
+    </div>
+
+    <div id="notes-host" class="notes-host" aria-live="polite" hidden></div>
+
+    <div id="submit-dialog" class="dialog-backdrop" hidden>
+      <section
+        class="dialog submit-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="submit-dialog-title"
+        aria-describedby="submit-dialog-description"
+        tabindex="-1"
+      >
+        <h2 id="submit-dialog-title">Submit answers?</h2>
+        <p id="submit-dialog-description">
+          After submitting, your answers will be shown in review mode.
+        </p>
+        <div class="dialog-actions">
+          <button id="cancel-submit-button" class="secondary-button" type="button">Cancel</button>
+          <button id="confirm-submit-button" class="primary-button" type="button">Submit</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="homework-receipt-dialog" class="dialog-backdrop" hidden>
+      <section
+        class="dialog homework-receipt-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="homework-receipt-title"
+        tabindex="-1"
+      >
+        <header class="homework-receipt-header">
+          <div>
+            <p class="homework-receipt-eyebrow">提交记录</p>
+            <h2 id="homework-receipt-title">练习小结</h2>
+          </div>
+          <button id="close-homework-receipt-button" class="receipt-close-button" type="button" aria-label="关闭练习小结">×</button>
+        </header>
+        <div id="homework-receipt-content" class="homework-receipt-content"></div>
+        <div class="dialog-actions homework-receipt-actions">
+          <button id="copy-homework-receipt-button" class="secondary-button" type="button">复制文字</button>
+          <button id="download-homework-receipt-button" class="primary-button" type="button">保存小结图片</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="highlight-status" class="highlight-status-toast" role="status" aria-live="polite" hidden></div>
+    <div id="live-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <noscript>
+      <div class="noscript-message" role="alert">
+        需要启用 JavaScript 才能运行 ZYZ 阅读练习。
+      </div>
+    </noscript>
+    <script data-bilingual-sentence-link-demo="T44R1-retry3"><!-- @include src/runtime/bilingual-link.js --></script>
+</body>
+</html>

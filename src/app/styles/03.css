@@ -1,0 +1,37 @@
+
+/* T45R1: complete 40-question mock records add one quiet secondary result line. */
+[data-view="records"] .record-card-score .record-card-band {
+  color: #735f7c;
+  font-size: 12px;
+  font-weight: 560;
+  line-height: 1.25;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+[data-view="records"] .record-card-score .record-card-band-value {
+  color: #5b4766;
+  font-weight: 800;
+}
+  
+/* BEGIN T48 PRACTICE SELECTION STICKY CONTRACT */
+.selection-column { min-width: 0; align-self: stretch; }
+.selection-sticky-sentinel { display: block; width: 1px; height: 1px; margin-bottom: -1px; pointer-events: none; }
+.selection-panel { top: 18px; height: auto; max-height: none; display: flex; flex-direction: column; overflow: hidden; overflow: clip; padding: 0; }
+.selection-panel.is-stuck { max-height: calc(100vh - 36px); overflow: hidden; }
+.selection-panel-header { order: 1; flex: none; }
+.selection-panel-scroll { order: 2; min-height: 0; flex: 1 1 auto; overflow: visible; overscroll-behavior: auto; }
+.selection-panel.is-stuck .selection-panel-scroll { overflow-y: auto; scrollbar-gutter: stable; }
+.selection-footer { order: 3; flex: none; }
+@media (max-width: 1050px) {
+  .selection-panel { top: 12px; }
+  .selection-panel.is-stuck { max-height: calc(100vh - 24px); }
+}
+@media (max-width: 760px) {
+  .selection-column { align-self: start; }
+  .selection-sticky-sentinel { display: none; }
+  .selection-panel { position: static; height: auto; max-height: none; min-height: 0; }
+  .selection-panel.is-stuck { max-height: none; overflow: hidden; overflow: clip; }
+  .selection-panel-scroll { overflow: visible; }
+}
+/* END T48 PRACTICE SELECTION STICKY CONTRACT */

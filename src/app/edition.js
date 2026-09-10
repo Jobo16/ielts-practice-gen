@@ -1,0 +1,1 @@
+window.__STUDENT_EDITION__ = {"month":"2026-09","displayVersion":"2026-09-06"};

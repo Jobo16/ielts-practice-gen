@@ -1,0 +1,18 @@
+{
+  "sourceFilename": "PASSAGE-by-ZYZ-IELTS-Reading-2026-09-06-r1.html",
+  "sourceSha256": "69d1f54d48959b1783da7b65a9b9853274d000d2456a9f5873932c31d2402106",
+  "decodedPayloadSha256": "8abea934a59239b1d9b06bf17ce74ded465225380f55c573de04f9fa9a232748",
+  "runtimeTemplateSha256": "81d7c25fbcddecde01878f853cff57fa30a04808f75c813ed31957e4f2b83e20",
+  "passageCount": 170,
+  "questionCount": 2263,
+  "datasets": [
+    "data/translations/window-ielts-review-translations.json",
+    "data/translations/window-ielts-review-translation-source-binding.json",
+    "data/controller/const-t36-evidence-anchor-sidecar.json",
+    "data/bilingual-link/const-sidecar.json",
+    "data/library/window-student-library.json",
+    "data/manifest/window-student-manifest.json",
+    "data/app/freezetrustedreplaydata.json"
+  ],
+  "originalSignaturePreservedInBuild": false
+}

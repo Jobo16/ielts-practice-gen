@@ -1,0 +1,1 @@
+window.__STUDENT_MANIFEST__ = __ZYZ_JSON__("data/manifest/window-student-manifest.json");

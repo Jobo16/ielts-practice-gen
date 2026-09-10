@@ -1,0 +1,1 @@
+window.__STUDENT_LIBRARY__ = __ZYZ_JSON__("data/library/window-student-library.json");
