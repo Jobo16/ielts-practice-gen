@@ -2,7 +2,7 @@
 ieltsbuddy-reading-gen.jobo.asia {
     encode zstd gzip
     request_body {
-        max_size 16MB
+        max_size 16777216
     }
     reverse_proxy 127.0.0.1:14173
 }
