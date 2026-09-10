@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>阅读题库后台</title><link rel="icon" href="data:,"><style><!-- @include src/engine/style.css --><!-- @include src/admin/style.css --></style></head>
+<body><main>
+<header><span class="brand">READING</span><span>题库后台</span><a href="/">本地练习工具</a></header>
+<div class="top"><div><h1>录入题目，生成练习包。</h1><p>粘贴 Agent 生成的 JSON，校验、预览，再保存或下载。</p></div><button id="guide">Agent 接入指南</button></div>
+<form id="connect"><label>后台密钥 <input id="token" type="password" autocomplete="off" placeholder="本地开发可留空"></label><button>连接后台</button><span id="connection" role="status"></span></form>
+<p id="status" role="status" hidden></p>
+<section class="workspace">
+<aside><div class="list-head"><h2>已保存题目</h2><button id="refresh">刷新</button></div><input id="search" type="search" placeholder="搜索标题" aria-label="搜索题目"><div id="sets"></div></aside>
+<section class="editor">
+<div class="actions"><button id="new">新建</button><label class="button">导入 JSON<input id="file" type="file" accept=".json,application/json"></label><select id="examples" aria-label="选择题型示例"><option value="">载入题型示例…</option></select></div>
+<label for="json">题目 JSON</label><textarea id="json" spellcheck="false" placeholder="粘贴 reading-set.v1 题目，或从上方选择示例。"></textarea>
+<p id="selection">编辑后保存会生成新版本，原题目保留。</p>
+<div class="actions"><button id="validate">校验</button><button id="preview">预览做题</button><button class="primary" id="save">保存到题库</button><button id="download">下载 HTML</button><button id="source">下载 JSON</button><button id="archive" hidden>归档当前版本</button></div>
+</section></section>
+<details><summary>字段与题型说明</summary><div class="doc-actions"><button data-doc="content-format">字段说明</button><button data-doc="task-layouts">题型字段结构</button><a href="/api/v1/openapi.json">OpenAPI</a></div><pre id="documentation">点击按钮读取说明；完整可运行题型示例可从编辑区载入。</pre></details>
+<dialog id="preview-dialog"><div class="runner-bar"><strong>练习预览</strong><button id="close-preview">关闭预览</button></div><iframe id="preview-frame" title="后台题目预览" allow="fullscreen"></iframe></dialog>
+<dialog id="guide-dialog"><div class="runner-bar"><strong>Agent 接入指南</strong><button id="close-guide">关闭指南</button></div><pre id="guide-text"></pre></dialog>
+<footer>题目由调用方整理；服务只负责校验、管理与生成 HTML。</footer>
+</main><script><!-- @include src/admin/app.js --></script></body></html>

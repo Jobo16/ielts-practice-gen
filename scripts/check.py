@@ -35,7 +35,7 @@ def main():
     assert (ROOT / 'dist/index.html').read_bytes() == first, 'Build is not deterministic'
     count = 0
     with tempfile.TemporaryDirectory(prefix='zyz-check-') as temp:
-        documents = [render('src/app/index.html'), render('src/runtime/index.html'), (ROOT / 'dist/index.html').read_text(), engine_runtime()]
+        documents = [render('src/app/index.html'), render('src/runtime/index.html'), (ROOT / 'dist/index.html').read_text(), engine_runtime(), (ROOT / 'dist/admin.html').read_text()]
         for html in documents:
             parser = Scripts()
             assert '__ZYZ_JSON__(' not in html
@@ -66,6 +66,7 @@ def main():
         finally:
             builder.ROOT = ROOT
     print('PASS: identical engine builds without data/ or reference/.')
+    subprocess.run(['python3', str(ROOT / 'scripts/check-service.py')], check=True, cwd=ROOT)
 
 
 if __name__ == '__main__':

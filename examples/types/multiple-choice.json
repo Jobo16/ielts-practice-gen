@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "reading-set.v1",
+  "title": "multiple_choice · 独立示例",
+  "parts": [
+    {
+      "partId": "part.garden",
+      "instruction": "Read the passage and answer the questions.",
+      "passage": {
+        "passageId": "garden",
+        "title": "The Community Garden",
+        "blocks": [
+          {
+            "blockId": "garden.a",
+            "type": "paragraph",
+            "label": "A",
+            "text": "In 2024, residents opened a community garden beside the library. Volunteers meet every Saturday. They grow vegetables in raised beds and collect rainwater in a tank."
+          },
+          {
+            "blockId": "garden.b",
+            "type": "paragraph",
+            "label": "B",
+            "text": "The garden is free to enter. Local schools visit on Fridays to learn about insects. Next year, the volunteers plan to plant an apple tree."
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "taskId": "choice",
+          "questionType": "multiple_choice",
+          "interactionVariant": "single_choice",
+          "layoutVariant": "option_list",
+          "instructions": [
+            "Choose the correct answer."
+          ],
+          "responseSlotIds": [
+            "r3"
+          ],
+          "content": {
+            "items": [
+              {
+                "itemId": "i3",
+                "text": "What do the volunteers plan to plant next year?",
+                "responseSlotIds": [
+                  "r3"
+                ],
+                "options": [
+                  {
+                    "optionId": "apple",
+                    "text": "An apple tree"
+                  },
+                  {
+                    "optionId": "rose",
+                    "text": "A rose bush"
+                  },
+                  {
+                    "optionId": "oak",
+                    "text": "An oak tree"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "responseSlots": [
+    {
+      "responseSlotId": "r3",
+      "taskId": "choice",
+      "responseKind": "option"
+    }
+  ],
+  "scoreSlots": [
+    {
+      "scoreSlotId": "s3",
+      "taskId": "choice",
+      "responseSlotIds": [
+        "r3"
+      ],
+      "marks": 1,
+      "evaluation": "exact-option",
+      "accepted": [
+        {
+          "kind": "option-id",
+          "value": "apple"
+        }
+      ]
+    }
+  ],
+  "reviewEntries": [
+    {
+      "scoreSlotId": "s3",
+      "answerDisplay": "An apple tree",
+      "explanation": "计划种植的是苹果树。",
+      "evidence": [
+        {
+          "blockId": "garden.b",
+          "quote": "Next year, the volunteers plan to plant an apple tree."
+        }
+      ]
+    }
+  ],
+  "translations": {
+    "garden": {
+      "title": "社区花园",
+      "garden.a": "2024年，居民在图书馆旁建起了一座社区花园。志愿者每周六见面。他们在高架种植床里种菜，并用水箱收集雨水。",
+      "garden.b": "花园免费开放。当地学校每周五来学习昆虫知识。志愿者计划明年种一棵苹果树。"
+    }
+  }
+}

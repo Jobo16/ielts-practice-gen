@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "reading-set.v1",
+  "title": "true_false_not_given · 独立示例",
+  "parts": [
+    {
+      "partId": "part.garden",
+      "instruction": "Read the passage and answer the questions.",
+      "passage": {
+        "passageId": "garden",
+        "title": "The Community Garden",
+        "blocks": [
+          {
+            "blockId": "garden.a",
+            "type": "paragraph",
+            "label": "A",
+            "text": "In 2024, residents opened a community garden beside the library. Volunteers meet every Saturday. They grow vegetables in raised beds and collect rainwater in a tank."
+          },
+          {
+            "blockId": "garden.b",
+            "type": "paragraph",
+            "label": "B",
+            "text": "The garden is free to enter. Local schools visit on Fridays to learn about insects. Next year, the volunteers plan to plant an apple tree."
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "taskId": "tf",
+          "questionType": "true_false_not_given",
+          "interactionVariant": "single_choice",
+          "layoutVariant": "statement_list",
+          "instructions": [
+            "Choose TRUE, FALSE or NOT GIVEN."
+          ],
+          "responseSlotIds": [
+            "r1",
+            "r2"
+          ],
+          "content": {
+            "options": [
+              {
+                "optionId": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "optionId": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "optionId": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ],
+            "items": [
+              {
+                "itemId": "i1",
+                "text": "The garden opened in 2024.",
+                "responseSlotIds": [
+                  "r1"
+                ]
+              },
+              {
+                "itemId": "i2",
+                "text": "Visitors must pay to enter the garden.",
+                "responseSlotIds": [
+                  "r2"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "responseSlots": [
+    {
+      "responseSlotId": "r1",
+      "taskId": "tf",
+      "responseKind": "option"
+    },
+    {
+      "responseSlotId": "r2",
+      "taskId": "tf",
+      "responseKind": "option"
+    }
+  ],
+  "scoreSlots": [
+    {
+      "scoreSlotId": "s1",
+      "taskId": "tf",
+      "responseSlotIds": [
+        "r1"
+      ],
+      "marks": 1,
+      "evaluation": "exact-option",
+      "accepted": [
+        {
+          "kind": "option-id",
+          "value": "TRUE"
+        }
+      ]
+    },
+    {
+      "scoreSlotId": "s2",
+      "taskId": "tf",
+      "responseSlotIds": [
+        "r2"
+      ],
+      "marks": 1,
+      "evaluation": "exact-option",
+      "accepted": [
+        {
+          "kind": "option-id",
+          "value": "FALSE"
+        }
+      ]
+    }
+  ],
+  "reviewEntries": [
+    {
+      "scoreSlotId": "s1",
+      "answerDisplay": "TRUE",
+      "explanation": "原文明确说明花园于2024年开放。",
+      "evidence": [
+        {
+          "blockId": "garden.a",
+          "quote": "In 2024, residents opened a community garden beside the library."
+        }
+      ]
+    },
+    {
+      "scoreSlotId": "s2",
+      "answerDisplay": "FALSE",
+      "explanation": "原文说免费开放，与必须付费相矛盾。",
+      "evidence": [
+        {
+          "blockId": "garden.b",
+          "quote": "The garden is free to enter."
+        }
+      ]
+    }
+  ],
+  "translations": {
+    "garden": {
+      "title": "社区花园",
+      "garden.a": "2024年，居民在图书馆旁建起了一座社区花园。志愿者每周六见面。他们在高架种植床里种菜，并用水箱收集雨水。",
+      "garden.b": "花园免费开放。当地学校每周五来学习昆虫知识。志愿者计划明年种一棵苹果树。"
+    }
+  }
+}

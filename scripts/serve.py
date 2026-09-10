@@ -1,17 +1,17 @@
-"""Build, then serve only dist/ on loopback. Stop with Ctrl-C."""
+"""Build and run the reading tool, admin UI and JSON-to-HTML API."""
 import argparse
-from functools import partial
-from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
-from build import ROOT, build
+from build import build
+from service import create_server
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--port', type=int, default=4173)
+    parser.add_argument('--host', default='127.0.0.1')
+    parser.add_argument('--data-dir')
     args = parser.parse_args()
     build()
-    handler = partial(SimpleHTTPRequestHandler, directory=str(ROOT / 'dist'))
-    server = ThreadingHTTPServer(('127.0.0.1', args.port), handler)
-    print(f'Open http://127.0.0.1:{args.port}', flush=True)
+    server = create_server(args.host, args.port, args.data_dir)
+    print(f'Open http://{args.host}:{args.port}/admin', flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

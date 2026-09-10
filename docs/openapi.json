@@ -1,0 +1,393 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Reading JSON to HTML API",
+    "version": "1.0.0",
+    "description": "Public guide endpoints. API token: validate/build. Separate admin token: saved library. Local loopback development may disable authentication."
+  },
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "summary": "Read health",
+        "responses": {
+          "200": {
+            "description": "Public documentation or example"
+          }
+        }
+      }
+    },
+    "/api/v1/agent-guide": {
+      "get": {
+        "summary": "Read agent-guide",
+        "responses": {
+          "200": {
+            "description": "Public documentation or example"
+          }
+        }
+      }
+    },
+    "/api/v1/content-format": {
+      "get": {
+        "summary": "Read content-format",
+        "responses": {
+          "200": {
+            "description": "Public documentation or example"
+          }
+        }
+      }
+    },
+    "/api/v1/task-layouts": {
+      "get": {
+        "summary": "Read task-layouts",
+        "responses": {
+          "200": {
+            "description": "Public documentation or example"
+          }
+        }
+      }
+    },
+    "/api/v1/openapi.json": {
+      "get": {
+        "summary": "Read openapi.json",
+        "responses": {
+          "200": {
+            "description": "Public documentation or example"
+          }
+        }
+      }
+    },
+    "/api/v1/examples": {
+      "get": {
+        "summary": "Read examples",
+        "responses": {
+          "200": {
+            "description": "Public documentation or example"
+          }
+        }
+      }
+    },
+    "/api/v1/examples/{name}": {
+      "get": {
+        "summary": "Read examples/{name}",
+        "responses": {
+          "200": {
+            "description": "Public documentation or example"
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/validate": {
+      "post": {
+        "summary": "Validate a reading set",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReadingSet"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Validation statistics or existing version",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid token"
+          },
+          "422": {
+            "description": "Invalid content; error.code and error.message"
+          },
+          "413": {
+            "description": "JSON exceeds 16 MiB"
+          },
+          "503": {
+            "description": "Busy or timed out; retry later"
+          }
+        }
+      }
+    },
+    "/api/v1/build": {
+      "post": {
+        "summary": "Return standalone HTML without storing",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReadingSet"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "HTML attachment",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid token"
+          },
+          "422": {
+            "description": "Invalid content; error.code and error.message"
+          },
+          "413": {
+            "description": "JSON exceeds 16 MiB"
+          },
+          "503": {
+            "description": "Busy or timed out; retry later"
+          }
+        }
+      }
+    },
+    "/api/v1/sets": {
+      "post": {
+        "summary": "Save immutable version (admin token required)",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReadingSet"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Validation statistics or existing version",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid token"
+          },
+          "422": {
+            "description": "Invalid content; error.code and error.message"
+          },
+          "413": {
+            "description": "JSON exceeds 16 MiB"
+          },
+          "503": {
+            "description": "Busy or timed out; retry later"
+          },
+          "201": {
+            "description": "New version saved"
+          }
+        }
+      },
+      "get": {
+        "summary": "List non-archived sets (admin)",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "sets array"
+          },
+          "401": {
+            "description": "Admin token required"
+          }
+        }
+      }
+    },
+    "/api/v1/sets/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      ],
+      "get": {
+        "summary": "Download source JSON (admin)",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "401": {
+            "description": "Admin token required"
+          },
+          "404": {
+            "description": "Missing or archived"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Archive version (admin)",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "401": {
+            "description": "Admin token required"
+          },
+          "404": {
+            "description": "Missing or archived"
+          }
+        }
+      }
+    },
+    "/api/v1/sets/{id}/html": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      ],
+      "get": {
+        "summary": "Download HTML (admin)",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "401": {
+            "description": "Admin token required"
+          },
+          "404": {
+            "description": "Missing or archived"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    },
+    "schemas": {
+      "ReadingSet": {
+        "type": "object",
+        "description": "See content-format and task-layouts for nested contracts. Runtime compile is authoritative.",
+        "required": [
+          "schemaVersion",
+          "title",
+          "parts",
+          "responseSlots",
+          "scoreSlots",
+          "reviewEntries"
+        ],
+        "properties": {
+          "schemaVersion": {
+            "type": "string",
+            "enum": [
+              "reading-set.v1"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "parts": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "responseSlots": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "scoreSlots": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "reviewEntries": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "assets": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "translations": {
+            "type": "object"
+          },
+          "timerPolicy": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

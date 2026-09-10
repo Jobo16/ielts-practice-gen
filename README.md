@@ -8,7 +8,7 @@
 
 ## 启动
 
-需要 Python 3.10+；运行检查另需 Node.js 18+。没有 npm 依赖需要安装。
+需要 Python 3.10+ 和 Node.js 18+。没有 npm 依赖需要安装。
 
 ```sh
 npm run dev
@@ -16,7 +16,7 @@ npm run dev
 
 打开 <http://127.0.0.1:4173>，导入自己的 JSON，或先点击“试用示例题目”。
 示例是新编的社区花园短文，包含 5 道题和中文解析，不使用原题库文章。
-当前预览如已在运行，直接刷新即可。
+后台入口为 http://127.0.0.1:4173/admin，可管理题目、校验、预览并下载 HTML。
 
 修改源码后运行 `npm run build`，刷新页面；没有自动热更新。
 不用 npm 也可运行 `python3 scripts/serve.py --port 4173`。
@@ -30,7 +30,7 @@ npm run dev
 - [各题型字段形状](docs/task-layouts.json)：17 种题型的结构参考，不是可直接导入的模板。
 - [可直接运行的示例](examples/community-garden.json)：判断题、单选题、句子填空。
 
-当前接受结构化 JSON。PDF、Word、图片需要先转换；未包含 OCR、账号、云端题库或成绩上传服务。
+当前接受结构化 JSON。PDF、Word、图片由外部 Agent 先转换；本服务提供题库保存和打包接口，不包含 OCR、学员账号或成绩上传。
 导入界面保存最近的一份练习（1–3 篇、1–200 个答题位置），可导出 JSON 备份后再导入其他题目。
 
 ## 构建产物
@@ -42,6 +42,7 @@ npm run check
 
 | 产物 | 用途 |
 | --- | --- |
+| `dist/admin.html` | 服务端题库管理界面，需由 Python 服务运行 |
 | `dist/index.html` | 约 0.9 MB 的自有题目导入工具，内嵌引擎与自编示例 |
 | `dist/reading-engine.js` | 可嵌入其他页面的编译与渲染 API |
 | `dist/reading-runtime.html` | 供 API 使用的答题模板，含一个题目插入点 |
@@ -74,3 +75,18 @@ npm run check
 译文可随题目提供，当前自有译文按整段联动；证据必须由题目作者提供，不自动推断。
 这个工程保留原代码署名和第三方许可注释，不另行给原代码和题库授予开源许可。
 原作者源码历史、构建系统与签名私钥未恢复；原始解包记录见 [重建说明](docs/reconstruction.md)。
+
+## 后台与 Agent CLI
+
+- [Agent 接入规范](docs/agent-guide.md)：原始材料处理流程、题型识别特征、字段关联、接口调用。
+- [后台与部署说明](docs/service.md)：持久存储、两种密钥、域名上线准备。
+- [OpenAPI](docs/openapi.json)：HTTP 接口定义，嵌套题目字段以格式文档和运行时校验为准。
+
+```sh
+python3 scripts/reading_cli.py guide --output-dir reading-guide
+python3 scripts/reading_cli.py validate examples/community-garden.json
+python3 scripts/reading_cli.py build examples/community-garden.json -o practice.html
+python3 scripts/reading_cli.py upload examples/community-garden.json
+```
+
+CLI 默认连接本地 4173；远程设置 READING_SERVER、READING_API_TOKEN。upload 使用独立 READING_ADMIN_TOKEN。普通 build 不保存题库记录，返回可离线打开的 HTML。域名和证书尚未部署。

@@ -5,3 +5,7 @@ original/
 __pycache__/
 .playwright-cli/
 node_modules/
+.local/
+.env
+.env.*
+!.env.example

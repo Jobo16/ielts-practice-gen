@@ -51,6 +51,7 @@ def build(include_legacy=False):
         raise ValueError('Unexpanded build placeholder')
     data = html.encode('utf-8')
     (output / 'index.html').write_bytes(data)
+    (output / 'admin.html').write_text(render('src/admin/index.html'), encoding='utf-8')
     receipt = {
         'type': 'unsigned-local-reconstruction',
         'sha256': hashlib.sha256(data).hexdigest(),

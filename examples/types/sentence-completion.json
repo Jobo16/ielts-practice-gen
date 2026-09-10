@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "reading-set.v1",
+  "title": "sentence_completion · 独立示例",
+  "parts": [
+    {
+      "partId": "part.garden",
+      "instruction": "Read the passage and answer the questions.",
+      "passage": {
+        "passageId": "garden",
+        "title": "The Community Garden",
+        "blocks": [
+          {
+            "blockId": "garden.a",
+            "type": "paragraph",
+            "label": "A",
+            "text": "In 2024, residents opened a community garden beside the library. Volunteers meet every Saturday. They grow vegetables in raised beds and collect rainwater in a tank."
+          },
+          {
+            "blockId": "garden.b",
+            "type": "paragraph",
+            "label": "B",
+            "text": "The garden is free to enter. Local schools visit on Fridays to learn about insects. Next year, the volunteers plan to plant an apple tree."
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "taskId": "fill",
+          "questionType": "sentence_completion",
+          "interactionVariant": "text_entry",
+          "layoutVariant": "sentence_list",
+          "instructions": [
+            "Complete the sentences. Write ONE WORD ONLY."
+          ],
+          "responseSlotIds": [
+            "r4",
+            "r5"
+          ],
+          "rules": {
+            "wordLimit": {
+              "maxWords": 1,
+              "allowNumber": false,
+              "sourceText": "ONE WORD ONLY"
+            }
+          },
+          "content": {
+            "items": [
+              {
+                "itemId": "i4",
+                "text": "Volunteers meet every ____.",
+                "responseSlotIds": [
+                  "r4"
+                ],
+                "inlines": [
+                  {
+                    "type": "text",
+                    "text": "Volunteers meet every "
+                  },
+                  {
+                    "type": "response",
+                    "responseSlotId": "r4"
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "itemId": "i5",
+                "text": "Schools visit on ____.",
+                "responseSlotIds": [
+                  "r5"
+                ],
+                "inlines": [
+                  {
+                    "type": "text",
+                    "text": "Schools visit on "
+                  },
+                  {
+                    "type": "response",
+                    "responseSlotId": "r5"
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "targets": [
+              {
+                "targetId": "target4",
+                "targetType": "blank",
+                "itemId": "i4",
+                "fieldId": "f4"
+              },
+              {
+                "targetId": "target5",
+                "targetType": "blank",
+                "itemId": "i5",
+                "fieldId": "f5"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "responseSlots": [
+    {
+      "responseSlotId": "r4",
+      "taskId": "fill",
+      "responseKind": "text",
+      "fieldId": "f4",
+      "targetId": "target4"
+    },
+    {
+      "responseSlotId": "r5",
+      "taskId": "fill",
+      "responseKind": "text",
+      "fieldId": "f5",
+      "targetId": "target5"
+    }
+  ],
+  "scoreSlots": [
+    {
+      "scoreSlotId": "s4",
+      "taskId": "fill",
+      "responseSlotIds": [
+        "r4"
+      ],
+      "marks": 1,
+      "evaluation": "normalized-text",
+      "accepted": [
+        {
+          "kind": "text",
+          "value": "Saturday"
+        }
+      ]
+    },
+    {
+      "scoreSlotId": "s5",
+      "taskId": "fill",
+      "responseSlotIds": [
+        "r5"
+      ],
+      "marks": 1,
+      "evaluation": "normalized-text",
+      "accepted": [
+        {
+          "kind": "text",
+          "value": "Fridays"
+        }
+      ]
+    }
+  ],
+  "reviewEntries": [
+    {
+      "scoreSlotId": "s4",
+      "answerDisplay": "Saturday",
+      "explanation": "根据原文的日期表达填写，注意保留单词形式。",
+      "evidence": [
+        {
+          "blockId": "garden.a",
+          "quote": "Volunteers meet every Saturday."
+        }
+      ]
+    },
+    {
+      "scoreSlotId": "s5",
+      "answerDisplay": "Fridays",
+      "explanation": "根据原文的日期表达填写，注意保留单词形式。",
+      "evidence": [
+        {
+          "blockId": "garden.b",
+          "quote": "Local schools visit on Fridays to learn about insects."
+        }
+      ]
+    }
+  ],
+  "translations": {
+    "garden": {
+      "title": "社区花园",
+      "garden.a": "2024年，居民在图书馆旁建起了一座社区花园。志愿者每周六见面。他们在高架种植床里种菜，并用水箱收集雨水。",
+      "garden.b": "花园免费开放。当地学校每周五来学习昆虫知识。志愿者计划明年种一棵苹果树。"
+    }
+  }
+}
