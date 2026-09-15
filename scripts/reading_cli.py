@@ -10,7 +10,7 @@ from urllib.error import HTTPError, URLError
 
 
 def main():
-    parser = argparse.ArgumentParser(description='JSON → IELTS reading HTML. Convert PDF with your Agent first.')
+    parser = argparse.ArgumentParser(description='JSON → IELTS reading or listening HTML. Convert source material with your Agent first.')
     parser.add_argument('--server', default=os.getenv('READING_SERVER', 'http://127.0.0.1:4173'))
     commands = parser.add_subparsers(dest='command', required=True)
     guide = commands.add_parser('guide', help='Download Agent guide, field reference and examples')
@@ -47,7 +47,7 @@ def main():
     try:
         if args.command == 'guide':
             folder = Path(args.output_dir)
-            for endpoint, name in [('agent-guide','AGENT-GUIDE.md'), ('content-format','content-format.md'), ('task-layouts','task-layouts.json'), ('openapi.json','openapi.json')]:
+            for endpoint, name in [('agent-guide','AGENT-GUIDE.md'), ('capabilities','capabilities.json'), ('task-catalog','task-catalog.md'), ('content-format','content-format.md'), ('listening-content-format','listening-content-format.md'), ('task-layouts','task-layouts.json'), ('openapi.json','openapi.json')]:
                 write(folder / name, request(endpoint))
             for example in json.loads(request('examples'))['examples']:
                 write(folder / 'examples' / (example['name'] + '.json'), request('examples/' + example['name']))

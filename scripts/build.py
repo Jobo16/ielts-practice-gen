@@ -46,11 +46,15 @@ def build(include_legacy=False):
     (output / 'reading-runtime.html').write_text(runtime, encoding='utf-8')
     sdk = '\n'.join(render(path) for path in ['src/app/composer.js', 'src/runtime/answer-grading.js', 'src/engine/content.js'])
     (output / 'reading-engine.js').write_text(sdk, encoding='utf-8')
+    listening_sdk = '\n'.join(render(path) for path in ['src/app/composer.js', 'src/runtime/answer-grading.js', 'src/engine/content.js', 'src/engine/listening-content.js'])
+    (output / 'listening-engine.js').write_text(listening_sdk, encoding='utf-8')
+    (output / 'listening-runtime.html').write_text(runtime, encoding='utf-8')
     html = render('src/engine/index.html', {'src/runtime/index.html': runtime})
     if '<!-- @include ' in html or '__ZYZ_JSON__(' in html or '__ZYZ_HTML_STRING__(' in html:
         raise ValueError('Unexpanded build placeholder')
     data = html.encode('utf-8')
     (output / 'index.html').write_bytes(data)
+    (output / 'listening.html').write_text(render('src/engine/listening-index.html', {'src/runtime/index.html': runtime}), encoding='utf-8')
     (output / 'admin.html').write_text(render('src/admin/index.html'), encoding='utf-8')
     receipt = {
         'type': 'unsigned-local-reconstruction',

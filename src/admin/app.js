@@ -35,7 +35,7 @@
     visible.forEach(item => {
       const button = document.createElement('button'); button.className = `set${selected === item.id ? ' active' : ''}`;
       const title = document.createElement('strong'); title.textContent = item.title;
-      const detail = document.createElement('small'); detail.textContent = `${item.passageCount} 篇 · ${item.questionCount} 题 · ${item.id.slice(0,8)}`;
+      const detail = document.createElement('small'); detail.textContent = `${item.kind === 'listening' ? item.passageCount + ' 个 Part' : item.passageCount + ' 篇'} · ${item.questionCount} 题 · ${item.id.slice(0,8)}`;
       button.append(title, detail); button.onclick = () => action(async () => {
         replaceEditor(await (await request(`sets/${item.id}`)).json(), item.id);
         status('题目已载入。');
@@ -48,14 +48,14 @@
   $('new').onclick = () => { $('json').value = ''; selected = null; $('archive').hidden = true; $('selection').textContent = '粘贴题目 JSON，或载入一个题型示例。'; renderList(); };
   $('file').onchange = event => { const file = event.target.files[0]; event.target.value = ''; if (file) action(async () => { replaceEditor(JSON.parse(await file.text())); status('文件已载入，尚未保存。'); }); };
   $('examples').onchange = event => { const name = event.target.value; if (name) action(async () => { replaceEditor(await (await request(`examples/${name}`)).json()); status('示例已载入，可直接修改。'); }); };
-  $('validate').onclick = () => action(async () => { const result = await (await request('validate',{method:'POST',body:content()})).json(); status(`校验通过：${result.passageCount} 篇、${result.questionCount} 题，满分 ${result.maxMarks}。`); });
+  $('validate').onclick = () => action(async () => { const result = await (await request('validate',{method:'POST',body:content()})).json(); status(`校验通过：${result.kind === 'listening' ? result.passageCount + ' 个 Part' : result.passageCount + ' 篇'}、${result.questionCount} 题，满分 ${result.maxMarks}。`); });
   $('save').onclick = () => action(async () => {
     const result = await (await request('sets',{method:'POST',body:content()})).json(); selected = result.id; $('archive').hidden = false;
     $('selection').textContent = `已保存版本 ${result.id.slice(0,12)} · 编辑后保存为新版本，原题目保留。`;
     await refresh(); status(result.created ? '题目已保存，HTML 练习包已生成。' : '相同内容已存在，已打开对应版本。');
   });
-  $('download').onclick = () => action(async () => { const response = await request('build',{method:'POST',body:content()}); saveBlob('reading-practice.html',await response.blob()); status('HTML 已下载，本次打包未新增题库记录。'); });
-  $('source').onclick = () => action(async () => saveBlob('reading-questions.json',new Blob([JSON.stringify(JSON.parse(content()),null,2)],{type:'application/json'})));
+  $('download').onclick = () => action(async () => { const source = JSON.parse(content()); const response = await request('build',{method:'POST',body:JSON.stringify(source)}); saveBlob(source.schemaVersion === 'listening-set.v1' ? 'listening-practice.html' : 'reading-practice.html',await response.blob()); status('HTML 已下载，本次打包未新增题库记录。'); });
+  $('source').onclick = () => action(async () => { const source = JSON.parse(content()); saveBlob(source.schemaVersion === 'listening-set.v1' ? 'listening-questions.json' : 'reading-questions.json',new Blob([JSON.stringify(source,null,2)],{type:'application/json'})); });
   $('preview').onclick = () => action(async () => { const response = await request('build',{method:'POST',body:content()}); $('preview-frame').srcdoc = await response.text(); $('preview-dialog').showModal(); });
   $('close-preview').onclick = () => $('preview-dialog').close();
   $('archive').onclick = () => action(async () => { await request(`sets/${selected}`,{method:'DELETE'}); selected = null; $('archive').hidden = true; await refresh(); status('当前版本已归档。JSON 仍保留在编辑区，重新保存可恢复。'); });

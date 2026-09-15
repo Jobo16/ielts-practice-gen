@@ -1,0 +1,22 @@
+(function () {
+  'use strict';
+  const pkg = window.__IELTS_V2_PACKAGE__;
+  const listening = pkg?.listeningContent;
+  if (!listening?.audio?.data || !listening.audio.mediaType) return;
+  const host = document.getElementById('listening-audio-host');
+  if (!host) return;
+  document.body.classList.add('listening-practice');
+  document.documentElement.lang = 'en';
+  const audio = document.createElement('audio');
+  audio.controls = true;
+  audio.preload = 'metadata';
+  audio.src = `data:${listening.audio.mediaType};base64,${listening.audio.data}`;
+  audio.setAttribute('aria-label', 'Listening audio');
+  const label = document.createElement('p');
+  label.className = 'listening-audio-label';
+  label.textContent = 'Listening audio';
+  host.replaceChildren(label, audio);
+  host.hidden = false;
+  const passageTitle = document.getElementById('passage-pane-title');
+  if (passageTitle) passageTitle.textContent = listening.hasTranscript ? 'Transcript' : 'Listening instructions';
+})();

@@ -15,6 +15,7 @@ from build import ROOT
 def main():
     api, admin = 'api-test-' + 'a'*32, 'admin-test-' + 'b'*32
     sample = json.loads((ROOT/'examples/community-garden.json').read_text())
+    listening_sample = json.loads((ROOT/'examples/listening-welcome.json').read_text())
     with tempfile.TemporaryDirectory() as folder:
         server = create_server(port=0, data_dir=folder, api_token=api, admin_token=admin)
         threading.Thread(target=server.serve_forever, daemon=True).start()
@@ -31,8 +32,9 @@ def main():
                 assert response.status == expected, (path, response.status, body[:300])
                 return body, response.headers
         try:
-            for path in ('health','agent-guide','content-format','task-layouts','openapi.json','examples'):
+            for path in ('health','agent-guide','capabilities','task-catalog','content-format','listening-content-format','task-layouts','openapi.json','examples'):
                 call('/api/v1/'+path,token='')
+            capabilities=json.loads(call('/.well-known/ielts-content-agent.json',token='')[0]);assert capabilities['schemaVersion']=='ielts-content-agent.v1'
             call('/admin',token='')
             assert call('/api/v1/health',method='HEAD',token='')[0] == b''
             for path in ('/data/packages.json','/.local/service/reading.sqlite3','/legacy.html'):
@@ -40,6 +42,7 @@ def main():
             call('/api/v1/sets',expected=401)
             call('/api/v1/validate','POST',sample,token='',expected=401)
             value=json.loads(call('/api/v1/validate','POST',sample)[0]);assert value['questionCount']==5 and value['maxMarks']==5
+            listening_value=json.loads(call('/api/v1/validate','POST',listening_sample)[0]);assert listening_value['kind']=='listening' and listening_value['questionCount']==3
             for file in (ROOT/'examples/types').glob('*.json'):
                 call('/api/v1/validate','POST',json.loads(file.read_text()))
             call('/api/v1/validate','POST',{},expected=422)
@@ -48,6 +51,8 @@ def main():
             html,headers=call('/api/v1/build','POST',sample)
             assert hashlib.sha256(html).hexdigest()==headers['X-Artifact-SHA256']
             assert b'__IELTS_PACKAGE_JSON__' not in html
+            listening_html,listening_headers=call('/api/v1/build','POST',listening_sample)
+            assert listening_sample['audio']['data'].encode() in listening_html and b'listening-audio-host' in listening_html and 'listening-' in listening_headers['Content-Disposition']
             assert json.loads(call('/api/v1/sets',token=admin)[0])['sets']==[]
             call('/api/v1/sets','POST',sample,expected=401)
             saved=json.loads(call('/api/v1/sets','POST',sample,admin,201)[0]);ident=saved['id']
@@ -62,6 +67,7 @@ def main():
             outfile=Path(folder)/'practice.html'
             for args in (['guide','--output-dir',str(Path(folder)/'guide')],['validate',str(ROOT/'examples/community-garden.json')],['build',str(ROOT/'examples/community-garden.json'),'-o',str(outfile)],['upload',str(ROOT/'examples/community-garden.json')]):
                 subprocess.run(cli+args,env=env,check=True,capture_output=True)
+            assert (Path(folder)/'guide'/'capabilities.json').is_file() and (Path(folder)/'guide'/'task-catalog.md').is_file()
             assert outfile.read_bytes()==html
             bad=Path(folder)/'bad.json';bad.write_text('{}')
             result=subprocess.run(cli+['build',str(bad),'-o',str(outfile)],env=env,capture_output=True)
