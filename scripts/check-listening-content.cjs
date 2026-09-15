@@ -1,0 +1,18 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+global.window = global;
+vm.runInThisContext(fs.readFileSync('dist/listening-engine.js', 'utf8'));
+const source = JSON.parse(fs.readFileSync('examples/listening-welcome.json', 'utf8'));
+const pkg = ListeningContent.compile(source);
+assert.equal(pkg.candidate.mode, 'listening');
+assert.equal(pkg.listeningContent.audio.mediaType, 'audio/wav');
+assert.match(pkg.manifest.packageId, /^listening\.own\./);
+const runtime = fs.readFileSync('dist/listening-runtime.html', 'utf8');
+const html = ListeningContent.render(pkg, runtime);
+assert.ok(html.includes(source.audio.data), 'audio data is embedded in the standalone artifact');
+assert.ok(html.includes('listening-audio-host'), 'runtime has an audio host');
+assert.throws(() => ListeningContent.compile({ ...source, audio: { ...source.audio, encoding: 'url' } }), /base64/);
+assert.throws(() => ListeningContent.compile({ ...source, audio: { ...source.audio, mediaType: 'audio/flac' } }), /仅支持/);
+assert.throws(() => ListeningContent.compile({ ...source, parts: [] }), /1–4/);
+console.log('PASS: listening JSON compiles, embeds audio, and rejects invalid audio contracts.');
