@@ -1,6 +1,18 @@
 # Agent 接入规范：原始材料 → JSON → HTML
 
-目标：把用户提供的阅读材料转成 `reading-set.v1` JSON，再由本服务校验和打包。服务不接收 PDF、不提供 OCR，不要求使用特定模型或提取脚本。当前只支持阅读；不能据此假定听力已经可用。
+目标：把用户提供的阅读或听力材料转成 `reading-set.v1` 或 `listening-set.v1` JSON，再由本服务校验和打包。服务不接收 PDF、不提供 OCR，不要求使用特定模型或提取脚本。听力音频必须由调用方转为受支持格式并内嵌为 base64。
+
+## 从一个网址开始
+
+给 Agent 本服务根网址即可。它应先读取以下资源，而不是猜测字段：
+
+1. `GET /.well-known/ielts-content-agent.json` 或 `GET /api/v1/capabilities`：机器可读能力清单、端点和限制。
+2. `GET /api/v1/task-catalog`：17 个允许的题型三元组、各自的页面效果和必填结构。
+3. `GET /api/v1/content-format` 或 `GET /api/v1/listening-content-format`：阅读或听力的顶层字段与专属规则。
+4. `GET /api/v1/task-layouts`：每个题型的 `task`、`responseSlot` 和 `scoreSlot` 完整字段形状。
+5. `GET /api/v1/examples`：可下载并校验的完整示例。必须从最相近示例复制结构，而不是从空 JSON 猜字段。
+
+构建后的 HTML 不需要再拼接脚本：阅读呈现为文章与题目双栏；听力增加音频播放器和可选逐字稿；提交后均显示分数、正确答案与解析。
 
 ## 工作步骤
 
@@ -67,9 +79,9 @@ python3 scripts/reading_cli.py upload questions.json
 
 ## HTTP
 
-POST `/api/v1/validate` 或 `/api/v1/build`，请求头 `Content-Type: application/json`，请求体直接是整份 reading-set.v1（不要套 data 字段）。远程认证使用 `Authorization: Bearer <API密钥>`。
+POST `/api/v1/validate` 或 `/api/v1/build`，请求头 `Content-Type: application/json`，请求体直接是整份 reading-set.v1 或 listening-set.v1（不要套 data 字段）。远程认证使用 `Authorization: Bearer <API密钥>`。
 validate 返回统计 JSON；build 返回 `text/html` 附件和 `X-Artifact-SHA256`，不保存题库记录。失败返回 `{ "error": { "code": "invalid_content", "message": "字段路径和原因" } }`，不能把错误 JSON 当 HTML 保存。
 
 POST `/api/v1/sets` 使用独立管理员密钥，返回版本 ID 和 HTML 下载路径；GET `/api/v1/sets/{id}/html` 同样需要管理员认证。内容相同重复上传幂等，编辑会生成新版本。DELETE `/api/v1/sets/{id}` 归档，重新提交原 JSON 可恢复。
 
-限制：每次 JSON 最大 16 MiB、1–3 篇、1–200 个作答位置；最多同时编译 4 份。422 表示内容需修改；503 可稍后重试。超时请求重试保存不会生成重复内容版本。API 密钥只允许校验和打包，不能读取管理员题库。公开接口清单见 openapi.json。
+限制：每次 JSON 最大 96 MiB；阅读为 1–3 篇，听力为 1–4 个 Part，均为 1–200 个答题位置；最多同时编译 4 份。听力嵌入音频解码后最多 64 MiB。422 表示内容需修改；503 可稍后重试。超时请求重试保存不会生成重复内容版本。API 密钥只允许校验和打包，不能读取管理员题库。公开接口清单见 openapi.json。

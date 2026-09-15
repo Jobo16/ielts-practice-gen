@@ -53,6 +53,8 @@ def main():
         subprocess.run(['node', str(ROOT / 'scripts/check-core.cjs'), str(Path(temp) / 'runtime.html')], check=True, cwd=ROOT)
         (ROOT / 'artifacts').mkdir(exist_ok=True)
         subprocess.run(['node', str(ROOT / 'scripts/check-content.cjs')], check=True, cwd=ROOT)
+        subprocess.run(['node', str(ROOT / 'scripts/check-listening-content.cjs')], check=True, cwd=ROOT)
+        subprocess.run(['node', str(ROOT / 'scripts/check-agent-contract.cjs')], check=True, cwd=ROOT)
     print(f'PASS: {count} built scripts parse; deterministic HTML; runtime package slot preserved.')
     # Prove the default engine can be built without any recovered bank or release metadata.
     with tempfile.TemporaryDirectory(prefix='reading-independent-') as temp:

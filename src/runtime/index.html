@@ -21,6 +21,7 @@
   <style><!-- @include src/runtime/styles/02.css --></style>  <meta name="zyz-bilingual-sentence-link-demo" content="T44R1-retry3-create-only-qa-awaiting-human-review">
   <style data-bilingual-sentence-link-demo="T44R1-retry3"><!-- @include src/runtime/styles/03.css --></style>
 <style id="t53-question-flags-style"><!-- @include src/runtime/styles/04.css --></style>
+<style><!-- @include src/runtime/styles/listening.css --></style>
 </head>
   <body>
     <a class="skip-link" href="#exam-shell">Skip to the reading test</a>
@@ -112,6 +113,8 @@
           </button>
         </span>
       </section>
+
+      <section id="listening-audio-host" class="listening-audio-host" aria-label="Listening audio" hidden></section>
 
       <section
         id="review-banner"
@@ -400,5 +403,6 @@
       </div>
     </noscript>
     <script data-bilingual-sentence-link-demo="T44R1-retry3"><!-- @include src/runtime/bilingual-link.js --></script>
+    <script><!-- @include src/runtime/listening-player.js --></script>
 </body>
 </html>

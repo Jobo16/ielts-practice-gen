@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "listening-set.v1",
+  "title": "Welcome call · 自编听力示例",
+  "audio": {
+    "mediaType": "audio/wav",
+    "encoding": "base64",
+    "filename": "replace-with-your-audio.wav",
+    "data": "UklGRnQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YVAAAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgA=="
+  },
+  "parts": [
+    {
+      "partId": "part.welcome",
+      "instruction": "Listen to the recording and answer Questions 1–3.",
+      "transcript": {
+        "title": "Transcript (sample only)",
+        "blocks": [
+          { "blockId": "welcome.a", "type": "paragraph", "text": "This silent sample demonstrates the file format. Replace the audio and the questions with your own listening material." }
+        ]
+      },
+      "tasks": [
+        {
+          "taskId": "choice",
+          "questionType": "multiple_choice",
+          "interactionVariant": "single_choice",
+          "layoutVariant": "option_list",
+          "instructions": ["Choose the correct answer."],
+          "responseSlotIds": ["r1"],
+          "content": {
+            "items": [{
+              "itemId": "q1",
+              "text": "What does this file demonstrate?",
+              "responseSlotIds": ["r1"],
+              "options": [
+                { "optionId": "format", "text": "The listening JSON format" },
+                { "optionId": "score", "text": "A Band score calculator" },
+                { "optionId": "transcript", "text": "An automatic transcript" }
+              ]
+            }]
+          }
+        },
+        {
+          "taskId": "complete",
+          "questionType": "sentence_completion",
+          "interactionVariant": "text_entry",
+          "layoutVariant": "sentence_list",
+          "instructions": ["Complete the sentences. Write ONE WORD ONLY."],
+          "responseSlotIds": ["r2", "r3"],
+          "rules": { "wordLimit": { "maxWords": 1, "allowNumber": false, "sourceText": "ONE WORD ONLY" } },
+          "content": {
+            "items": [
+              { "itemId": "q2", "text": "The exported practice includes the ____.", "responseSlotIds": ["r2"], "inlines": [{ "type": "text", "text": "The exported practice includes the " }, { "type": "response", "responseSlotId": "r2" }, { "type": "text", "text": "." }] },
+              { "itemId": "q3", "text": "Use your own listening ____.", "responseSlotIds": ["r3"], "inlines": [{ "type": "text", "text": "Use your own listening " }, { "type": "response", "responseSlotId": "r3" }, { "type": "text", "text": "." }] }
+            ],
+            "targets": [{ "targetId": "target2", "targetType": "blank", "itemId": "q2", "fieldId": "f2" }, { "targetId": "target3", "targetType": "blank", "itemId": "q3", "fieldId": "f3" }]
+          }
+        }
+      ]
+    }
+  ],
+  "responseSlots": [
+    { "responseSlotId": "r1", "taskId": "choice", "responseKind": "option" },
+    { "responseSlotId": "r2", "taskId": "complete", "responseKind": "text", "fieldId": "f2", "targetId": "target2" },
+    { "responseSlotId": "r3", "taskId": "complete", "responseKind": "text", "fieldId": "f3", "targetId": "target3" }
+  ],
+  "scoreSlots": [
+    { "scoreSlotId": "s1", "taskId": "choice", "responseSlotIds": ["r1"], "marks": 1, "evaluation": "exact-option", "accepted": [{ "kind": "option-id", "value": "format" }] },
+    { "scoreSlotId": "s2", "taskId": "complete", "responseSlotIds": ["r2"], "marks": 1, "evaluation": "normalized-text", "accepted": [{ "kind": "text", "value": "audio" }] },
+    { "scoreSlotId": "s3", "taskId": "complete", "responseSlotIds": ["r3"], "marks": 1, "evaluation": "normalized-text", "accepted": [{ "kind": "text", "value": "material" }] }
+  ],
+  "reviewEntries": [
+    { "scoreSlotId": "s1", "answerDisplay": "The listening JSON format", "explanation": "The sample is a starter file for the listening format." },
+    { "scoreSlotId": "s2", "answerDisplay": "audio", "explanation": "The single HTML file embeds the audio as base64." },
+    { "scoreSlotId": "s3", "answerDisplay": "material", "explanation": "Only use audio material that you are allowed to use." }
+  ]
+}
