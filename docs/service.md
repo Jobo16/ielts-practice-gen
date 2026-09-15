@@ -55,6 +55,6 @@ python3 scripts/reading_cli.py build examples/community-garden.json -o practice.
 4. 域名 DNS 指向服务器，配置 Caddy 的 READING_DOMAIN 和 deploy/Caddyfile，由 Caddy 代理本地服务并管理 HTTPS。网络只开放反向代理入口；即使服务绑定本地回环，被代理到公网之前也必须配置两个密钥。
 5. 检查未认证的题库请求被拒绝、API 密钥不能访问管理接口，并验证 CLI 返回的 HTML。
 
-服务目前是单实例、共享管理员题库，适合轻量使用；没有用户注册、租户隔离或计费。最多同时 4 个编译任务，JSON 16 MiB，编译限时 20 秒。Python HTTP 服务应放在反向代理后；客户端上传超时/速率限制可由部署环境设置。
+服务目前是单实例、共享管理员题库，适合轻量使用；没有用户注册、租户隔离或计费。最多同时 4 个编译任务，JSON 96 MiB，编译限时 20 秒。该上限容纳最大 64 MiB 的 base64 内嵌听力音频；生产 Caddy 入口使用相同的 96 MiB 请求限制。Python HTTP 服务应放在反向代理后；客户端上传超时/速率限制可由部署环境设置。
 
 备份 SQLite 时使用 SQLite backup API/工具，不能只复制正在写入的主文件而漏掉 WAL。升级前保留数据库备份，打包器的源码版本也应留存以便复现。

@@ -28,7 +28,8 @@ class Service:
             raise ValueError('Configure both READING_API_TOKEN and READING_ADMIN_TOKEN, or neither for loopback-only development.')
         if self.api_token and (len(self.api_token) < 24 or len(self.admin_token) < 24 or self.api_token == self.admin_token):
             raise ValueError('API and admin tokens must differ and each contain at least 24 characters.')
-        self.max_body = 16 * 1024 * 1024
+        # A 64 MiB audio file expands to about 85 MiB when embedded as base64.
+        self.max_body = 96 * 1024 * 1024
         self.workers = threading.BoundedSemaphore(4)
         folder = Path(data_dir or os.environ.get('READING_DATA_DIR', ROOT / '.local/service'))
         folder.mkdir(parents=True, exist_ok=True)
@@ -37,9 +38,12 @@ class Service:
             db.execute('PRAGMA journal_mode=WAL')
             db.execute('''CREATE TABLE IF NOT EXISTS question_sets (
                 id TEXT PRIMARY KEY, title TEXT NOT NULL, created_at TEXT NOT NULL,
-                passage_count INTEGER NOT NULL, question_count INTEGER NOT NULL,
+                kind TEXT NOT NULL DEFAULT 'reading', passage_count INTEGER NOT NULL, question_count INTEGER NOT NULL,
                 task_count INTEGER NOT NULL, source TEXT NOT NULL, html TEXT NOT NULL,
                 html_sha256 TEXT NOT NULL, archived INTEGER NOT NULL DEFAULT 0)''')
+            columns = {row[1] for row in db.execute('PRAGMA table_info(question_sets)')}
+            if 'kind' not in columns:
+                db.execute("ALTER TABLE question_sets ADD COLUMN kind TEXT NOT NULL DEFAULT 'reading'")
 
     @contextmanager
     def connection(self):
@@ -54,7 +58,7 @@ class Service:
         if not self.workers.acquire(blocking=False):
             raise ApiError(503, 'busy', '打包服务繁忙，请稍后重试。')
         try:
-            args = ['node', '--max-old-space-size=256', str(ROOT / 'scripts/compile-worker.cjs')]
+            args = ['node', '--max-old-space-size=512', str(ROOT / 'scripts/compile-worker.cjs')]
             if html:
                 args.append('--html')
             result = subprocess.run(args, input=json.dumps(source, ensure_ascii=False), text=True,
@@ -109,7 +113,7 @@ def handler_for(service):
             if size < 0:
                 raise ApiError(411, 'length_required', '需要 Content-Length。')
             if size > service.max_body:
-                raise ApiError(413, 'too_large', 'JSON 文件不能超过 16 MiB。')
+                raise ApiError(413, 'too_large', 'JSON 文件不能超过 96 MiB。')
             self.connection.settimeout(30)
             try:
                 return json.loads(self.rfile.read(size))
@@ -123,21 +127,26 @@ def handler_for(service):
                 return self.respond(200, {'ok': True, 'apiVersion': 'v1', 'authenticationRequired': bool(service.api_token), 'maxBytes': service.max_body})
             public_docs = {
                 '/api/v1/agent-guide': ('docs/agent-guide.md', 'text/markdown; charset=utf-8'),
+                '/api/v1/capabilities': ('docs/agent-capabilities.json', 'application/json; charset=utf-8'),
+                '/api/v1/task-catalog': ('docs/agent-task-catalog.md', 'text/markdown; charset=utf-8'),
                 '/api/v1/content-format': ('docs/content-format.md', 'text/markdown; charset=utf-8'),
+                '/api/v1/listening-content-format': ('docs/listening-content-format.md', 'text/markdown; charset=utf-8'),
                 '/api/v1/task-layouts': ('docs/task-layouts.json', 'application/json; charset=utf-8'),
                 '/api/v1/openapi.json': ('docs/openapi.json', 'application/json; charset=utf-8'),
             }
             if method == 'GET' and path in public_docs:
                 file, mime = public_docs[path]
                 return self.respond(200, (ROOT / file).read_bytes(), mime)
+            if method == 'GET' and path == '/.well-known/ielts-content-agent.json':
+                return self.respond(200, (ROOT / 'docs/agent-capabilities.json').read_bytes(), 'application/json; charset=utf-8')
             if method == 'GET' and path == '/api/v1/examples':
-                files = [ROOT / 'examples/community-garden.json', *sorted((ROOT / 'examples/types').glob('*.json'))]
+                files = [ROOT / 'examples/community-garden.json', ROOT / 'examples/listening-welcome.json', *sorted((ROOT / 'examples/types').glob('*.json'))]
                 return self.respond(200, {'examples': [{'name': file.stem, 'url': f'/api/v1/examples/{file.stem}'} for file in files]})
             if method == 'GET' and path.startswith('/api/v1/examples/'):
                 name = path.rsplit('/', 1)[-1]
                 if not re.fullmatch(r'[a-z0-9-]+', name):
                     raise ApiError(404, 'not_found', '示例不存在。')
-                file = ROOT / ('examples/community-garden.json' if name == 'community-garden' else f'examples/types/{name}.json')
+                file = ROOT / ({'community-garden': 'examples/community-garden.json', 'listening-welcome': 'examples/listening-welcome.json'}.get(name, f'examples/types/{name}.json'))
                 if not file.is_file():
                     raise ApiError(404, 'not_found', '示例不存在。')
                 return self.respond(200, file.read_bytes())
@@ -152,14 +161,14 @@ def handler_for(service):
                 digest = hashlib.sha256(html.encode()).hexdigest()
                 if not storing:
                     return self.respond(200, html, 'text/html; charset=utf-8', {
-                        'Content-Disposition': f'attachment; filename="reading-{result["id"][:12]}.html"',
+                        'Content-Disposition': f'attachment; filename="{result["kind"]}-{result["id"][:12]}.html"',
                         'X-Artifact-SHA256': digest,
                     })
                 with service.connection() as db:
                     existing = db.execute('SELECT archived FROM question_sets WHERE id=?', (result['id'],)).fetchone()
                     db.execute('''INSERT OR IGNORE INTO question_sets
-                        (id,title,created_at,passage_count,question_count,task_count,source,html,html_sha256)
-                        VALUES (?,?,?,?,?,?,?,?,?)''', (result['id'], result['title'], datetime.now(timezone.utc).isoformat(),
+                        (id,title,created_at,kind,passage_count,question_count,task_count,source,html,html_sha256)
+                        VALUES (?,?,?,?,?,?,?,?,?,?)''', (result['id'], result['title'], datetime.now(timezone.utc).isoformat(), result['kind'],
                         result['passageCount'], result['questionCount'], result['taskCount'], json.dumps(source, ensure_ascii=False), html, digest))
                     db.execute('UPDATE question_sets SET archived=0 WHERE id=?', (result['id'],))
                     stored_digest = db.execute('SELECT html_sha256 FROM question_sets WHERE id=?', (result['id'],)).fetchone()[0]
@@ -168,14 +177,14 @@ def handler_for(service):
             if path == '/api/v1/sets' and method == 'GET':
                 self.authorize(admin=True)
                 with service.connection() as db:
-                    rows = db.execute('SELECT id,title,created_at,passage_count,question_count,task_count FROM question_sets WHERE archived=0 ORDER BY created_at DESC,id').fetchall()
-                return self.respond(200, {'sets': [dict(zip(('id','title','createdAt','passageCount','questionCount','taskCount'), row)) for row in rows]})
+                    rows = db.execute('SELECT id,title,created_at,kind,passage_count,question_count,task_count FROM question_sets WHERE archived=0 ORDER BY created_at DESC,id').fetchall()
+                return self.respond(200, {'sets': [dict(zip(('id','title','createdAt','kind','passageCount','questionCount','taskCount'), row)) for row in rows]})
             match = re.fullmatch(r'/api/v1/sets/([a-f0-9]{64})(/html)?', path)
             if match and method in ('GET', 'DELETE'):
                 self.authorize(admin=True)
                 ident, artifact = match.groups()
                 with service.connection() as db:
-                    row = db.execute('SELECT source,html,html_sha256 FROM question_sets WHERE id=? AND archived=0', (ident,)).fetchone()
+                    row = db.execute('SELECT source,html,html_sha256,kind FROM question_sets WHERE id=? AND archived=0', (ident,)).fetchone()
                     if row is None:
                         raise ApiError(404, 'not_found', '题目不存在或已归档。')
                     if method == 'DELETE':
@@ -186,10 +195,12 @@ def handler_for(service):
                     return self.respond(200, {'ok': True, 'archived': True})
                 if artifact:
                     return self.respond(200, row[1], 'text/html; charset=utf-8', {
-                        'Content-Disposition': f'attachment; filename="reading-{ident[:12]}.html"', 'X-Artifact-SHA256': row[2]})
+                        'Content-Disposition': f'attachment; filename="{row[3]}-{ident[:12]}.html"', 'X-Artifact-SHA256': row[2]})
                 return self.respond(200, row[0])
-            static = {'/': 'index.html', '/index.html': 'index.html', '/admin': 'admin.html', '/admin.html': 'admin.html',
-                      '/reading-engine.js': 'reading-engine.js', '/reading-runtime.html': 'reading-runtime.html'}
+            static = {'/': 'index.html', '/index.html': 'index.html', '/listening': 'listening.html', '/listening.html': 'listening.html',
+                      '/admin': 'admin.html', '/admin.html': 'admin.html', '/reading-engine.js': 'reading-engine.js',
+                      '/reading-runtime.html': 'reading-runtime.html', '/listening-engine.js': 'listening-engine.js',
+                      '/listening-runtime.html': 'listening-runtime.html'}
             if method == 'GET' and path in static:
                 name = static[path]
                 mime = 'text/javascript; charset=utf-8' if name.endswith('.js') else 'text/html; charset=utf-8'

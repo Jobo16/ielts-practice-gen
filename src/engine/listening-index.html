@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>听力练习 · 自有题目</title>
+  <link rel="icon" href="data:,">
+  <style><!-- @include src/engine/style.css --></style>
+</head>
+<body>
+  <main>
+    <header><span class="brand">LISTENING</span><span>自有题目</span><a href="./index.html">阅读工具</a></header>
+    <section id="library">
+      <h1>把你的音频和题目变成听力练习。</h1>
+      <p>导入内嵌音频、题目、答案和解析，在浏览器中完成作答、判分与复盘。</p>
+      <div class="actions">
+        <label class="button">导入题目 JSON<input id="import-content" type="file" accept=".json,application/json"></label>
+        <button id="sample">试用示例题目</button>
+        <button id="download-sample">下载题目模板</button>
+      </div>
+      <p id="error" role="alert" hidden></p>
+      <article id="summary" hidden>
+        <h2 id="title"></h2><p id="details"></p>
+        <div class="actions"><button id="start" class="primary">开始 / 继续练习</button><button id="export-html">导出单文件听力包</button><button id="export-json">导出题目 JSON</button></div>
+      </article>
+      <p class="hint">音频与题目保存在当前浏览器，文件不会上传。导出的 HTML 内嵌音频，可离线打开。</p>
+      <details><summary>题目格式</summary><p>使用 <code>listening-set.v1</code>。题型、答案和解析结构与阅读引擎一致；音频使用 base64 内嵌。PDF、Word、图片及音频转码需先在外部完成。</p><p>单文件音频上限为 64 MiB；建议使用 MP3 或 M4A 以减小导出文件。</p></details>
+    </section>
+    <section id="runner" hidden><div class="runner-bar"><button id="back">返回题目</button><span>答案自动保存在当前浏览器</span></div><iframe id="frame" title="自有题目听力练习" allow="fullscreen"></iframe></section>
+    <footer>自有题目听力引擎</footer>
+  </main>
+  <script><!-- @include src/app/composer.js --></script>
+  <script><!-- @include src/runtime/answer-grading.js --></script>
+  <script><!-- @include src/engine/content.js --></script>
+  <script><!-- @include src/engine/listening-content.js --></script>
+  <script><!-- @include src/engine/listening-store.js --></script>
+  <script>window.__LISTENING_TEMPLATE__ = __ZYZ_HTML_STRING__("src/runtime/index.html"); window.__LISTENING_SAMPLE__ = __ZYZ_JSON__("examples/listening-welcome.json");</script>
+  <script><!-- @include src/engine/listening-app.js --></script>
+</body>
+</html>

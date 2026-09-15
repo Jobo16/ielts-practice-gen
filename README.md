@@ -2,11 +2,11 @@
 
 [![Checks](https://github.com/Jobo16/ielts-reading-gen/actions/workflows/check.yml/badge.svg)](https://github.com/Jobo16/ielts-reading-gen/actions/workflows/check.yml)
 
-**把结构化 JSON 转换为可交互、可离线分发的雅思阅读练习 HTML。**
+**把结构化 JSON 转换为可交互、可离线分发的雅思阅读与听力练习 HTML。**
 
-[在线练习工具](https://ieltsbuddy-reading-gen.jobo.asia/) · [题库后台](https://ieltsbuddy-reading-gen.jobo.asia/admin) · [Agent 接入规范](docs/agent-guide.md) · [HTTP API](docs/openapi.json)
+[在线练习工具](https://ieltsbuddy-reading-gen.jobo.asia/) · [题库后台](https://ieltsbuddy-reading-gen.jobo.asia/admin) · [Agent 接入规范](docs/agent-guide.md) · [题型目录](docs/agent-task-catalog.md) · [机器能力清单](docs/agent-capabilities.json) · [HTTP API](docs/openapi.json)
 
-支持 17 种阅读题型、自动评分、答案解析、译文和证据定位。提供简单的题库后台、HTTP API 与 Python CLI，适合由 Agent 将 PDF 等原始材料整理成 JSON，再交给本项目生成 HTML。PDF 识别和 OCR 由调用方负责。
+阅读与听力共用 17 种题型、自动评分和答案解析。听力包将自有 MP3、M4A、WAV、OGG 或 WebM 音频以内嵌 base64 形式打入单文件 HTML。提供简单的题库后台、HTTP API 与 Python CLI，适合由 Agent 将 PDF、音频等原始材料整理成 JSON，再交给本项目生成 HTML。PDF 识别、OCR 和音频转码由调用方负责。
 
 在线练习工具可直接试用原创示例；服务端打包 API 需要 API 密钥，管理题库需要独立的后台密钥。自行部署时可在本地回环地址无密钥运行。
 
@@ -26,7 +26,7 @@ cd ielts-reading-gen
 npm run dev
 ```
 
-打开 <http://127.0.0.1:4173>，导入自己的 JSON，或先点击“试用示例题目”。
+打开 <http://127.0.0.1:4173> 导入阅读 JSON，或访问 <http://127.0.0.1:4173/listening.html> 导入听力 JSON；两者都可先点击“试用示例题目”。
 示例是新编的社区花园短文，包含 5 道题和中文解析，不使用原题库文章。
 后台入口为 http://127.0.0.1:4173/admin，可管理题目、校验、预览并下载 HTML。
 
@@ -57,11 +57,14 @@ npm run check
 | `dist/admin.html` | 服务端题库管理界面，需由 Python 服务运行 |
 | `dist/index.html` | 约 0.9 MB 的自有题目导入工具，内嵌引擎与自编示例 |
 | `dist/reading-engine.js` | 可嵌入其他页面的编译与渲染 API |
+| `dist/listening.html` | 自有听力题目导入工具，内嵌播放器与示例 |
+| `dist/listening-engine.js` | 同时提供 `ReadingContent` 与 `ListeningContent` API |
+| `dist/listening-runtime.html` | 听力单文件包使用的答题模板 |
 | `dist/reading-runtime.html` | 供 API 使用的答题模板，含一个题目插入点 |
 | `dist/legacy.html` | 可选参考应用，运行 `npm run build:legacy` 生成 |
 | `dist/build.json` | 默认入口的构建摘要，不是签名 |
 
-首页“导出离线练习包”会生成只含当前题目的单文件 HTML。
+首页“导出离线练习包”会生成只含当前题目的单文件 HTML；听力页会把音频一同嵌入。单文件音频上限为 64 MiB，建议使用 MP3/M4A 控制体积。
 默认构建也不读取原题库；只有 `build:legacy` 和原包回归检查需要 `data/`。
 `dist/` 是生成目录，不提交 Git，也不要直接修改。
 
